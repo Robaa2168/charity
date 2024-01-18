@@ -13,21 +13,32 @@ app.use((req, res, next) => {
     const segments = req.path.split('/').filter(Boolean); 
     console.log('Path Segments:', segments);
 
-    if (segments.length > 1) {
-        // More than one segment: replace the last '/' with an underscore and append '.html'
-        const lastSegment = segments.pop();
-        req.url = '/' + segments.join('/') + '_' + lastSegment + '.html';
-        console.log('Rewritten URL (multi-segment):', req.url);
-    } else if (segments.length === 1) {
-        // Single segment: just append '.html'
-        req.url = '/' + segments[0] + '.html';
-        console.log('Rewritten URL (single segment):', req.url);
+    // Check if the last segment has a file extension
+    const lastSegment = segments[segments.length - 1];
+    const hasExtension = lastSegment.includes('.');
+
+    if (!hasExtension) {
+        // If there's no file extension, assume it's an HTML page
+        if (segments.length > 1) {
+            // More than one segment: replace the last '/' with an underscore and append '.html'
+            const newLastSegment = segments.pop() + '.html';
+            req.url = '/' + segments.join('/') + '_' + newLastSegment;
+            console.log('Rewritten URL (multi-segment):', req.url);
+        } else if (segments.length === 1) {
+            // Single segment: just append '.html'
+            req.url = '/' + segments[0] + '.html';
+            console.log('Rewritten URL (single segment):', req.url);
+        } else {
+            console.log('Root URL, no rewrite necessary.');
+        }
     } else {
-        console.log('Root URL, no rewrite necessary.');
+        // If there's a file extension, don't rewrite the URL
+        console.log('No rewrite: File extension detected.');
     }
 
     next();
 });
+
 
 // Serve static files from 'children' directory
 app.use(express.static('children'));
