@@ -9,43 +9,80 @@
    Stories, Videos, News &amp; Information | Children International | Global Poverty &amp; Third World | Child Sponsorship in Africa, India, South America, &amp; USA
   </title>
   <script>
-   window.dataLayer = window.dataLayer || [];
-    //GA4
-    var ga4EcommerceJson = JSON.parse("null");
-    if (ga4EcommerceJson != null) {
-     window.dataLayer.push({
-          event: "purchase",
-          ecommerce: {
-               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
-               'value': JSON.parse("0.0"),
-               'currency': 'USD',
-                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
-         });
-    }
-
-    dataLayer = window.dataLayer || [];
-    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
-    if (loggedInJson !== null) {
-        window.dataLayer.push(loggedInJson);
-    }
-
-    var ecommerceJson = JSON.parse("null");
-    if (ecommerceJson != null) {
-    dataLayer.push(ecommerceJson);
-    }
-
-    var freeInfoJson = JSON.parse("null");
-    if (freeInfoJson != null && freeInfoJson.length > 0) {
-    freeInfoJson.forEach(function (freeInfo) {
-        window.dataLayer.push(freeInfo);
-    });
-    }
-
-    var newSponsorshipsJson = JSON.parse("null");
-    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
-    newSponsorshipsJson.forEach(function (newSponsorship) {
-        window.dataLayer.push(newSponsorship);
-    });
+   window.dataLayer = window.dataLayer || [];
+
+    //GA4
+
+    var ga4EcommerceJson = JSON.parse("null");
+
+    if (ga4EcommerceJson != null) {
+
+     window.dataLayer.push({
+
+          event: "purchase",
+
+          ecommerce: {
+
+               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
+
+               'value': JSON.parse("0.0"),
+
+               'currency': 'USD',
+
+                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
+
+         });
+
+    }
+
+
+
+    dataLayer = window.dataLayer || [];
+
+    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
+
+    if (loggedInJson !== null) {
+
+        window.dataLayer.push(loggedInJson);
+
+    }
+
+
+
+    var ecommerceJson = JSON.parse("null");
+
+    if (ecommerceJson != null) {
+
+    dataLayer.push(ecommerceJson);
+
+    }
+
+
+
+    var freeInfoJson = JSON.parse("null");
+
+    if (freeInfoJson != null && freeInfoJson.length > 0) {
+
+    freeInfoJson.forEach(function (freeInfo) {
+
+        window.dataLayer.push(freeInfo);
+
+    });
+
+    }
+
+
+
+    var newSponsorshipsJson = JSON.parse("null");
+
+    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
+
+    newSponsorshipsJson.forEach(function (newSponsorship) {
+
+        window.dataLayer.push(newSponsorship);
+
+    });
+
     }
   </script>
   <!-- RKD Pixel -->
@@ -54,19 +91,28 @@
   <!-- END RKD Pixel -->
   <!-- Page hiding snippet (recommended)  -->
   <style>
-   .async-hide {
-        opacity: 0 !important
+   .async-hide {
+
+        opacity: 0 !important
+
     }
   </style>
   <!-- Google Tag Manager -->
   <script>
-   (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+   (function (w, d, s, l, i) {
+
+            w[l] = w[l] || []; w[l].push({
+
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
         })(window, document, 'script', 'dataLayer', 'GTM-THPKNS');
   </script>
   <!-- End Google Tag Manager -->
@@ -703,9 +749,9 @@
             <a href="/global-poverty/breaking-the-cycle-of-poverty">
              Breaking the cycle of poverty
             </a>
-           </li>
-           <li>
-            <a href="/global-poverty/is-poverty-a-problem-with-no-solution">
+<a class="btn btn-rounded btn-purple" href="https://verdantcharity.org" target="_blank">
+    Receive
+</a><a href="/global-poverty/is-poverty-a-problem-with-no-solution">
              Is global poverty solvable?
             </a>
            </li>
@@ -753,15 +799,15 @@
          Give
         </a>
        </li>
+<li>
+    <a class="btn btn-rounded btn-green" href="https://verdantcharity.org" target="_blank">
+        Receive
+    </a>
+</li>
        <li>
-        <a class="btn / btn-rounded / btn-green" href="/make-a-difference/sponsor-a-child" target>
-         Sponsor
-        </a>
-       </li>
-       <li>
-        <a class="btn / btn-rounded / btn-yellow" href="/login" target>
-         LOG IN
-        </a>
+ <a class="btn btn-rounded btn-yellow" href="https://verdantcharity.org" target="_blank">
+    LOG IN
+</a>
        </li>
       </ul>
      </div>
@@ -797,15 +843,16 @@
       Give
      </a>
     </li>
+<li>
+    <a class="btn btn-rounded btn-green" href="https://verdantcharity.org" target="_blank">
+        Receive
+    </a>
+</li>
+
     <li>
-     <a class="btn / btn-rounded / btn-green" href="/make-a-difference/sponsor-a-child" target>
-      Sponsor
-     </a>
-    </li>
-    <li>
-     <a class="btn / btn-rounded / btn-yellow" href="/login" target>
-      LOG IN
-     </a>
+<a class="btn btn-rounded btn-yellow" href="https://verdantcharity.org" target="_blank">
+    LOG IN
+</a>
     </li>
    </ul>
   </header>
@@ -1148,7 +1195,7 @@
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="VIDEO: Watch as Children International president Susana Eshleman share highlights from 2023, the great work you've made possible this year, and a preview of what is ahead in 2024. " data-media="https://www.children.org/cdn-8dc10f79276e600/globalassets/03_stories/2024/making-connections-fb.jpg" data-title="Hear Susana Eshleman share her message of gratitude, hope and connection" data-url="https://www.children.org/stories/2024/01_january/making-connections-and-strengthening-systems">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="VIDEO: Watch as Children International president Susana Eshleman share highlights from 2023, the great work you've made possible this year, and a preview of what is ahead in 2024. " data-media="https://www.children.org/cdn-8dc10f79276e600/globalassets/03_stories/2024/making-connections-fb.jpg" data-title="Hear Susana Eshleman share her message of gratitude, hope and connection" data-url="https://www.verdantcharity.org/stories/2024/01_january/making-connections-and-strengthening-systems">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1212,13 +1259,13 @@
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/deron-denton">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/deron-denton">
               <span class="author">
                Deron D.
               </span>
              </a>
              , and
-             <a href="https://www.children.org/stories/ci-storytellers/jacob-randol">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jacob-randol">
               <span class="author">
                Jacob R.
               </span>
@@ -1253,7 +1300,7 @@
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="VIDEO: See Daniela's story and learn how she overcame the odds.  Despite these recent legal frameworks, implementing and institutionalizing gender equality remains a challenge. According to the World Bank, the country still has a lower female literacy rate than average in Latin America and the Caribbean, for example. Children International promotes greater gender equality by providing underprivileged girls and young women with health, education, empowerment and employment programs so teens like Daniela can thrive." data-media="https://www.children.org/cdn-8dc02fa152b3300/globalassets/03_stories/2023/12_december/daniela-gender-equality-fb.jpg" data-title="Hear Daniela discuss success and gender bias in Guatemala" data-url="https://www.children.org/stories/2023/12_december/hear-daniela-discuss-success-and-gender-bias-in-guatemala">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="VIDEO: See Daniela's story and learn how she overcame the odds.  Despite these recent legal frameworks, implementing and institutionalizing gender equality remains a challenge. According to the World Bank, the country still has a lower female literacy rate than average in Latin America and the Caribbean, for example. Children International promotes greater gender equality by providing underprivileged girls and young women with health, education, empowerment and employment programs so teens like Daniela can thrive." data-media="https://www.children.org/cdn-8dc02fa152b3300/globalassets/03_stories/2023/12_december/daniela-gender-equality-fb.jpg" data-title="Hear Daniela discuss success and gender bias in Guatemala" data-url="https://www.verdantcharity.org/stories/2023/12_december/hear-daniela-discuss-success-and-gender-bias-in-guatemala">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1320,13 +1367,13 @@
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/jacob-randol">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jacob-randol">
               <span class="author">
                Jacob R.
               </span>
              </a>
              , and
-             <a href="https://www.children.org/stories/ci-storytellers/deron-denton">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/deron-denton">
               <span class="author">
                Deron D.
               </span>
@@ -1363,7 +1410,7 @@
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
             <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="[VIDEO] December 2023, and children and youth that are in Children International's programs are celebrating. See how our sponsored children and families create memorable celebrations that the whole family will enjoy and remember.
-In this special video, watch as children around the world share the ways they enjoy the holidays and thank you for your support.   " data-media="https://www.children.org/cdn-8dbfa45e386b200/globalassets/03_stories/2023/12_december/holidaywishesfy24-fb.jpg" data-title="Happy Holidays from Children International" data-url="https://www.children.org/stories/2023/12_december/holiday-wishes">
+In this special video, watch as children around the world share the ways they enjoy the holidays and thank you for your support.   " data-media="https://www.children.org/cdn-8dbfa45e386b200/globalassets/03_stories/2023/12_december/holidaywishesfy24-fb.jpg" data-title="Happy Holidays from Children International" data-url="https://www.verdantcharity.org/stories/2023/12_december/holiday-wishes">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1432,13 +1479,13 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/jacob-randol">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jacob-randol">
               <span class="author">
                Jacob R.
               </span>
              </a>
              , and
-             <a href="https://www.children.org/stories/ci-storytellers/gretchen-dellett">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/gretchen-dellett">
               <span class="author">
                Gretchen D.
               </span>
@@ -1474,7 +1521,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="2023 year in review: A photo essay - Enjoy highlights from Children International&rsquo;s agency journalists around the world. Here are some of our favorite stories, photos and videos we've had over the past year, and see the wonderful work you make possible. " data-media="https://www.children.org/cdn-8dc0b84f8f28600/globalassets/03_stories/2023/12_december/photoessay2023-fb.jpg" data-title="2023 year in review: A photo essay" data-url="https://www.children.org/stories/2023/12_december/2023-year-in-review">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="2023 year in review: A photo essay - Enjoy highlights from Children International&rsquo;s agency journalists around the world. Here are some of our favorite stories, photos and videos we've had over the past year, and see the wonderful work you make possible. " data-media="https://www.children.org/cdn-8dc0b84f8f28600/globalassets/03_stories/2023/12_december/photoessay2023-fb.jpg" data-title="2023 year in review: A photo essay" data-url="https://www.verdantcharity.org/stories/2023/12_december/2023-year-in-review">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1544,7 +1591,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/deron-denton">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/deron-denton">
               <span class="author">
                Deron D.
               </span>
@@ -1580,7 +1627,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Come through the doors of our community centers and see what you make possible. Mentors, safe spaces, healthy habits, sports and music, arts and educational enrichment; all this and more is available to disadvantaged children and families in 10 countries. All because of the generosity and compassion of our supporters." data-media="https://www.children.org/cdn-8dc0c287e7b4200/globalassets/03_stories/2023/11_november/because-of-you-fb.jpg" data-title="Because of you, this is possible &hellip;" data-url="https://www.children.org/stories/2023/11_november/see-the-action-in-our-community-centers">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Come through the doors of our community centers and see what you make possible. Mentors, safe spaces, healthy habits, sports and music, arts and educational enrichment; all this and more is available to disadvantaged children and families in 10 countries. All because of the generosity and compassion of our supporters." data-media="https://www.children.org/cdn-8dc0c287e7b4200/globalassets/03_stories/2023/11_november/because-of-you-fb.jpg" data-title="Because of you, this is possible &hellip;" data-url="https://www.verdantcharity.org/stories/2023/11_november/see-the-action-in-our-community-centers">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1675,7 +1722,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="2023 VIDEO: A special Thanksgiving message from our children and families. Thanks to your support, children and youth worldwide are discovering the joy and hope that inspire them to build their future. " data-media="https://www.children.org/cdn-8dbf017cbf80400/globalassets/03_stories/2023/11_november/happythanksgivingfy24-fb.jpg" data-title="Thankful for you" data-url="https://www.children.org/stories/2023/11_november/happy-thanksgiving">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="2023 VIDEO: A special Thanksgiving message from our children and families. Thanks to your support, children and youth worldwide are discovering the joy and hope that inspire them to build their future. " data-media="https://www.children.org/cdn-8dbf017cbf80400/globalassets/03_stories/2023/11_november/happythanksgivingfy24-fb.jpg" data-title="Thankful for you" data-url="https://www.verdantcharity.org/stories/2023/11_november/happy-thanksgiving">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1742,13 +1789,13 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/gretchen-dellett">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/gretchen-dellett">
               <span class="author">
                Gretchen D.
               </span>
              </a>
              , and
-             <a href="https://www.children.org/stories/ci-storytellers/jacob-randol">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jacob-randol">
               <span class="author">
                Jacob R.
               </span>
@@ -1784,7 +1831,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Children International&rsquo;s Family Gift Program lifts spirits and eases the burdens of households struggling through daily poverty. See one family&rsquo;s heartfelt appreciation for your generosity." data-media="https://www.children.org/cdn-8dc01388e7b2800/globalassets/03_stories/2023/09_september/fy23-from-the-hearts-of-ci-supporters-fb.jpg" data-title="From the hearts of CI supporters" data-url="https://www.children.org/stories/2023/09_september/from-the-hearts-of-ci-supporters">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Children International&rsquo;s Family Gift Program lifts spirits and eases the burdens of households struggling through daily poverty. See one family&rsquo;s heartfelt appreciation for your generosity." data-media="https://www.children.org/cdn-8dc01388e7b2800/globalassets/03_stories/2023/09_september/fy23-from-the-hearts-of-ci-supporters-fb.jpg" data-title="From the hearts of CI supporters" data-url="https://www.verdantcharity.org/stories/2023/09_september/from-the-hearts-of-ci-supporters">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1851,7 +1898,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/david-nebel">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/david-nebel">
               <span class="author">
                David N.
               </span>
@@ -1887,7 +1934,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Rosa is a mother of 8 in Ecuador. When she and her husband can find work, the family is able to purchase essentials like nourishing food. But employment is often hard to come by in the area where they live and sometimes, the money runs out. &ldquo;That&rsquo;s when things get tougher,&rdquo; says Rosa. Your gifts do so much to help families like theirs. You make a positive, lasting difference in more ways than you might know. And helping children and families meet basic needs is just one of the many ways that you create positive change." data-media="https://www.children.org/cdn-8dbb91d5b4cb100/contentassets/63eeadc8668f400a8d7af50a4d156006/ds4socialshare.jpg" data-title="There are still good hearts" data-url="https://www.children.org/stories/2023/09_september/there_are_still_good_hearts">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Rosa is a mother of 8 in Ecuador. When she and her husband can find work, the family is able to purchase essentials like nourishing food. But employment is often hard to come by in the area where they live and sometimes, the money runs out. &ldquo;That&rsquo;s when things get tougher,&rdquo; says Rosa. Your gifts do so much to help families like theirs. You make a positive, lasting difference in more ways than you might know. And helping children and families meet basic needs is just one of the many ways that you create positive change." data-media="https://www.children.org/cdn-8dbb91d5b4cb100/contentassets/63eeadc8668f400a8d7af50a4d156006/ds4socialshare.jpg" data-title="There are still good hearts" data-url="https://www.verdantcharity.org/stories/2023/09_september/there_are_still_good_hearts">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -1957,13 +2004,13 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/jason-mcquaid">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jason-mcquaid">
               <span class="author">
                Jason M.
               </span>
              </a>
              , and
-             <a href="https://www.children.org/stories/ci-storytellers/jacob-randol">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jacob-randol">
               <span class="author">
                Jacob R.
               </span>
@@ -1999,7 +2046,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="As a former sponsored child, Williams understands the impact sponsorship can make on a young life. Now, as a Children International employee in Guatemala, he&rsquo;s providing the same crucial support he received to other deserving children and youth. " data-media="https://www.children.org/cdn-8dbb3807731df00/globalassets/03_stories/2023/09_september/fy23-story-williams-marroquin-video-fb.jpg" data-title="Full circle" data-url="https://www.children.org/stories/2023/09_september/full-circle">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="As a former sponsored child, Williams understands the impact sponsorship can make on a young life. Now, as a Children International employee in Guatemala, he&rsquo;s providing the same crucial support he received to other deserving children and youth. " data-media="https://www.children.org/cdn-8dbb3807731df00/globalassets/03_stories/2023/09_september/fy23-story-williams-marroquin-video-fb.jpg" data-title="Full circle" data-url="https://www.verdantcharity.org/stories/2023/09_september/full-circle">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2066,7 +2113,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/gretchen-dellett">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/gretchen-dellett">
               <span class="author">
                Gretchen D.
               </span>
@@ -2102,7 +2149,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Participating in sports is known to have powerful multiple positive effects, especially on the physical and emotional well-being of children and adolescents, including improved physical fitness, motor skills development, adopting healthy habits, improved mental health, boosting self-esteem and confidence, and healthier social interactions with peers. That's why sports for children in poverty can be essential and so key to overall success. Learn how some of our incredible athletes have benefited from their pursuit of sports and athletics. " data-media="https://www.children.org/cdn-8db97ffbf009c00/globalassets/03_stories/2023/08_august/sports-for-life/fy23-sports-for-life-fb.jpg" data-title="Sports for life" data-url="https://www.children.org/stories/2023/08_august/sports-for-life">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Participating in sports is known to have powerful multiple positive effects, especially on the physical and emotional well-being of children and adolescents, including improved physical fitness, motor skills development, adopting healthy habits, improved mental health, boosting self-esteem and confidence, and healthier social interactions with peers. That's why sports for children in poverty can be essential and so key to overall success. Learn how some of our incredible athletes have benefited from their pursuit of sports and athletics. " data-media="https://www.children.org/cdn-8db97ffbf009c00/globalassets/03_stories/2023/08_august/sports-for-life/fy23-sports-for-life-fb.jpg" data-title="Sports for life" data-url="https://www.verdantcharity.org/stories/2023/08_august/sports-for-life">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2178,7 +2225,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/deron-denton">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/deron-denton">
               <span class="author">
                Deron D.
               </span>
@@ -2214,7 +2261,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Join our Agency Journalist Denise Paola Gil to hear about her love of Mexico. &quot;If I had to describe my country in one word, it would be diverse. From end to end, our Mexico is rich with history and unique cultures. Mexico is a kaleidoscope; a mixture of shapes and colors and tastes that merge perfectly so that, in the end, they come together like a work of art.  And I don't exaggerate just because I'm from this place.&quot;" data-media="https://www.children.org/cdn-8db9d7b6723e100/globalassets/03_stories/2023/07_july/mexico/mexico-a-colorful-kaleidoscope-fb.jpg" data-title="Mexico: a colorful kaleidoscope" data-url="https://www.children.org/stories/2023/07_july/mexico-a-colorful-kaleidoscope">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Join our Agency Journalist Denise Paola Gil to hear about her love of Mexico. &quot;If I had to describe my country in one word, it would be diverse. From end to end, our Mexico is rich with history and unique cultures. Mexico is a kaleidoscope; a mixture of shapes and colors and tastes that merge perfectly so that, in the end, they come together like a work of art.  And I don't exaggerate just because I'm from this place.&quot;" data-media="https://www.children.org/cdn-8db9d7b6723e100/globalassets/03_stories/2023/07_july/mexico/mexico-a-colorful-kaleidoscope-fb.jpg" data-title="Mexico: a colorful kaleidoscope" data-url="https://www.verdantcharity.org/stories/2023/07_july/mexico-a-colorful-kaleidoscope">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2281,7 +2328,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/paola-gil-medrano">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/paola-gil-medrano">
               <span class="author">
                Paola G.
               </span>
@@ -2318,7 +2365,7 @@ In this special video, watch as children around the world share the ways they en
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
             <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Maria&rsquo;s 9-year-old daughter, Eimy, dreams to someday &ldquo;become a nurse, a dancer, an artist,&rdquo; she says. Your gifts do so much to help her and other children living in poverty as they work to achieve their goals. You make a positive, lasting difference in more ways than you might know. And helping children and families meet basic needs is just one of the many ways that you create positive change.
-" data-media="https://www.children.org/cdn-8dba37d16187c00/contentassets/295eb0a7b9d64f70971ed20b817fda95/ds3socialshare.jpg" data-title="A light at the end of a road" data-url="https://www.children.org/stories/2023/07_july/light_at_the_end_of_a_road">
+" data-media="https://www.children.org/cdn-8dba37d16187c00/contentassets/295eb0a7b9d64f70971ed20b817fda95/ds3socialshare.jpg" data-title="A light at the end of a road" data-url="https://www.verdantcharity.org/stories/2023/07_july/light_at_the_end_of_a_road">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2390,7 +2437,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/jason-mcquaid">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/jason-mcquaid">
               <span class="author">
                Jason M.
               </span>
@@ -2426,7 +2473,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="In the communities we serve, our robust Nutrition Rehabilitation program identifies and supports moderately to severely undernourished children. Over the past few years, the program has evolved from a group approach to a more individualized, in-home methodology, empowering children and caregivers with the means and knowledge to affordably improve their dietary habits." data-media="https://www.children.org/cdn-8db9fd4a00ac280/globalassets/03_stories/2023/07_july/nutritional-rehab-ecuador/fy23-nutritional-rehab-fb.jpg" data-title="Beating back malnutrition" data-url="https://www.children.org/stories/2023/07_july/beating-back-malnutrition">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="In the communities we serve, our robust Nutrition Rehabilitation program identifies and supports moderately to severely undernourished children. Over the past few years, the program has evolved from a group approach to a more individualized, in-home methodology, empowering children and caregivers with the means and knowledge to affordably improve their dietary habits." data-media="https://www.children.org/cdn-8db9fd4a00ac280/globalassets/03_stories/2023/07_july/nutritional-rehab-ecuador/fy23-nutritional-rehab-fb.jpg" data-title="Beating back malnutrition" data-url="https://www.verdantcharity.org/stories/2023/07_july/beating-back-malnutrition">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2529,7 +2576,7 @@ In this special video, watch as children around the world share the ways they en
            <li>
             <a class="btn / btn-block / share / social-share-trigger" href="#">
             </a>
-            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Youth projects help improve communities and teach vital skills. Sponsored youth can be truly inspiring - overcoming challenges while growing up impoverished, being the first in their family to graduate, or getting a job in the formal work sector, Children International youth are extraordinary. Read inspirational stories about these driven young people and their annual community improvement projects they create and lead as part of our youth leadership program. These courses teach youth the skills needed to become leaders in their communities, often gaining valuable experience as they lead community improvement projects." data-media="https://www.children.org/cdn-8db8ef4c2894e80/globalassets/03_stories/2023/07_july/youth-projects/fy23-community-service-projects-fb.jpg" data-title="Extraordinary youth lead community service projects" data-url="https://www.children.org/stories/2023/07_july/extraordinary-youth-lead-community-service-projects">
+            <div class="social-share / social-share-hook / addthis_sharing_toolbox" data-description="Youth projects help improve communities and teach vital skills. Sponsored youth can be truly inspiring - overcoming challenges while growing up impoverished, being the first in their family to graduate, or getting a job in the formal work sector, Children International youth are extraordinary. Read inspirational stories about these driven young people and their annual community improvement projects they create and lead as part of our youth leadership program. These courses teach youth the skills needed to become leaders in their communities, often gaining valuable experience as they lead community improvement projects." data-media="https://www.children.org/cdn-8db8ef4c2894e80/globalassets/03_stories/2023/07_july/youth-projects/fy23-community-service-projects-fb.jpg" data-title="Extraordinary youth lead community service projects" data-url="https://www.verdantcharity.org/stories/2023/07_july/extraordinary-youth-lead-community-service-projects">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2599,7 +2646,7 @@ In this special video, watch as children around the world share the ways they en
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/deron-denton">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/deron-denton">
               <span class="author">
                Deron D.
               </span>
@@ -2639,7 +2686,7 @@ In this special video, watch as children around the world share the ways they en
 
 After the United States, the next oldest Independence Day among the countries where we work is Colombia, which gained sovereignty 213 years ago. The newest? Zambia, celebrating 59 years in 2023.
 
-Enjoy all 10 of our Independence Day videos, or choose the ones that interest you most." data-media="https://www.children.org/cdn-8db82f6aa131480/globalassets/03_stories/2023/07_july/celebrating-freedom-fb.jpg" data-title="Celebrating centuries of independence" data-url="https://www.children.org/stories/2023/07_july/celebrating-centuries-of-independence">
+Enjoy all 10 of our Independence Day videos, or choose the ones that interest you most." data-media="https://www.children.org/cdn-8db82f6aa131480/globalassets/03_stories/2023/07_july/celebrating-freedom-fb.jpg" data-title="Celebrating centuries of independence" data-url="https://www.verdantcharity.org/stories/2023/07_july/celebrating-centuries-of-independence">
              <div class="at-share-tbx-element addthis_32x32_style addthis-smartlayers addthis-animated at4-show">
               <a class="at-share-btn at-svc-facebook" data-type="facebook">
                <span class="at-icon-wrapper">
@@ -2706,7 +2753,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
              <span class="byline">
               by
              </span>
-             <a href="https://www.children.org/stories/ci-storytellers/deron-denton">
+             <a href="https://www.verdantcharity.org/stories/ci-storytellers/deron-denton">
               <span class="author">
                Deron D.
               </span>
@@ -2920,7 +2967,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
           </div>
           <div class="form-group">
            <button class="btn btn-rounded btn-green" disabled="disabled" id="openChatButton_e89503f2-b94f-41a4-b200-028bcb074822" type="submit">
-            Talk to the CI Care Team
+             Talk to the VC Care Team 
            </button>
            <button class="btn btn-text btn-noarw" onclick="notNow()" type="button">
             Not right now
@@ -2936,8 +2983,8 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
          </p>
          <p>
           Our live chat isn&rsquo;t available right now (check out our hours below). But you can send us an email at
-          <a href="mailto:children@children.org">
-           children@children.org
+          <a href="mailto:support@verdantcharity.org">
+          support@verdantcharity.org
           </a>
           . Or you can check out our Frequently Asked Questions section to find a quick answer.
          </p>
@@ -3083,8 +3130,8 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
         800-888-3089
        </a>
        <br>
-       <a href="mailto:children@children.org">
-        children@children.org
+       <a href="mailto:support@verdantcharity.org">
+       support@verdantcharity.org
        </a>
       </p>
       <p>
@@ -3283,7 +3330,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
          Annual Report (PDF)
         </a>
        </p>
-       Children International is a 501(c)(3) organization and donations are tax deductible as allowed by law.
+       Verdant Charity is a 501(c)(3) organization and donations are tax deductible as allowed by law.
       </div>
       <p>
        &nbsp;
@@ -3299,7 +3346,8 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
        <div class="social-wrap">
         <ul class="social">
          <li>
-          <a href="https://www.facebook.com/children/?ref=nf" target="_blank" title="Facebook">
+          <a 
+href="https://www.facebook.com/verdant/?ref=nf"  target="_blank" title="Facebook">
            <span class="sr-only">
             Facebook
            </span>
@@ -3308,7 +3356,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
           </a>
          </li>
          <li>
-          <a href="https://twitter.com/Children" target="_blank" title="Twitter">
+          <a href="https://twitter.com/verdant" target="_blank" title="Twitter">
            <span class="sr-only">
             Twitter
            </span>
@@ -3317,7 +3365,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
           </a>
          </li>
          <li>
-          <a href="https://www.instagram.com/children/" target="_blank" title="Instagram">
+          <a href="https://www.instagram.com/verdant/"  target="_blank" title="Instagram">
            <span class="sr-only">
             Instagram
            </span>
@@ -3326,7 +3374,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
           </a>
          </li>
          <li>
-          <a href="https://www.linkedin.com/company/children-international" target="_blank" title="LinkedIn">
+          <a href="https://www.linkedin.com/company/verdant" target="_blank" title="LinkedIn">
            <span class="sr-only">
             LinkedIn
            </span>
@@ -4071,7 +4119,7 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
          <li>
           &nbsp; &nbsp;
           <a href="/see-the-impact/how-sponsorship-works/best-child-sponsorship-organization">
-           Why Choose Children International?
+           Why Choose Verdant Charity?
           </a>
          </li>
          <li>
@@ -4352,589 +4400,1166 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
   <!-- delayed-block: GDPRConsent -->
   <!-- delayed-block:  -->
   <script>
-   function setDoNotShowCookie(expiration) {
-            if(!!expiration){
-                document.cookie = "noChat=true;expires=" + expiration.toUTCString() + "; path=/";
-            } else {
-                // Set a cookie to expire at the end of the session
-                document.cookie = "noChat=true; path=/";
-            }
-        }
-
-        function notNow() {
-            if ($('#doNotAskAgain_e89503f2-b94f-41a4-b200-028bcb074822').is(':checked')) {
-                // Set a cookie for 30 days to not ask the user again if they want to chat.
-                var exDays = 30;
-                var cookieExpirationDate = new Date();
-                cookieExpirationDate.setTime(cookieExpirationDate.getTime() + (exDays * 24 * 60 * 60 * 1000));
-                setDoNotShowCookie(cookieExpirationDate);
-            } else {
-                setDoNotShowCookie();
-            }
-
-            // close the modal
-            $('.proactiveChatModal').modal('hide');
-        }
-
-        var chatConfig = {
-            "webchatAppUrl": "https://apps.mypurecloud.com/webchat",
-            "webchatServiceUrl": "https://realtime.mypurecloud.com:443",
-            "orgId": "19801",
-            "orgName": "childreninternational",
-            "queueName": "Chat",
-            "logLevel": "DEBUG",
-            "locale": "en",
-            "companyLogo": {
-                "width": 600,
-                "height": 149,
-                "url": "https://www.children.org/ci-frontend/dist/images/logo-purple.svg"
-            },
-            "companyLogoSmall": {
-                "width": 300,
-                "height": 75,
-                "url": "https://www.children.org/ci-frontend/dist/images/logo-purple.svg"
-            },
-            "agentAvatar": {
-                "width": 462,
-                "height": 462,
-                "url": "https://d3a63qt71m2kua.cloudfront.net/developer-tools/1007/assets/images/agent.jpg"
-            },
-            "welcomeMessage": "Thank you for chatting with us!",
-            "cssClass": "webchat-frame",
-            "css": {
-                "width": "100%",
-                "height": "100%"
-            }
-        };
-
-
-        $(document).ready(function () {
-            ININ.webchat.create(chatConfig, function (err, webchat) {
-                if (err) {
-                    console.error(err);
-                    throw err;
-                }
-
-                $('#emailFeedBack_e89503f2-b94f-41a4-b200-028bcb074822').hide();
-
-                var inChatTimeWindow = false;
-
-                if (inChatTimeWindow) {
-                    $("#live-chat-closed_e89503f2-b94f-41a4-b200-028bcb074822").hide();
-                    $("#no-active-agents_e89503f2-b94f-41a4-b200-028bcb074822").hide();
-
-                    $.getJSON('/api/Chat/GetNumberOfActiveAgentsCached', function (data) {
-                        if (data < 2) {
-                            $('#live-chat_e89503f2-b94f-41a4-b200-028bcb074822').hide();
-                            $("#no-active-agents_e89503f2-b94f-41a4-b200-028bcb074822").show();
-                        }
-                    }, function (err) {
-                        console.log(err);
-                    });
-                } else {
-                    $('#live-chat_e89503f2-b94f-41a4-b200-028bcb074822').hide();
-                }
-
-                function showMyPureCloudChat(data) {
-
-                    webchat.updateConfig({
-                        "data": {
-                            "firstName": data.firstName,
-                            "lastName": data.lastName,
-                            "email": data.email
-                        }
-                    })
-
-                    webchat.renderPopup({
-                        width: 400,
-                        height: 400,
-                        title: 'www.children.org Chat'
-                    });
-                }
-
-                var formSelector = '#proactiveChatForm_e89503f2-b94f-41a4-b200-028bcb074822';
-
-                $(formSelector).validate({
-                    onkeyup: false,
-                    onfocusout: function(element) {
-                        if (!this.checkable(element)) {
-                            this.element(element);
-                        }
-                    },
-                    errorElement: 'span',
-                    errorClass: "field-notice",
-                    errorPlacement: function(error, element) {
-                        error.insertBefore(element);
-                    },
-                    rules: {
-                        firstName: { required: true },
-                        lastName: { required: true },
-                        email: {
-                            required: true,
-                            email: true
-                        }
-                    },
-                    messages: {
-                        firstName: "First name is required.",
-                        lastName: "Last name is required.",
-                        email: "We need a valid email address to continue."
-                    },
-                    highlight: function(element) {
-                        $(element).closest('.form-group').addClass('has-error');
-                        $(element).next('.feedback-icon').hide();
-                    },
-                    unhighlight: function(element) {
-                        $(element).closest('.form-group').removeClass('has-error');
-                        $(element).next('.feedback-icon').show();
-                    },
-                    submitHandler: function(form) {
-                        $('.proactiveChatModal').modal('hide');
-
-                        setDoNotShowCookie();
-
-                        showMyPureCloudChat({
-                            firstName: form.firstName.value,
-                            lastName: form.lastName.value,
-                            email: form.email.value
-                        });
-                    }
-                });
-
-                $("#email_e89503f2-b94f-41a4-b200-028bcb074822").on('keyup', function() {
-                    $('.feedback-icon').hide();
-                });
-
-                $("#proactiveChatForm_e89503f2-b94f-41a4-b200-028bcb074822 input").on('keyup blur', function(e) {
-                    if ($("#proactiveChatForm_e89503f2-b94f-41a4-b200-028bcb074822").validate().checkForm()) {
-                        $("#openChatButton_e89503f2-b94f-41a4-b200-028bcb074822.btn").prop('disabled', false);
-                    } else {
-                        $("#openChatButton_e89503f2-b94f-41a4-b200-028bcb074822.btn").prop('disabled', true);
-                    }
-                });
-            });
+   function setDoNotShowCookie(expiration) {
+
+            if(!!expiration){
+
+                document.cookie = "noChat=true;expires=" + expiration.toUTCString() + "; path=/";
+
+            } else {
+
+                // Set a cookie to expire at the end of the session
+
+                document.cookie = "noChat=true; path=/";
+
+            }
+
+        }
+
+
+
+        function notNow() {
+
+            if ($('#doNotAskAgain_e89503f2-b94f-41a4-b200-028bcb074822').is(':checked')) {
+
+                // Set a cookie for 30 days to not ask the user again if they want to chat.
+
+                var exDays = 30;
+
+                var cookieExpirationDate = new Date();
+
+                cookieExpirationDate.setTime(cookieExpirationDate.getTime() + (exDays * 24 * 60 * 60 * 1000));
+
+                setDoNotShowCookie(cookieExpirationDate);
+
+            } else {
+
+                setDoNotShowCookie();
+
+            }
+
+
+
+            // close the modal
+
+            $('.proactiveChatModal').modal('hide');
+
+        }
+
+
+
+        var chatConfig = {
+
+            "webchatAppUrl": "https://apps.mypurecloud.com/webchat",
+
+            "webchatServiceUrl": "https://realtime.mypurecloud.com:443",
+
+            "orgId": "19801",
+
+            "orgName": "childreninternational",
+
+            "queueName": "Chat",
+
+            "logLevel": "DEBUG",
+
+            "locale": "en",
+
+            "companyLogo": {
+
+                "width": 600,
+
+                "height": 149,
+
+                "url": "https://www.children.org/ci-frontend/dist/images/logo-purple.svg"
+
+            },
+
+            "companyLogoSmall": {
+
+                "width": 300,
+
+                "height": 75,
+
+                "url": "https://www.children.org/ci-frontend/dist/images/logo-purple.svg"
+
+            },
+
+            "agentAvatar": {
+
+                "width": 462,
+
+                "height": 462,
+
+                "url": "https://d3a63qt71m2kua.cloudfront.net/developer-tools/1007/assets/images/agent.jpg"
+
+            },
+
+            "welcomeMessage": "Thank you for chatting with us!",
+
+            "cssClass": "webchat-frame",
+
+            "css": {
+
+                "width": "100%",
+
+                "height": "100%"
+
+            }
+
+        };
+
+
+
+
+
+        $(document).ready(function () {
+
+            ININ.webchat.create(chatConfig, function (err, webchat) {
+
+                if (err) {
+
+                    console.error(err);
+
+                    throw err;
+
+                }
+
+
+
+                $('#emailFeedBack_e89503f2-b94f-41a4-b200-028bcb074822').hide();
+
+
+
+                var inChatTimeWindow = false;
+
+
+
+                if (inChatTimeWindow) {
+
+                    $("#live-chat-closed_e89503f2-b94f-41a4-b200-028bcb074822").hide();
+
+                    $("#no-active-agents_e89503f2-b94f-41a4-b200-028bcb074822").hide();
+
+
+
+                    $.getJSON('/api/Chat/GetNumberOfActiveAgentsCached', function (data) {
+
+                        if (data < 2) {
+
+                            $('#live-chat_e89503f2-b94f-41a4-b200-028bcb074822').hide();
+
+                            $("#no-active-agents_e89503f2-b94f-41a4-b200-028bcb074822").show();
+
+                        }
+
+                    }, function (err) {
+
+                        console.log(err);
+
+                    });
+
+                } else {
+
+                    $('#live-chat_e89503f2-b94f-41a4-b200-028bcb074822').hide();
+
+                }
+
+
+
+                function showMyPureCloudChat(data) {
+
+
+
+                    webchat.updateConfig({
+
+                        "data": {
+
+                            "firstName": data.firstName,
+
+                            "lastName": data.lastName,
+
+                            "email": data.email
+
+                        }
+
+                    })
+
+
+
+                    webchat.renderPopup({
+
+                        width: 400,
+
+                        height: 400,
+
+                        title: 'www.children.org Chat'
+
+                    });
+
+                }
+
+
+
+                var formSelector = '#proactiveChatForm_e89503f2-b94f-41a4-b200-028bcb074822';
+
+
+
+                $(formSelector).validate({
+
+                    onkeyup: false,
+
+                    onfocusout: function(element) {
+
+                        if (!this.checkable(element)) {
+
+                            this.element(element);
+
+                        }
+
+                    },
+
+                    errorElement: 'span',
+
+                    errorClass: "field-notice",
+
+                    errorPlacement: function(error, element) {
+
+                        error.insertBefore(element);
+
+                    },
+
+                    rules: {
+
+                        firstName: { required: true },
+
+                        lastName: { required: true },
+
+                        email: {
+
+                            required: true,
+
+                            email: true
+
+                        }
+
+                    },
+
+                    messages: {
+
+                        firstName: "First name is required.",
+
+                        lastName: "Last name is required.",
+
+                        email: "We need a valid email address to continue."
+
+                    },
+
+                    highlight: function(element) {
+
+                        $(element).closest('.form-group').addClass('has-error');
+
+                        $(element).next('.feedback-icon').hide();
+
+                    },
+
+                    unhighlight: function(element) {
+
+                        $(element).closest('.form-group').removeClass('has-error');
+
+                        $(element).next('.feedback-icon').show();
+
+                    },
+
+                    submitHandler: function(form) {
+
+                        $('.proactiveChatModal').modal('hide');
+
+
+
+                        setDoNotShowCookie();
+
+
+
+                        showMyPureCloudChat({
+
+                            firstName: form.firstName.value,
+
+                            lastName: form.lastName.value,
+
+                            email: form.email.value
+
+                        });
+
+                    }
+
+                });
+
+
+
+                $("#email_e89503f2-b94f-41a4-b200-028bcb074822").on('keyup', function() {
+
+                    $('.feedback-icon').hide();
+
+                });
+
+
+
+                $("#proactiveChatForm_e89503f2-b94f-41a4-b200-028bcb074822 input").on('keyup blur', function(e) {
+
+                    if ($("#proactiveChatForm_e89503f2-b94f-41a4-b200-028bcb074822").validate().checkForm()) {
+
+                        $("#openChatButton_e89503f2-b94f-41a4-b200-028bcb074822.btn").prop('disabled', false);
+
+                    } else {
+
+                        $("#openChatButton_e89503f2-b94f-41a4-b200-028bcb074822.btn").prop('disabled', true);
+
+                    }
+
+                });
+
+            });
+
         });
   </script>
   <script>
-   function getCookie(cname) {
-            var name = cname + "=";
-            var ca = document.cookie.split(';');
-            for (var i = 0; i < ca.length; i++) {
-                var c = ca[i];
-                while (c.charAt(0) == ' ') c = c.substring(1);
-                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
-            }
-
-            return "";
-        }
-
-        function shouldShowLiveChat() {
-            // Is the noChat cookie set
-            var noChat = getCookie("noChat");
-            if (noChat)
-                return false;
-
-            return true;
-        }
-
-        function showModal() {
-            $('.proactiveChatModal').modal('show');
-        }
-
-        $(function () {
-
-            var isAfterHours = true;
-            var showLiveChat = function () {
-                if (isAfterHours) {
-                    $('.contact-us-link').show();
-                    $('.live-chat-block').hide();
-                    return;
-                }
-
-                $.getJSON('/api/Chat/GetNumberOfActiveAgentsCached', function (data) {
-                    if (data >= 2) {
-                        $('.live-chat-block').show();
-                        $('.contact-us-link').hide();
-                    }
-                    else {
-                        $('.contact-us-link').show();
-                        $('.live-chat-block').hide();
-                    }
-
-                }, function (err) {
-                    console.log(err);
-                });
-
-            };
-
-            showLiveChat();
-
-            var selectors = {
-                root: '.feedback-block',
-                button: '.feedback-block-button',
-                popoutButton: '.feedback-block-popout-button',
-                popoutContent: '.feedback-block-popout-content'
-            };
-
-            var root = $(selectors.root);
-
-            $(selectors.popoutContent).on('show.bs.collapse', function (e) {
-                var elem = $(this);
-                var parent = elem.parents(selectors.root);
-                parent.find(selectors.popoutButton).html('<i class="icon-minus"></i>');
-            });
-
-            $(selectors.popoutContent).on('hide.bs.collapse', function (e) {
-                var elem = $(this);
-                var parent = elem.parents(selectors.root);
-                parent.find(selectors.popoutButton).html('<i class="icon-plus"></i>');
-            });
-
-            root.on('click', selectors.button, function (e) {
-                e.preventDefault();
-
-                showModal();
-            });
-
-            var timeout = 0;
-
-            if(timeout > 0 && $(window).width() > 768){
-                setTimeout(function () {
-                    if(shouldShowLiveChat()){
-                        $('.scroll-top-wrapper').addClass('show');
-                        $('#feedbackCollapse').collapse('show');
-                    }
-                }, timeout * 1000);
-            }
+   function getCookie(cname) {
+
+            var name = cname + "=";
+
+            var ca = document.cookie.split(';');
+
+            for (var i = 0; i < ca.length; i++) {
+
+                var c = ca[i];
+
+                while (c.charAt(0) == ' ') c = c.substring(1);
+
+                if (c.indexOf(name) == 0) return c.substring(name.length, c.length);
+
+            }
+
+
+
+            return "";
+
+        }
+
+
+
+        function shouldShowLiveChat() {
+
+            // Is the noChat cookie set
+
+            var noChat = getCookie("noChat");
+
+            if (noChat)
+
+                return false;
+
+
+
+            return true;
+
+        }
+
+
+
+        function showModal() {
+
+            $('.proactiveChatModal').modal('show');
+
+        }
+
+
+
+        $(function () {
+
+
+
+            var isAfterHours = true;
+
+            var showLiveChat = function () {
+
+                if (isAfterHours) {
+
+                    $('.contact-us-link').show();
+
+                    $('.live-chat-block').hide();
+
+                    return;
+
+                }
+
+
+
+                $.getJSON('/api/Chat/GetNumberOfActiveAgentsCached', function (data) {
+
+                    if (data >= 2) {
+
+                        $('.live-chat-block').show();
+
+                        $('.contact-us-link').hide();
+
+                    }
+
+                    else {
+
+                        $('.contact-us-link').show();
+
+                        $('.live-chat-block').hide();
+
+                    }
+
+
+
+                }, function (err) {
+
+                    console.log(err);
+
+                });
+
+
+
+            };
+
+
+
+            showLiveChat();
+
+
+
+            var selectors = {
+
+                root: '.feedback-block',
+
+                button: '.feedback-block-button',
+
+                popoutButton: '.feedback-block-popout-button',
+
+                popoutContent: '.feedback-block-popout-content'
+
+            };
+
+
+
+            var root = $(selectors.root);
+
+
+
+            $(selectors.popoutContent).on('show.bs.collapse', function (e) {
+
+                var elem = $(this);
+
+                var parent = elem.parents(selectors.root);
+
+                parent.find(selectors.popoutButton).html('<i class="icon-minus"></i>');
+
+            });
+
+
+
+            $(selectors.popoutContent).on('hide.bs.collapse', function (e) {
+
+                var elem = $(this);
+
+                var parent = elem.parents(selectors.root);
+
+                parent.find(selectors.popoutButton).html('<i class="icon-plus"></i>');
+
+            });
+
+
+
+            root.on('click', selectors.button, function (e) {
+
+                e.preventDefault();
+
+
+
+                showModal();
+
+            });
+
+
+
+            var timeout = 0;
+
+
+
+            if(timeout > 0 && $(window).width() > 768){
+
+                setTimeout(function () {
+
+                    if(shouldShowLiveChat()){
+
+                        $('.scroll-top-wrapper').addClass('show');
+
+                        $('#feedbackCollapse').collapse('show');
+
+                    }
+
+                }, timeout * 1000);
+
+            }
+
         });
   </script>
   <script>
-   (function($) {
-
-                var selectors = {
-                    root: '#cart-review-block-f608470d21fd4142a0403825cd24a863',
-                    spinner: '.spinner-wrapper',
-                    cartList: '.cart-content',
-                    cartListEmpty: '.cart-content-empty',
-                    cartItem: '.cart-detail',
-                    cartItemRemove: '.cart-item-remove',
-                    cartItemAmountInput: '.cart-item-amount-input',
-                    checkoutButton: '.cart-checkout',
-                    keepShopping: '.cart-keep-shopping',
-                    cartTotalAmount: '.cart-total-amount',
-                    cartModal: '[class*=modal modalBlock]',
-                    cartItemUpdate: '.cart-item-update',
-                    inputErrorMessage: '.input-error-message',
-                    btnPlus: '.qty-plus',
-                    btnMinus: '.qty-minus',
-                    serverErrorMessage: '.server-error-message'
-                };
-
-                var clean = function(value, removeCommas) {
-                    if (!value)
-                        return value;
-
-                    value = value.trim();
-                    if (value.startsWith('$')) {
-                        value = value.substring(1, value.length);
-                    }
-
-                    value = value
-                        .replace(/[^0-9.]/g, "")
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-                    if (removeCommas) {
-                        value = value.replace(/,/g, "");
-                    }
-
-                    return value;
-                };
-
-                $(function() {
-
-                    var cartItemCount = 0;
-                    var closeCartIfEmpty = true;
-
-                    var $cartItems;
-                    var $cartItemAmountInput;
-
-                    var $root = $(selectors.root);
-                    var $spinner = $root.find(selectors.spinner);
-                    var $cartList = $root.find(selectors.cartList);
-                    var $checkoutButton = $root.find(selectors.checkoutButton);
-                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
-                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
-                    var $cartModal = $root.closest(selectors.cartModal);
-
-                    var getCurrentCulture = function () {
-                        var paths = location.pathname.split('/');
-                        if (paths.length < 2) return '';
-                        return (paths[1] !== 'es') ? '' : 'es';
-                    }
-
-                    var closeModal = function () {
-                        if ($cartModal.length === 1
-                            && ($cartModal.hasClass('show')
-                                || $cartModal.hasClass('in'))) {
-                            $cartModal.modal('hide');
-                        }
-                    };
-
-                    var setCartItemElements = function () {
-                        $root = $(selectors.root);
-                        $cartItems = $root.find(selectors.cartItem);
-                        cartItemCount = $cartItems.length;
-                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
-                    }
-
-                    var checkIfCartIsEmpty = function () {
-                        $cartListEmpty.slideUp();
-                        $checkoutButton.prop("disabled", false);
-                        if (cartItemCount === 0) {
-                            $cartListEmpty.fadeIn();
-                            $checkoutButton.prop("disabled", true);
-                            if (closeCartIfEmpty) { closeModal(); }
-                        }
-                    }
-
-                    var setTotalForCart = function() {
-                        var total = 0;
-                        $cartItemAmountInput.each(function(index, input) {
-                            var $input = $(input);
-                            var inputAmount = Number(clean($input.val(), true));
-                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
-                            if (origAmount > 0)
-                                inputAmount = origAmount;
-                            total += inputAmount;                            
-                        });
-                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
-                        $cartTotalAmount.html(totalValue);
-                    }
-
-                    var updateNavCart = function() {
-                        if (window.Cart) {
-                            Cart.updateCartCount();
-                        }
-                    }
-
-                    var resetCartItemElements = function() {
-                        setCartItemElements();
-                        checkIfCartIsEmpty();
-                        setTotalForCart();
-                        updateNavCart();
-                    };
-
-                    var refreshCheckoutCart = function() {
-                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
-                    }
-
-                    var reloadCart = function() {
-                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
-                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
-
-                        $cartList.slideDown(function() {
-                            $spinner.fadeIn();
-
-                            $.ajax({
-                                url: ajaxUrl,
-                                type: 'POST',
-                                dataType: 'html'
-                            }).success(function(newHtml) {
-                                $cartList.html(newHtml);
-                                resetCartItemElements();
-                            }).done(function() {
-                                $spinner.fadeOut();
-                            });
-                        });
-                    };
-
-                    var isOnCheckoutPage = function(checkoutUrl) {
-                        if (!checkoutUrl) { return false; }
-                        var currentUrl = window.location.pathname;
-                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
-                    }
-
-                    $root.on('click',
-                        selectors.checkoutButton,
-                        function(e) {
-                            e.preventDefault();
-
-                            var $this = $(this);
-                            var url = $this.attr('href');
-
-                            if (!isOnCheckoutPage(url)) {
-                                window.location = url;
-                                return;
-                            }
-
-                            $(selectors.keepShopping).click();
-                        });
-
-
-                    $root.on('click',
-                        selectors.cartItemRemove,
-                        function(e) {
-                            e.preventDefault();
-
-                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
-                                    var removeUrl = "/Cart/Remove";
-                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
-                                    var itemId = $cartElement.data('item-id');
-
-                                    if (!itemId) {
-                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
-                                    }
-
-                                    if (itemId) {
-                                        $closestCartItem.fadeTo("fast",
-                                            .5,
-                                            function () {
-                                                $.ajax({
-                                                    url: removeUrl,
-                                                    type: 'POST',
-                                                    data: { id: itemId }
-                                                }).success(function() {
-                                                    $closestCartItem.remove();
-                                                    refreshCheckoutCart();
-                                                    resetCartItemElements();
-                                                }).fail(function() {
-                                                    $closestCartItem.fadeTo("fast",
-                                                        1,
-                                                        function() {
-                                                            resetCartItemElements();
-                                                        });
-                                                });
-                                            });
-                                    }
-                                },
-                                250
-                            );
-
-                            var $removeElement = $(e.target);
-                            removeItemFromCart($removeElement);
-                        });
-
-                    $root.on('keyup blur',
-                        selectors.cartItemAmountInput,
-                        function (e) {                      
-                            var $amountInput = $(e.target);                                                  
-                            var cleanedAmount = clean($amountInput.val());                                                        
-                            var amount = Number(clean(cleanedAmount, true));                     
-                            var origValue = $(e.target).attr('data-orig-value');
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-                            
-                            var btnMinus = container.find(selectors.btnMinus);
-                            var btnUpdate = container.find(selectors.cartItemUpdate);
-                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
-                            //setTotalForCart();
-                            
-                            var minimum = $amountInput.data('minimum-amount');
-                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
-                            var keycode = (e.keyCode ? e.keyCode : e.which);
-
-                            if (!isNaN(minimum)) {
-                                if(e.type != 'keyup' || keycode == 13)
-                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
-                                if (amount <= minimum)
-                                    btnMinus.addClass('disabled');
-                                else
-                                    btnMinus.removeClass('disabled');
-                                if(!isNaN(origValue))
-                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
-                            }
-
-                            
-                            if (keycode == '13') {
-                                btnUpdate.trigger('click');
-                            }
-                    });
-
-                    $(document).on('refresh-cart-review-event',
-                        function() {
-                            reloadCart();
-                        });
-
-                    if ($cartModal.length === 1) {
-                        $cartModal.on('hide.bs.modal',
-                            function () {
-                                updateNavCart();
-                                refreshCheckoutCart();
-					        });
-                    }
-
-                    $root.on('click',
-                        selectors.btnPlus,
-                        function (e) {
-                            e.preventDefault();
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-                            var $closestInput = container.find('input');
-                            var amount = Number(clean($closestInput.val(), true));   
-                            $closestInput.val(amount + 1).trigger('blur');
-                        });
-
-                    $root.on('click',
-                        selectors.btnMinus,
-                        function (e) {
-                            e.preventDefault();
-                            if ($(this).hasClass('disabled'))
-                                return;
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-                            var $closestInput = container.find('input');
-                            var amount = Number(clean($closestInput.val(), true));
-                            if(amount>0)
-                                $closestInput.val(amount -1).trigger('blur');
-                        });
-
-                    $root.on('click',
-                        selectors.cartItemUpdate,
-                        function(e) {
-                            e.preventDefault();                            
-                           
-                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
-                                var container = $cartElement.parents('.cart-item-container').eq(0);
-                                var updateUrl = "/Cart/Update";
-                                var itemId = $cartElement.data('item-id');
-                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
-                                var $closestInput = container.find('input');
-                                var value = Number(clean($closestInput.val(),true));                                
-                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
-                                var amountSpan = container.find('.cart-item-amount');
-                                var serverErrorMessage = container.find('.server-error-message');
-                                inputErrorMessage.hide();
-                                serverErrorMessage.html('').hide();
-                           
-                                if (itemId) {
-                                    if (value < minimumAmount) {                                        
-                                        inputErrorMessage.show();
-                                        return;
-                                    }
-
-                                    $.ajax({
-                                        url: updateUrl,
-                                        type: 'POST',
-                                        data: { id: itemId, value: value }
-                                    }).success(function (response) {
-                                        if (response.success) {
-                                            refreshCheckoutCart();
-                                            resetCartItemElements();
-                                            amountSpan.html($closestInput.val());
-                                            $closestInput.attr('data-orig-value', value).trigger('blur');
-                                            setTotalForCart();
-                                        }
-                                        else {
-                                            serverErrorMessage.html(response.message).show();
-                                        }
-                                            
-                                    }).fail(function () {
-
-                                    });
-                                }
-                            });   
-                            var $updateElement = $(e.target);
-                            updateCartItem($updateElement);
-                        });
-                    
-                    resetCartItemElements();                                        
-                });
+   (function($) {
+
+
+
+                var selectors = {
+
+                    root: '#cart-review-block-f608470d21fd4142a0403825cd24a863',
+
+                    spinner: '.spinner-wrapper',
+
+                    cartList: '.cart-content',
+
+                    cartListEmpty: '.cart-content-empty',
+
+                    cartItem: '.cart-detail',
+
+                    cartItemRemove: '.cart-item-remove',
+
+                    cartItemAmountInput: '.cart-item-amount-input',
+
+                    checkoutButton: '.cart-checkout',
+
+                    keepShopping: '.cart-keep-shopping',
+
+                    cartTotalAmount: '.cart-total-amount',
+
+                    cartModal: '[class*=modal modalBlock]',
+
+                    cartItemUpdate: '.cart-item-update',
+
+                    inputErrorMessage: '.input-error-message',
+
+                    btnPlus: '.qty-plus',
+
+                    btnMinus: '.qty-minus',
+
+                    serverErrorMessage: '.server-error-message'
+
+                };
+
+
+
+                var clean = function(value, removeCommas) {
+
+                    if (!value)
+
+                        return value;
+
+
+
+                    value = value.trim();
+
+                    if (value.startsWith('$')) {
+
+                        value = value.substring(1, value.length);
+
+                    }
+
+
+
+                    value = value
+
+                        .replace(/[^0-9.]/g, "")
+
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+
+
+                    if (removeCommas) {
+
+                        value = value.replace(/,/g, "");
+
+                    }
+
+
+
+                    return value;
+
+                };
+
+
+
+                $(function() {
+
+
+
+                    var cartItemCount = 0;
+
+                    var closeCartIfEmpty = true;
+
+
+
+                    var $cartItems;
+
+                    var $cartItemAmountInput;
+
+
+
+                    var $root = $(selectors.root);
+
+                    var $spinner = $root.find(selectors.spinner);
+
+                    var $cartList = $root.find(selectors.cartList);
+
+                    var $checkoutButton = $root.find(selectors.checkoutButton);
+
+                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
+
+                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
+
+                    var $cartModal = $root.closest(selectors.cartModal);
+
+
+
+                    var getCurrentCulture = function () {
+
+                        var paths = location.pathname.split('/');
+
+                        if (paths.length < 2) return '';
+
+                        return (paths[1] !== 'es') ? '' : 'es';
+
+                    }
+
+
+
+                    var closeModal = function () {
+
+                        if ($cartModal.length === 1
+
+                            && ($cartModal.hasClass('show')
+
+                                || $cartModal.hasClass('in'))) {
+
+                            $cartModal.modal('hide');
+
+                        }
+
+                    };
+
+
+
+                    var setCartItemElements = function () {
+
+                        $root = $(selectors.root);
+
+                        $cartItems = $root.find(selectors.cartItem);
+
+                        cartItemCount = $cartItems.length;
+
+                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
+
+                    }
+
+
+
+                    var checkIfCartIsEmpty = function () {
+
+                        $cartListEmpty.slideUp();
+
+                        $checkoutButton.prop("disabled", false);
+
+                        if (cartItemCount === 0) {
+
+                            $cartListEmpty.fadeIn();
+
+                            $checkoutButton.prop("disabled", true);
+
+                            if (closeCartIfEmpty) { closeModal(); }
+
+                        }
+
+                    }
+
+
+
+                    var setTotalForCart = function() {
+
+                        var total = 0;
+
+                        $cartItemAmountInput.each(function(index, input) {
+
+                            var $input = $(input);
+
+                            var inputAmount = Number(clean($input.val(), true));
+
+                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
+
+                            if (origAmount > 0)
+
+                                inputAmount = origAmount;
+
+                            total += inputAmount;                            
+
+                        });
+
+                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
+
+                        $cartTotalAmount.html(totalValue);
+
+                    }
+
+
+
+                    var updateNavCart = function() {
+
+                        if (window.Cart) {
+
+                            Cart.updateCartCount();
+
+                        }
+
+                    }
+
+
+
+                    var resetCartItemElements = function() {
+
+                        setCartItemElements();
+
+                        checkIfCartIsEmpty();
+
+                        setTotalForCart();
+
+                        updateNavCart();
+
+                    };
+
+
+
+                    var refreshCheckoutCart = function() {
+
+                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
+
+                    }
+
+
+
+                    var reloadCart = function() {
+
+                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
+
+                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
+
+
+
+                        $cartList.slideDown(function() {
+
+                            $spinner.fadeIn();
+
+
+
+                            $.ajax({
+
+                                url: ajaxUrl,
+
+                                type: 'POST',
+
+                                dataType: 'html'
+
+                            }).success(function(newHtml) {
+
+                                $cartList.html(newHtml);
+
+                                resetCartItemElements();
+
+                            }).done(function() {
+
+                                $spinner.fadeOut();
+
+                            });
+
+                        });
+
+                    };
+
+
+
+                    var isOnCheckoutPage = function(checkoutUrl) {
+
+                        if (!checkoutUrl) { return false; }
+
+                        var currentUrl = window.location.pathname;
+
+                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
+
+                    }
+
+
+
+                    $root.on('click',
+
+                        selectors.checkoutButton,
+
+                        function(e) {
+
+                            e.preventDefault();
+
+
+
+                            var $this = $(this);
+
+                            var url = $this.attr('href');
+
+
+
+                            if (!isOnCheckoutPage(url)) {
+
+                                window.location = url;
+
+                                return;
+
+                            }
+
+
+
+                            $(selectors.keepShopping).click();
+
+                        });
+
+
+
+
+
+                    $root.on('click',
+
+                        selectors.cartItemRemove,
+
+                        function(e) {
+
+                            e.preventDefault();
+
+
+
+                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
+
+                                    var removeUrl = "/Cart/Remove";
+
+                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
+
+                                    var itemId = $cartElement.data('item-id');
+
+
+
+                                    if (!itemId) {
+
+                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
+
+                                    }
+
+
+
+                                    if (itemId) {
+
+                                        $closestCartItem.fadeTo("fast",
+
+                                            .5,
+
+                                            function () {
+
+                                                $.ajax({
+
+                                                    url: removeUrl,
+
+                                                    type: 'POST',
+
+                                                    data: { id: itemId }
+
+                                                }).success(function() {
+
+                                                    $closestCartItem.remove();
+
+                                                    refreshCheckoutCart();
+
+                                                    resetCartItemElements();
+
+                                                }).fail(function() {
+
+                                                    $closestCartItem.fadeTo("fast",
+
+                                                        1,
+
+                                                        function() {
+
+                                                            resetCartItemElements();
+
+                                                        });
+
+                                                });
+
+                                            });
+
+                                    }
+
+                                },
+
+                                250
+
+                            );
+
+
+
+                            var $removeElement = $(e.target);
+
+                            removeItemFromCart($removeElement);
+
+                        });
+
+
+
+                    $root.on('keyup blur',
+
+                        selectors.cartItemAmountInput,
+
+                        function (e) {                      
+
+                            var $amountInput = $(e.target);                                                  
+
+                            var cleanedAmount = clean($amountInput.val());                                                        
+
+                            var amount = Number(clean(cleanedAmount, true));                     
+
+                            var origValue = $(e.target).attr('data-orig-value');
+
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+
+                            
+
+                            var btnMinus = container.find(selectors.btnMinus);
+
+                            var btnUpdate = container.find(selectors.cartItemUpdate);
+
+                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
+
+                            //setTotalForCart();
+
+                            
+
+                            var minimum = $amountInput.data('minimum-amount');
+
+                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
+
+                            var keycode = (e.keyCode ? e.keyCode : e.which);
+
+
+
+                            if (!isNaN(minimum)) {
+
+                                if(e.type != 'keyup' || keycode == 13)
+
+                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
+
+                                if (amount <= minimum)
+
+                                    btnMinus.addClass('disabled');
+
+                                else
+
+                                    btnMinus.removeClass('disabled');
+
+                                if(!isNaN(origValue))
+
+                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
+
+                            }
+
+
+
+                            
+
+                            if (keycode == '13') {
+
+                                btnUpdate.trigger('click');
+
+                            }
+
+                    });
+
+
+
+                    $(document).on('refresh-cart-review-event',
+
+                        function() {
+
+                            reloadCart();
+
+                        });
+
+
+
+                    if ($cartModal.length === 1) {
+
+                        $cartModal.on('hide.bs.modal',
+
+                            function () {
+
+                                updateNavCart();
+
+                                refreshCheckoutCart();
+
+					        });
+
+                    }
+
+
+
+                    $root.on('click',
+
+                        selectors.btnPlus,
+
+                        function (e) {
+
+                            e.preventDefault();
+
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+
+                            var $closestInput = container.find('input');
+
+                            var amount = Number(clean($closestInput.val(), true));   
+
+                            $closestInput.val(amount + 1).trigger('blur');
+
+                        });
+
+
+
+                    $root.on('click',
+
+                        selectors.btnMinus,
+
+                        function (e) {
+
+                            e.preventDefault();
+
+                            if ($(this).hasClass('disabled'))
+
+                                return;
+
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+
+                            var $closestInput = container.find('input');
+
+                            var amount = Number(clean($closestInput.val(), true));
+
+                            if(amount>0)
+
+                                $closestInput.val(amount -1).trigger('blur');
+
+                        });
+
+
+
+                    $root.on('click',
+
+                        selectors.cartItemUpdate,
+
+                        function(e) {
+
+                            e.preventDefault();                            
+
+                           
+
+                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
+
+                                var container = $cartElement.parents('.cart-item-container').eq(0);
+
+                                var updateUrl = "/Cart/Update";
+
+                                var itemId = $cartElement.data('item-id');
+
+                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
+
+                                var $closestInput = container.find('input');
+
+                                var value = Number(clean($closestInput.val(),true));                                
+
+                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
+
+                                var amountSpan = container.find('.cart-item-amount');
+
+                                var serverErrorMessage = container.find('.server-error-message');
+
+                                inputErrorMessage.hide();
+
+                                serverErrorMessage.html('').hide();
+
+                           
+
+                                if (itemId) {
+
+                                    if (value < minimumAmount) {                                        
+
+                                        inputErrorMessage.show();
+
+                                        return;
+
+                                    }
+
+
+
+                                    $.ajax({
+
+                                        url: updateUrl,
+
+                                        type: 'POST',
+
+                                        data: { id: itemId, value: value }
+
+                                    }).success(function (response) {
+
+                                        if (response.success) {
+
+                                            refreshCheckoutCart();
+
+                                            resetCartItemElements();
+
+                                            amountSpan.html($closestInput.val());
+
+                                            $closestInput.attr('data-orig-value', value).trigger('blur');
+
+                                            setTotalForCart();
+
+                                        }
+
+                                        else {
+
+                                            serverErrorMessage.html(response.message).show();
+
+                                        }
+
+                                            
+
+                                    }).fail(function () {
+
+
+
+                                    });
+
+                                }
+
+                            });   
+
+                            var $updateElement = $(e.target);
+
+                            updateCartItem($updateElement);
+
+                        });
+
+                    
+
+                    resetCartItemElements();                                        
+
+                });
+
             })(jQuery);
   </script>
   <div class="modal modalBlock slide-modal unique-show-modal-cart" role="dialog" tabindex="-1">
@@ -5011,52 +5636,98 @@ Enjoy all 10 of our Independence Day videos, or choose the ones that interest yo
    </div>
   </div>
   <script>
-   $(function () {
-            
-            var modalId = '-show-modal-cart';
-            var timeout = 0;
-
-            var selectors = {
-                modal: '.modal.unique' + modalId,
-                trigger: '.trigger-modal-' + modalId,
-                modalLinks: '.modal.unique' + modalId + ' a',
-                modalClose: '.modal.unique' + modalId + ' .callout-close'
-            };
-
-            $(selectors.trigger).on('click', function (e) {
-                e.preventDefault();
-                $(document).trigger('close-all-modals-event');
-                $(selectors.modal).modal('show');
-                
-            });
-
-            $(selectors.modalClose).on('click', function(e) {
-                e.preventDefault();
-                $(selectors.modal).modal('hide');
-                if (typeof ytPlayer !== "undefined") {
-                    ytPlayer.pauseVideo();
-                }
-                if (typeof vimeoPlayer !== "undefined") {
-                    vimeoPlayer.pause();
-                }
-            });
-
-            if(timeout !== 0) {
-                setTimeout(function(){
-                    $(selectors.modal).modal('show');
-                }, timeout * 1000);
-            }
-
-            $(document).on('close-all-modals-event',
-                function() {
-                    $(selectors.modal).modal('hide');
-                    if (typeof ytPlayer !== "undefined"){
-                        ytPlayer.pauseVideo();
-                    }
-                    if (typeof vimeoPlayer !== "undefined") {
-                        vimeoPlayer.pause();
-                    }
-                });
+   $(function () {
+
+            
+
+            var modalId = '-show-modal-cart';
+
+            var timeout = 0;
+
+
+
+            var selectors = {
+
+                modal: '.modal.unique' + modalId,
+
+                trigger: '.trigger-modal-' + modalId,
+
+                modalLinks: '.modal.unique' + modalId + ' a',
+
+                modalClose: '.modal.unique' + modalId + ' .callout-close'
+
+            };
+
+
+
+            $(selectors.trigger).on('click', function (e) {
+
+                e.preventDefault();
+
+                $(document).trigger('close-all-modals-event');
+
+                $(selectors.modal).modal('show');
+
+                
+
+            });
+
+
+
+            $(selectors.modalClose).on('click', function(e) {
+
+                e.preventDefault();
+
+                $(selectors.modal).modal('hide');
+
+                if (typeof ytPlayer !== "undefined") {
+
+                    ytPlayer.pauseVideo();
+
+                }
+
+                if (typeof vimeoPlayer !== "undefined") {
+
+                    vimeoPlayer.pause();
+
+                }
+
+            });
+
+
+
+            if(timeout !== 0) {
+
+                setTimeout(function(){
+
+                    $(selectors.modal).modal('show');
+
+                }, timeout * 1000);
+
+            }
+
+
+
+            $(document).on('close-all-modals-event',
+
+                function() {
+
+                    $(selectors.modal).modal('hide');
+
+                    if (typeof ytPlayer !== "undefined"){
+
+                        ytPlayer.pauseVideo();
+
+                    }
+
+                    if (typeof vimeoPlayer !== "undefined") {
+
+                        vimeoPlayer.pause();
+
+                    }
+
+                });
+
         });
   </script>
   <div class="pop-up-alerts">

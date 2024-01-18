@@ -9,43 +9,80 @@
    Youth Resource Center in Kolkata, India | Children International | Global Charity helping Children in Poverty
   </title>
   <script>
-   window.dataLayer = window.dataLayer || [];
-    //GA4
-    var ga4EcommerceJson = JSON.parse("null");
-    if (ga4EcommerceJson != null) {
-     window.dataLayer.push({
-          event: "purchase",
-          ecommerce: {
-               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
-               'value': JSON.parse("0.0"),
-               'currency': 'USD',
-                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
-         });
-    }
-
-    dataLayer = window.dataLayer || [];
-    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
-    if (loggedInJson !== null) {
-        window.dataLayer.push(loggedInJson);
-    }
-
-    var ecommerceJson = JSON.parse("null");
-    if (ecommerceJson != null) {
-    dataLayer.push(ecommerceJson);
-    }
-
-    var freeInfoJson = JSON.parse("null");
-    if (freeInfoJson != null && freeInfoJson.length > 0) {
-    freeInfoJson.forEach(function (freeInfo) {
-        window.dataLayer.push(freeInfo);
-    });
-    }
-
-    var newSponsorshipsJson = JSON.parse("null");
-    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
-    newSponsorshipsJson.forEach(function (newSponsorship) {
-        window.dataLayer.push(newSponsorship);
-    });
+   window.dataLayer = window.dataLayer || [];
+
+    //GA4
+
+    var ga4EcommerceJson = JSON.parse("null");
+
+    if (ga4EcommerceJson != null) {
+
+     window.dataLayer.push({
+
+          event: "purchase",
+
+          ecommerce: {
+
+               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
+
+               'value': JSON.parse("0.0"),
+
+               'currency': 'USD',
+
+                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
+
+         });
+
+    }
+
+
+
+    dataLayer = window.dataLayer || [];
+
+    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
+
+    if (loggedInJson !== null) {
+
+        window.dataLayer.push(loggedInJson);
+
+    }
+
+
+
+    var ecommerceJson = JSON.parse("null");
+
+    if (ecommerceJson != null) {
+
+    dataLayer.push(ecommerceJson);
+
+    }
+
+
+
+    var freeInfoJson = JSON.parse("null");
+
+    if (freeInfoJson != null && freeInfoJson.length > 0) {
+
+    freeInfoJson.forEach(function (freeInfo) {
+
+        window.dataLayer.push(freeInfo);
+
+    });
+
+    }
+
+
+
+    var newSponsorshipsJson = JSON.parse("null");
+
+    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
+
+    newSponsorshipsJson.forEach(function (newSponsorship) {
+
+        window.dataLayer.push(newSponsorship);
+
+    });
+
     }
   </script>
   <!-- RKD Pixel -->
@@ -54,19 +91,28 @@
   <!-- END RKD Pixel -->
   <!-- Page hiding snippet (recommended)  -->
   <style>
-   .async-hide {
-        opacity: 0 !important
+   .async-hide {
+
+        opacity: 0 !important
+
     }
   </style>
   <!-- Google Tag Manager -->
   <script>
-   (function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+   (function (w, d, s, l, i) {
+
+            w[l] = w[l] || []; w[l].push({
+
+                'gtm.start':
+
+                    new Date().getTime(), event: 'gtm.js'
+
+            }); var f = d.getElementsByTagName(s)[0],
+
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+
         })(window, document, 'script', 'dataLayer', 'GTM-THPKNS');
   </script>
   <!-- End Google Tag Manager -->
@@ -703,9 +749,9 @@
             <a href="/global-poverty/breaking-the-cycle-of-poverty">
              Breaking the cycle of poverty
             </a>
-           </li>
-           <li>
-            <a href="/global-poverty/is-poverty-a-problem-with-no-solution">
+<a class="btn btn-rounded btn-purple" href="https://verdantcharity.org" target="_blank">
+    Receive
+</a><a href="/global-poverty/is-poverty-a-problem-with-no-solution">
              Is global poverty solvable?
             </a>
            </li>
@@ -753,15 +799,15 @@
          Give
         </a>
        </li>
+<li>
+    <a class="btn btn-rounded btn-green" href="https://verdantcharity.org" target="_blank">
+        Receive
+    </a>
+</li>
        <li>
-        <a class="btn / btn-rounded / btn-green" href="/make-a-difference/sponsor-a-child" target>
-         Sponsor
-        </a>
-       </li>
-       <li>
-        <a class="btn / btn-rounded / btn-yellow" href="/login" target>
-         LOG IN
-        </a>
+ <a class="btn btn-rounded btn-yellow" href="https://verdantcharity.org" target="_blank">
+    LOG IN
+</a>
        </li>
       </ul>
      </div>
@@ -797,15 +843,16 @@
       Give
      </a>
     </li>
+<li>
+    <a class="btn btn-rounded btn-green" href="https://verdantcharity.org" target="_blank">
+        Receive
+    </a>
+</li>
+
     <li>
-     <a class="btn / btn-rounded / btn-green" href="/make-a-difference/sponsor-a-child" target>
-      Sponsor
-     </a>
-    </li>
-    <li>
-     <a class="btn / btn-rounded / btn-yellow" href="/login" target>
-      LOG IN
-     </a>
+<a class="btn btn-rounded btn-yellow" href="https://verdantcharity.org" target="_blank">
+    LOG IN
+</a>
     </li>
    </ul>
   </header>
@@ -1529,8 +1576,8 @@
         800-888-3089
        </a>
        <br>
-       <a href="mailto:children@children.org">
-        children@children.org
+       <a href="mailto:support@verdantcharity.org">
+       support@verdantcharity.org
        </a>
       </p>
       <p>
@@ -1729,7 +1776,7 @@
          Annual Report (PDF)
         </a>
        </p>
-       Children International is a 501(c)(3) organization and donations are tax deductible as allowed by law.
+       Verdant Charity is a 501(c)(3) organization and donations are tax deductible as allowed by law.
       </div>
       <p>
        &nbsp;
@@ -1745,7 +1792,8 @@
        <div class="social-wrap">
         <ul class="social">
          <li>
-          <a href="https://www.facebook.com/children/?ref=nf" target="_blank" title="Facebook">
+          <a 
+href="https://www.facebook.com/verdant/?ref=nf"  target="_blank" title="Facebook">
            <span class="sr-only">
             Facebook
            </span>
@@ -1754,7 +1802,7 @@
           </a>
          </li>
          <li>
-          <a href="https://twitter.com/Children" target="_blank" title="Twitter">
+          <a href="https://twitter.com/verdant" target="_blank" title="Twitter">
            <span class="sr-only">
             Twitter
            </span>
@@ -1763,7 +1811,7 @@
           </a>
          </li>
          <li>
-          <a href="https://www.instagram.com/children/" target="_blank" title="Instagram">
+          <a href="https://www.instagram.com/verdant/"  target="_blank" title="Instagram">
            <span class="sr-only">
             Instagram
            </span>
@@ -1772,7 +1820,7 @@
           </a>
          </li>
          <li>
-          <a href="https://www.linkedin.com/company/children-international" target="_blank" title="LinkedIn">
+          <a href="https://www.linkedin.com/company/verdant" target="_blank" title="LinkedIn">
            <span class="sr-only">
             LinkedIn
            </span>
@@ -2517,7 +2565,7 @@
          <li>
           &nbsp; &nbsp;
           <a href="/see-the-impact/how-sponsorship-works/best-child-sponsorship-organization">
-           Why Choose Children International?
+           Why Choose Verdant Charity?
           </a>
          </li>
          <li>
@@ -2824,767 +2872,1522 @@
    </div>
   </div>
   <script>
-   $(function () {
-            
-            var modalId = 'd457f29ac3c3424d97750d279d0d2211';
-            var timeout = 0;
-
-            var selectors = {
-                modal: '.modal.unique' + modalId,
-                trigger: '.trigger-modal-' + modalId,
-                modalLinks: '.modal.unique' + modalId + ' a',
-                modalClose: '.modal.unique' + modalId + ' .callout-close'
-            };
-
-            $(selectors.trigger).on('click', function (e) {
-                e.preventDefault();
-                $(document).trigger('close-all-modals-event');
-                $(selectors.modal).modal('show');
-                
-            });
-
-            $(selectors.modalClose).on('click', function(e) {
-                e.preventDefault();
-                $(selectors.modal).modal('hide');
-                if (typeof ytPlayer !== "undefined") {
-                    ytPlayer.pauseVideo();
-                }
-                if (typeof vimeoPlayer !== "undefined") {
-                    vimeoPlayer.pause();
-                }
-            });
-
-            if(timeout !== 0) {
-                setTimeout(function(){
-                    $(selectors.modal).modal('show');
-                }, timeout * 1000);
-            }
-
-            $(document).on('close-all-modals-event',
-                function() {
-                    $(selectors.modal).modal('hide');
-                    if (typeof ytPlayer !== "undefined"){
-                        ytPlayer.pauseVideo();
-                    }
-                    if (typeof vimeoPlayer !== "undefined") {
-                        vimeoPlayer.pause();
-                    }
-                });
+   $(function () {
+
+            
+
+            var modalId = 'd457f29ac3c3424d97750d279d0d2211';
+
+            var timeout = 0;
+
+
+
+            var selectors = {
+
+                modal: '.modal.unique' + modalId,
+
+                trigger: '.trigger-modal-' + modalId,
+
+                modalLinks: '.modal.unique' + modalId + ' a',
+
+                modalClose: '.modal.unique' + modalId + ' .callout-close'
+
+            };
+
+
+
+            $(selectors.trigger).on('click', function (e) {
+
+                e.preventDefault();
+
+                $(document).trigger('close-all-modals-event');
+
+                $(selectors.modal).modal('show');
+
+                
+
+            });
+
+
+
+            $(selectors.modalClose).on('click', function(e) {
+
+                e.preventDefault();
+
+                $(selectors.modal).modal('hide');
+
+                if (typeof ytPlayer !== "undefined") {
+
+                    ytPlayer.pauseVideo();
+
+                }
+
+                if (typeof vimeoPlayer !== "undefined") {
+
+                    vimeoPlayer.pause();
+
+                }
+
+            });
+
+
+
+            if(timeout !== 0) {
+
+                setTimeout(function(){
+
+                    $(selectors.modal).modal('show');
+
+                }, timeout * 1000);
+
+            }
+
+
+
+            $(document).on('close-all-modals-event',
+
+                function() {
+
+                    $(selectors.modal).modal('hide');
+
+                    if (typeof ytPlayer !== "undefined"){
+
+                        ytPlayer.pauseVideo();
+
+                    }
+
+                    if (typeof vimeoPlayer !== "undefined") {
+
+                        vimeoPlayer.pause();
+
+                    }
+
+                });
+
         });
   </script>
   <script>
-   (function ($) {
-            var stateList = JSON.parse("[{\"StateProvinceId\":66,\"StateProvinceAbbr\":\"AG\",\"DisplayName\":\"Aguascalientes\",\"CountryId\":148},{\"StateProvinceId\":1,\"StateProvinceAbbr\":\"AL\",\"DisplayName\":\"Alabama\",\"CountryId\":1},{\"StateProvinceId\":2,\"StateProvinceAbbr\":\"AK\",\"DisplayName\":\"Alaska\",\"CountryId\":1},{\"StateProvinceId\":100,\"StateProvinceAbbr\":\"AB\",\"DisplayName\":\"Alberta\",\"CountryId\":41},{\"StateProvinceId\":3,\"StateProvinceAbbr\":\"AS\",\"DisplayName\":\"American Samoa\",\"CountryId\":1},{\"StateProvinceId\":4,\"StateProvinceAbbr\":\"AZ\",\"DisplayName\":\"Arizona\",\"CountryId\":1},{\"StateProvinceId\":5,\"StateProvinceAbbr\":\"AR\",\"DisplayName\":\"Arkansas\",\"CountryId\":1},{\"StateProvinceId\":60,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Africa\",\"CountryId\":1},{\"StateProvinceId\":61,\"StateProvinceAbbr\":\"AA\",\"DisplayName\":\"Armed Forces Americas\",\"CountryId\":1},{\"StateProvinceId\":62,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Canada\",\"CountryId\":1},{\"StateProvinceId\":63,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Europe\",\"CountryId\":1},{\"StateProvinceId\":64,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Middle East\",\"CountryId\":1},{\"StateProvinceId\":65,\"StateProvinceAbbr\":\"AP\",\"DisplayName\":\"Armed Forces Pacific\",\"CountryId\":1},{\"StateProvinceId\":67,\"StateProvinceAbbr\":\"BC\",\"DisplayName\":\"Baja California\",\"CountryId\":148},{\"StateProvinceId\":68,\"StateProvinceAbbr\":\"BS\",\"DisplayName\":\"Baja California Sur\",\"CountryId\":148},{\"StateProvinceId\":101,\"StateProvinceAbbr\":\"BC\",\"DisplayName\":\"British Columbia\",\"CountryId\":41},{\"StateProvinceId\":6,\"StateProvinceAbbr\":\"CA\",\"DisplayName\":\"California\",\"CountryId\":1},{\"StateProvinceId\":69,\"StateProvinceAbbr\":\"CM\",\"DisplayName\":\"Campeche\",\"CountryId\":148},{\"StateProvinceId\":70,\"StateProvinceAbbr\":\"CS\",\"DisplayName\":\"Chiapas \",\"CountryId\":148},{\"StateProvinceId\":71,\"StateProvinceAbbr\":\"CH\",\"DisplayName\":\"Chihuahua\",\"CountryId\":148},{\"StateProvinceId\":72,\"StateProvinceAbbr\":\"CO\",\"DisplayName\":\"Coahuila de Zaragoza\",\"CountryId\":148},{\"StateProvinceId\":73,\"StateProvinceAbbr\":\"CL\",\"DisplayName\":\"Colima\",\"CountryId\":148},{\"StateProvinceId\":7,\"StateProvinceAbbr\":\"CO\",\"DisplayName\":\"Colorado\",\"CountryId\":1},{\"StateProvinceId\":8,\"StateProvinceAbbr\":\"CT\",\"DisplayName\":\"Connecticut\",\"CountryId\":1},{\"StateProvinceId\":9,\"StateProvinceAbbr\":\"DE\",\"DisplayName\":\"Delaware\",\"CountryId\":1},{\"StateProvinceId\":10,\"StateProvinceAbbr\":\"DC\",\"DisplayName\":\"District of Columbia\",\"CountryId\":1},{\"StateProvinceId\":74,\"StateProvinceAbbr\":\"DF\",\"DisplayName\":\"Distrito Federal\",\"CountryId\":148},{\"StateProvinceId\":75,\"StateProvinceAbbr\":\"DG\",\"DisplayName\":\"Durango\",\"CountryId\":148},{\"StateProvinceId\":11,\"StateProvinceAbbr\":\"FM\",\"DisplayName\":\"Federated States of Micronesia\",\"CountryId\":1},{\"StateProvinceId\":12,\"StateProvinceAbbr\":\"FL\",\"DisplayName\":\"Florida\",\"CountryId\":1},{\"StateProvinceId\":13,\"StateProvinceAbbr\":\"GA\",\"DisplayName\":\"Georgia\",\"CountryId\":1},{\"StateProvinceId\":14,\"StateProvinceAbbr\":\"GU\",\"DisplayName\":\"Guam\",\"CountryId\":1},{\"StateProvinceId\":76,\"StateProvinceAbbr\":\"GT\",\"DisplayName\":\"Guanajuato\",\"CountryId\":148},{\"StateProvinceId\":77,\"StateProvinceAbbr\":\"GR\",\"DisplayName\":\"Guerrero\",\"CountryId\":148},{\"StateProvinceId\":15,\"StateProvinceAbbr\":\"HI\",\"DisplayName\":\"Hawaii\",\"CountryId\":1},{\"StateProvinceId\":78,\"StateProvinceAbbr\":\"HG\",\"DisplayName\":\"Hidalgo\",\"CountryId\":148},{\"StateProvinceId\":16,\"StateProvinceAbbr\":\"ID\",\"DisplayName\":\"Idaho\",\"CountryId\":1},{\"StateProvinceId\":17,\"StateProvinceAbbr\":\"IL\",\"DisplayName\":\"Illinois\",\"CountryId\":1},{\"StateProvinceId\":18,\"StateProvinceAbbr\":\"IN\",\"DisplayName\":\"Indiana\",\"CountryId\":1},{\"StateProvinceId\":19,\"StateProvinceAbbr\":\"IA\",\"DisplayName\":\"Iowa\",\"CountryId\":1},{\"StateProvinceId\":79,\"StateProvinceAbbr\":\"JA\",\"DisplayName\":\"Jalisco\",\"CountryId\":148},{\"StateProvinceId\":20,\"StateProvinceAbbr\":\"KS\",\"DisplayName\":\"Kansas\",\"CountryId\":1},{\"StateProvinceId\":21,\"StateProvinceAbbr\":\"KY\",\"DisplayName\":\"Kentucky\",\"CountryId\":1},{\"StateProvinceId\":22,\"StateProvinceAbbr\":\"LA\",\"DisplayName\":\"Louisiana\",\"CountryId\":1},{\"StateProvinceId\":23,\"StateProvinceAbbr\":\"ME\",\"DisplayName\":\"Maine\",\"CountryId\":1},{\"StateProvinceId\":102,\"StateProvinceAbbr\":\"MB\",\"DisplayName\":\"Manitoba\",\"CountryId\":41},{\"StateProvinceId\":24,\"StateProvinceAbbr\":\"MH\",\"DisplayName\":\"Marshall Islands\",\"CountryId\":1},{\"StateProvinceId\":25,\"StateProvinceAbbr\":\"MD\",\"DisplayName\":\"Maryland\",\"CountryId\":1},{\"StateProvinceId\":26,\"StateProvinceAbbr\":\"MA\",\"DisplayName\":\"Massachusetts\",\"CountryId\":1},{\"StateProvinceId\":80,\"StateProvinceAbbr\":\"EM\",\"DisplayName\":\"Mexico\",\"CountryId\":148},{\"StateProvinceId\":27,\"StateProvinceAbbr\":\"MI\",\"DisplayName\":\"Michigan\",\"CountryId\":1},{\"StateProvinceId\":81,\"StateProvinceAbbr\":\"MI\",\"DisplayName\":\"Michoacan de Ocampo\",\"CountryId\":148},{\"StateProvinceId\":28,\"StateProvinceAbbr\":\"MN\",\"DisplayName\":\"Minnesota\",\"CountryId\":1},{\"StateProvinceId\":29,\"StateProvinceAbbr\":\"MS\",\"DisplayName\":\"Mississippi\",\"CountryId\":1},{\"StateProvinceId\":30,\"StateProvinceAbbr\":\"MO\",\"DisplayName\":\"Missouri\",\"CountryId\":1},{\"StateProvinceId\":31,\"StateProvinceAbbr\":\"MT\",\"DisplayName\":\"Montana\",\"CountryId\":1},{\"StateProvinceId\":82,\"StateProvinceAbbr\":\"MO\",\"DisplayName\":\"Morelos\",\"CountryId\":148},{\"StateProvinceId\":83,\"StateProvinceAbbr\":\"NA\",\"DisplayName\":\"Nayarit\",\"CountryId\":148},{\"StateProvinceId\":32,\"StateProvinceAbbr\":\"NE\",\"DisplayName\":\"Nebraska\",\"CountryId\":1},{\"StateProvinceId\":33,\"StateProvinceAbbr\":\"NV\",\"DisplayName\":\"Nevada\",\"CountryId\":1},{\"StateProvinceId\":103,\"StateProvinceAbbr\":\"NB\",\"DisplayName\":\"New Brunswick\",\"CountryId\":41},{\"StateProvinceId\":34,\"StateProvinceAbbr\":\"NH\",\"DisplayName\":\"New Hampshire\",\"CountryId\":1},{\"StateProvinceId\":35,\"StateProvinceAbbr\":\"NJ\",\"DisplayName\":\"New Jersey\",\"CountryId\":1},{\"StateProvinceId\":36,\"StateProvinceAbbr\":\"NM\",\"DisplayName\":\"New Mexico\",\"CountryId\":1},{\"StateProvinceId\":37,\"StateProvinceAbbr\":\"NY\",\"DisplayName\":\"New York\",\"CountryId\":1},{\"StateProvinceId\":104,\"StateProvinceAbbr\":\"NL\",\"DisplayName\":\"Newfoundland and Labrador\",\"CountryId\":41},{\"StateProvinceId\":38,\"StateProvinceAbbr\":\"NC\",\"DisplayName\":\"North Carolina\",\"CountryId\":1},{\"StateProvinceId\":39,\"StateProvinceAbbr\":\"ND\",\"DisplayName\":\"North Dakota\",\"CountryId\":1},{\"StateProvinceId\":40,\"StateProvinceAbbr\":\"MP\",\"DisplayName\":\"Northern Mariana Islands\",\"CountryId\":1},{\"StateProvinceId\":111,\"StateProvinceAbbr\":\"NT\",\"DisplayName\":\"Northwest\",\"CountryId\":41},{\"StateProvinceId\":105,\"StateProvinceAbbr\":\"NS\",\"DisplayName\":\"Nova Scotia\",\"CountryId\":41},{\"StateProvinceId\":84,\"StateProvinceAbbr\":\"NL\",\"DisplayName\":\"Nuevo Leon\",\"CountryId\":148},{\"StateProvinceId\":112,\"StateProvinceAbbr\":\"NU\",\"DisplayName\":\"Nunavut\",\"CountryId\":41},{\"StateProvinceId\":85,\"StateProvinceAbbr\":\"OA\",\"DisplayName\":\"Oaxaca\",\"CountryId\":148},{\"StateProvinceId\":41,\"StateProvinceAbbr\":\"OH\",\"DisplayName\":\"Ohio\",\"CountryId\":1},{\"StateProvinceId\":42,\"StateProvinceAbbr\":\"OK\",\"DisplayName\":\"Oklahoma\",\"CountryId\":1},{\"StateProvinceId\":106,\"StateProvinceAbbr\":\"ON\",\"DisplayName\":\"Ontario\",\"CountryId\":41},{\"StateProvinceId\":43,\"StateProvinceAbbr\":\"OR\",\"DisplayName\":\"Oregon\",\"CountryId\":1},{\"StateProvinceId\":44,\"StateProvinceAbbr\":\"PW\",\"DisplayName\":\"Palau\",\"CountryId\":1},{\"StateProvinceId\":45,\"StateProvinceAbbr\":\"PA\",\"DisplayName\":\"Pennsylvania\",\"CountryId\":1},{\"StateProvinceId\":107,\"StateProvinceAbbr\":\"PE\",\"DisplayName\":\"Prince Edward Island\",\"CountryId\":41},{\"StateProvinceId\":86,\"StateProvinceAbbr\":\"PU\",\"DisplayName\":\"Puebla\",\"CountryId\":148},{\"StateProvinceId\":46,\"StateProvinceAbbr\":\"PR\",\"DisplayName\":\"Puerto Rico\",\"CountryId\":1},{\"StateProvinceId\":108,\"StateProvinceAbbr\":\"QC\",\"DisplayName\":\"Quebec\",\"CountryId\":41},{\"StateProvinceId\":87,\"StateProvinceAbbr\":\"QT\",\"DisplayName\":\"Queretaro de Arteaga\",\"CountryId\":148},{\"StateProvinceId\":88,\"StateProvinceAbbr\":\"QR\",\"DisplayName\":\"Quintana Roo\",\"CountryId\":148},{\"StateProvinceId\":47,\"StateProvinceAbbr\":\"RI\",\"DisplayName\":\"Rhode Island\",\"CountryId\":1},{\"StateProvinceId\":89,\"StateProvinceAbbr\":\"SL\",\"DisplayName\":\"San Luis Potosi\",\"CountryId\":148},{\"StateProvinceId\":109,\"StateProvinceAbbr\":\"SK\",\"DisplayName\":\"Saskatchewan\",\"CountryId\":41},{\"StateProvinceId\":90,\"StateProvinceAbbr\":\"SI\",\"DisplayName\":\"Sinaloa\",\"CountryId\":148},{\"StateProvinceId\":91,\"StateProvinceAbbr\":\"SO\",\"DisplayName\":\"Sonora\",\"CountryId\":148},{\"StateProvinceId\":48,\"StateProvinceAbbr\":\"SC\",\"DisplayName\":\"South Carolina\",\"CountryId\":1},{\"StateProvinceId\":49,\"StateProvinceAbbr\":\"SD\",\"DisplayName\":\"South Dakota\",\"CountryId\":1},{\"StateProvinceId\":92,\"StateProvinceAbbr\":\"TB\",\"DisplayName\":\"Tabasco\",\"CountryId\":148},{\"StateProvinceId\":93,\"StateProvinceAbbr\":\"TM\",\"DisplayName\":\"Tamaulipas\",\"CountryId\":148},{\"StateProvinceId\":50,\"StateProvinceAbbr\":\"TN\",\"DisplayName\":\"Tennessee\",\"CountryId\":1},{\"StateProvinceId\":51,\"StateProvinceAbbr\":\"TX\",\"DisplayName\":\"Texas\",\"CountryId\":1},{\"StateProvinceId\":94,\"StateProvinceAbbr\":\"TL\",\"DisplayName\":\"Tlaxcala\",\"CountryId\":148},{\"StateProvinceId\":52,\"StateProvinceAbbr\":\"UT\",\"DisplayName\":\"Utah\",\"CountryId\":1},{\"StateProvinceId\":95,\"StateProvinceAbbr\":\"VE\",\"DisplayName\":\"Veracruz-Llave\",\"CountryId\":148},{\"StateProvinceId\":53,\"StateProvinceAbbr\":\"VT\",\"DisplayName\":\"Vermont\",\"CountryId\":1},{\"StateProvinceId\":54,\"StateProvinceAbbr\":\"VI\",\"DisplayName\":\"Virgin Islands\",\"CountryId\":1},{\"StateProvinceId\":55,\"StateProvinceAbbr\":\"VA\",\"DisplayName\":\"Virginia\",\"CountryId\":1},{\"StateProvinceId\":56,\"StateProvinceAbbr\":\"WA\",\"DisplayName\":\"Washington\",\"CountryId\":1},{\"StateProvinceId\":57,\"StateProvinceAbbr\":\"WV\",\"DisplayName\":\"West Virginia\",\"CountryId\":1},{\"StateProvinceId\":58,\"StateProvinceAbbr\":\"WI\",\"DisplayName\":\"Wisconsin\",\"CountryId\":1},{\"StateProvinceId\":59,\"StateProvinceAbbr\":\"WY\",\"DisplayName\":\"Wyoming\",\"CountryId\":1},{\"StateProvinceId\":96,\"StateProvinceAbbr\":\"YU\",\"DisplayName\":\"Yucatan\",\"CountryId\":148},{\"StateProvinceId\":110,\"StateProvinceAbbr\":\"YT\",\"DisplayName\":\"Yukon\",\"CountryId\":41},{\"StateProvinceId\":97,\"StateProvinceAbbr\":\"ZA\",\"DisplayName\":\"Zacatecas\",\"CountryId\":148}]");
-
-            var clean = function(value, removeCommas) {
-                if (!value)
-                    return value;
-
-                var value = value.trim();
-                if (value.startsWith('$')) {
-                    value = value.substring(1, value.length);
-
-                    value = value
-                        .replace(/[^0-9.]/g, "")
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                }
-
-                if (removeCommas) {
-                    value = value.replace(/,/g, "");
-                }
-
-                return value;
-            };
-
-            $(function() {
-                var rootSelector = '#donationblock_5e8c31e6e2014b989fc434e41ab500a4';
-                var inputSelector = rootSelector + ' ' + '.form-control.donation';
-                var radioSelector = rootSelector + ' ' + 'input:radio[name="ee54fc7d75c64253826ade72d2ce86af"]';
-                var productOptionSelector = rootSelector + ' ' + 'input[name="productOptionId"]';
-                var errorSelector = rootSelector + ' ' + '.server-error-message';
-                var destinationSelector = rootSelector + ' ' + '.destination-link';
-                var suggestedAmountSelector = rootSelector + ' ' + 'input[name="suggestedAmount"]';
-                var minimumDonationAmountSelector = rootSelector + ' ' + 'input[name="minimum-donation-amount"]';
-                var minimumDonationAmountErrorMessageSelector = rootSelector + ' ' + 'input[name="minimum-donation-amount-error-message"]';
-                var defaultServerErrorMessageSelector = rootSelector + ' ' + 'input[name="default-server-error-message"]';
-                var inHonorOfCheckBoxSelector = rootSelector + ' ' + '#inHonorOfCheck';
-                var inHonorOfDivSelector = rootSelector + ' ' + '.InHonorOfDonation';
-                var emailSettingsDivSelector = rootSelector + ' ' + '.emailSettings';
-                var mailSettingsDivSelector = rootSelector + ' ' + '.mailSettings';
-                var emailOrMailSelector = rootSelector + ' ' + 'select[name="emailOrMail"]';
-                var countrySelector = rootSelector + ' ' + 'select[name="honoreeCountry"]';
-                var stateSelector = rootSelector + ' ' + 'select[name="honoreeState"]';
-                var amountErrorElemSelector = rootSelector + ' ' + '.invalid-donation-amount';
-                var cartDescriptionInputSelector = rootSelector + ' ' + 'input[name="cartDescription"]';
-                var recurringProductCopySelector = rootSelector + ' ' + '.recurring-product-copy';
-                var activeDonateFrequencySelector = rootSelector + ' ' + '.donate-frequency-wrap .active';
-                var donateFrequencySelector = rootSelector + ' ' + '.donate-frequency-wrap div a';
-                var inputAmountFrequencySelector = rootSelector + ' ' + '.input-amount-frequency';
-
-                var form = $(rootSelector);
-
-                var getProductOptionId = function() {
-                    var $activeDonateFrequency = $(activeDonateFrequencySelector);
-                    if ($activeDonateFrequency.length === 1) {
-                        return $activeDonateFrequency.data('product-id');
-                    }
-
-                    var $productOptionElem = $(productOptionSelector);
-                    return $productOptionElem.val();
-                };
-
-                var getCartDescription = function() {
-                    var $activeDonateFrequency = $(activeDonateFrequencySelector);
-                    if ($activeDonateFrequency.length === 1) {
-                        return $activeDonateFrequency.data('product-description');
-                    }
-
-                    var $cartDescriptionInputSelector = $(cartDescriptionInputSelector);
-                    return $cartDescriptionInputSelector.val();
-                };
-
-                form.validate({
-                    onkeyup: false,
-                    onfocousout: function(element) {
-                        if (!this.checkable(element)) {
-                            this.element(element);
-                        }
-                    },
-                    errorElement: 'span',
-                    errorClass: 'field-notice',
-                    errorPlacement: function(error, element) {
-                        error.insertBefore(element);
-                    },
-                    highlight: function(element) {
-                        $(element).closest('.form-group').addClass('has-error');
-                        $(element).next('.feedback-icon').slideUp();
-                    },
-                    unhighlight: function(element) {
-                        $(element).closest('.form-group').removeClass('has-error');
-                        $(element).next('.feedback-icon').slideDown();
-                    },
-                    submitHandler: GlobalFunctions.debounce(function () {
-                        var productOptionId = getProductOptionId();
-                        var inputElem = $(inputSelector);
-                        var amount = clean(inputElem.val(), true);
-                        var suggestedAmount = $(suggestedAmountSelector).val();
-                        var amountErrorElem = $(amountErrorElemSelector);
-                        var cartDescription = getCartDescription();
-                        var destination = $(destinationSelector).prop('href');
-                        var inHonorOf = {};
-                        var showModal = false;
-
-                        if (suggestedAmount > 0 && (!amount || amount === '$')) {
-                            amountErrorElem.slideDown();
-                            return;
-                        } else {
-                            amountErrorElem.slideUp();
-                        }
-
-                        if ($(inHonorOfCheckBoxSelector).is(":checked")) {
-                            inHonorOf.InHonorOfType = form.find("input:radio[name='inHonorOrMemory']:checked").parent('label').text();
-                            inHonorOf.InHonorOfTypeId = form.find("input:radio[name='inHonorOrMemory']:checked").val();
-                            inHonorOf.HonoreeFirstName = form.find("#honoreeFirstName").val();
-                            inHonorOf.HonoreeLastName = form.find("#honoreeLastName").val();
-                            inHonorOf.EventOrName = form.find("#eventOrName").val();
-                            inHonorOf.SendViaEmail = form.find("#emailOrMail").val() === '1';
-                            inHonorOf.HonoreeEmailAddress = form.find("#honoreeEmail").val();
-                            inHonorOf.SendCopyToMe = form.find("#copyMe").is(":checked");
-                            inHonorOf.EmailMessage = form.find("#message").val();
-
-                            inHonorOf.HonoreeCountry = form.find("#honoreeCountry :selected").text();
-                            inHonorOf.HonoreeCountryId = form.find("#honoreeCountry").val();
-                            inHonorOf.HonoreeAddress = form.find("#honoreeAddress").val();
-                            inHonorOf.HonoreeUnit = form.find("#honoreeUnit").val();
-                            inHonorOf.HonoreeCity = form.find("#honoreeCity").val();
-                            inHonorOf.HonoreeZipPostalCode = form.find("#honoreeZip").val();
-                            inHonorOf.HonoreeStateProviceId = $(stateSelector).is(":visible")
-                                ? form.find("#honoreeState").val()
-                                : null;
-                            inHonorOf.HonoreeState = $(stateSelector).is(":visible")
-                                ? form.find("#honoreeState :selected").text()
-                                : '';
-
-                            inHonorOf.DonorName = "";
-                            inHonorOf.DonationBlockGuid = 'd69aab02-b3dc-479d-af6b-a1def2d68982';
-                        }
-
-                        var errorMessage = $(errorSelector);
-                        errorMessage.slideUp();
-                        var minimumDonationAmount = parseFloat($(minimumDonationAmountSelector).val());
-
-                        if (amount === "" || parseFloat(amount) < minimumDonationAmount) {
-                            var message = $(minimumDonationAmountErrorMessageSelector).val()
-                                + minimumDonationAmount + ".";
-                            errorMessage.html(message);
-                            errorMessage.slideDown();
-                            return;
-                        }
-                        
-                        Cart.addToCart(amount, productOptionId, cartDescription, null, inHonorOf,'d69aab02-b3dc-479d-af6b-a1def2d68982')
-                            .done(function () {
-                                Cart.updateCartCount()
-                                if (showModal) {
-                                    Cart.openCartModal();
-                                } else {
-                                    window.location = destination;
-                                }
-                            }).fail(function() {
-                                var message = $(defaultServerErrorMessageSelector).val();
-                                errorMessage.html(message);
-                                errorMessage.slideDown();
-                            });
-                    }, 1000),
-                    rules : {
-                        honoreeFirstName: {
-                            required: function () {
-                                return $(inHonorOfCheckBoxSelector).is(':checked');
-                            }
-                        },
-                        honoreeLastName: {
-                            required: function () {
-                                return $(inHonorOfCheckBoxSelector).is(':checked');
-                            }
-                        },
-                        honoreeEmail: {
-                            required: function () {
-                                return $(emailOrMailSelector).val() === '1';
-                            },
-                            email: true
-                        },
-                        honoreeCountry: {
-                            required: function() {
-                                return $(emailOrMailSelector).val() === '0';
-                            }
-                        },
-                        honoreeAddress: {
-                            required: function () {
-                                return $(emailOrMailSelector).val() === '0';
-                            }
-                        },
-                        honoreeCity: {
-                            required: function () {
-                                return $(emailOrMailSelector).val() === '0';
-                            }
-                        },
-                        honoreeState: {
-                            required: function () {
-                                return $(stateSelector).is(":visible") &&
-                                    $(emailOrMailSelector).val() === '0';
-                            },
-                            min: 1
-                        },
-                        honoreeZip: {
-                            required: function() {
-                                return $(emailOrMailSelector).val() === '0'
-                                    && $(countrySelector).val() === '1'; //USA
-                            }
-                        }
-                    },
-                    messages: {
-                        honoreeFirstName: "Oops! We need a first name to continue.",
-                        honoreeLastName: " Oops! We need a last name to continue.",
-                        honoreeEmail: "Oops! We need a valid email address to continue.",
-                        honoreeCountry: "Oops! We need a country to continue.",
-                        honoreeCity: "Oops! We need a city to continue.",
-                        honoreeAddress: "Oops! We need an address to continue.",
-                        honoreeState: "Please select a state/province",
-                        honoreeZip: "Oops! We need a ZIP code/postal code to continue."
-                    }
-                });
-
-                $(inHonorOfCheckBoxSelector).click(function() {
-                    var elem = $(this);
-                    if (elem.is(':checked')) {
-                        $(inHonorOfDivSelector).slideDown();
-                    } else {
-                        $(inHonorOfDivSelector).slideUp();
-                    }
-                });
-
-                $(emailOrMailSelector).change(function() {
-                    var elem = $(this);
-
-                    if (elem.val() === '1') {
-                        $(mailSettingsDivSelector).slideUp();
-                        $(emailSettingsDivSelector).slideDown();
-                    } else if (elem.val() === '0') {
-                        $(emailSettingsDivSelector).slideUp();
-                        $(mailSettingsDivSelector).slideDown();
-
-                        $(countrySelector).trigger('change');
-                    } else {
-                        $(emailSettingsDivSelector).slideUp();
-                        $(mailSettingsDivSelector).slideUp();
-                    }
-                });
-
-                $(countrySelector).change(function() {
-                    var elem = $(this);
-                    var $stateSelector = $(stateSelector);
-                    var $stateSelectorParent = $stateSelector.parent();
-
-                    $stateSelectorParent.slideUp();
-
-                    $stateSelector.find('option')
-                        .remove()
-                        .end();
-
-                    var countryId = elem.find(':selected').data('countryid');
-                    var countryStates = stateList.filter(function(element) {
-                        return element.CountryId === countryId;
-                    });
-
-                    if (countryStates.length === 0) {
-                        return;
-                    }
-
-                    $stateSelectorParent.slideDown();
-
-                    $stateSelector
-                        .append($("<option></option>")
-                            .val('0')
-                            .text('Please Select'));
-
-                    $.each(countryStates,
-                        function(key, value) {
-                            $stateSelector
-                                .append($("<option></option>")
-                                    .attr("value", value.StateProviceAbbr)
-                                    .val(value.StateProvinceId)
-                                    .text(value.DisplayName));
-                        });
-                });
-
-                $(radioSelector).click(function() {
-                    var elem = $(this);
-                    var input = $(inputSelector);
-                    var cleaned = clean(elem.val());
-                    if (cleaned !== 'Other') {
-                        input.val('$' + cleaned);
-                    } else {
-                        input.val('$');
-                        input.focus();
-                    }
-                });
-
-                $(inputSelector).on('keyup',
-                    function() {
-                        var elem = $(this);
-                        if (clean(elem.val()) === ""){
-                            elem.addClass("no-donation-value");
-                        }
-                        else {
-                            elem.removeClass("no-donation-value");
-                        }
-                        var radio = $(radioSelector);
-                        radio.removeAttr('checked');
-                        var cleaned = '$' + clean(elem.val());
-
-                        var matching = radio.filter('[value="' + cleaned + '"]');
-
-                        if (matching.length > 0) {
-                           matching.prop('checked', true).trigger('click');
-                        } else {
-                           radio.filter('[value="Other"]').prop('checked', true).trigger('click');
-                        }
-
-                        elem.val(cleaned);
-                    });
-
-                //ensure the input box and checkboxes are in sync when the widget loads.
-                $(inputSelector).trigger('keyup');
-
-                form.on('keyup blur', function (e) {
-                    if (form.validate().checkForm()) { }
-                });
-
-                $(donateFrequencySelector).click(function(e) {
-                    e.preventDefault();
-                    if (false) return;
-
-                    var $this = $(this).parent();
-
-                    if ($this.hasClass('active')) {
-                        return;
-                    }
-
-                    var recurringProduct = $this.data('recurring-product').toString() === 'true';
-                    var amountFrequency = $this.data('recurring-frequency').toString();
-
-                    var $donateFrequencies = $(donateFrequencySelector).parent();
-                    var $recurringProductCopy = $(recurringProductCopySelector);
-                    var $inputAmountFrequency = $(inputAmountFrequencySelector);
-                    var $inHonorOfCheckboxWrap = $(inHonorOfCheckBoxSelector).closest('.checkbox');
-                    var $inHonorOfCheckbox = $(inHonorOfCheckBoxSelector);
-                    var $inHonorOfDivSelector = $(inHonorOfDivSelector);
-                    var $inputDonation = $(inputSelector);
-
-                    $donateFrequencies.removeClass('active');
-                    $this.addClass('active');
-
-                    $inputAmountFrequency.html(amountFrequency);
-
-                    if (amountFrequency) {
-                        $inputDonation.addClass('mnthly');
-                    } else {
-                        $inputDonation.removeClass('mnthly');
-                    }
-
-                    if (recurringProduct) {
-                        $inHonorOfCheckbox.prop('checked', false);
-                        $inHonorOfDivSelector.slideUp();
-                        $inHonorOfCheckboxWrap.slideUp();
-                        $recurringProductCopy.slideDown();
-                    } else {
-                        $recurringProductCopy.slideUp();
-                        $inHonorOfCheckboxWrap.slideDown();
-                    }
-                });
-            });
-
-
-            $('#donationblock_5e8c31e6e2014b989fc434e41ab500a4 .tab-radio input[type=radio]').on('click', function () {
-               var target = $(this).data('target-id');
-               var parent = $(this).closest("li.tab-radio");
-                parent.siblings().removeClass('selected');
-                parent.addClass('selected');
-                $('#donationblock_5e8c31e6e2014b989fc434e41ab500a4 .option-tab').hide();
-                if(target != null)
-                    $('#' + target).show();
-            });
-
-
+   (function ($) {
+
+            var stateList = JSON.parse("[{\"StateProvinceId\":66,\"StateProvinceAbbr\":\"AG\",\"DisplayName\":\"Aguascalientes\",\"CountryId\":148},{\"StateProvinceId\":1,\"StateProvinceAbbr\":\"AL\",\"DisplayName\":\"Alabama\",\"CountryId\":1},{\"StateProvinceId\":2,\"StateProvinceAbbr\":\"AK\",\"DisplayName\":\"Alaska\",\"CountryId\":1},{\"StateProvinceId\":100,\"StateProvinceAbbr\":\"AB\",\"DisplayName\":\"Alberta\",\"CountryId\":41},{\"StateProvinceId\":3,\"StateProvinceAbbr\":\"AS\",\"DisplayName\":\"American Samoa\",\"CountryId\":1},{\"StateProvinceId\":4,\"StateProvinceAbbr\":\"AZ\",\"DisplayName\":\"Arizona\",\"CountryId\":1},{\"StateProvinceId\":5,\"StateProvinceAbbr\":\"AR\",\"DisplayName\":\"Arkansas\",\"CountryId\":1},{\"StateProvinceId\":60,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Africa\",\"CountryId\":1},{\"StateProvinceId\":61,\"StateProvinceAbbr\":\"AA\",\"DisplayName\":\"Armed Forces Americas\",\"CountryId\":1},{\"StateProvinceId\":62,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Canada\",\"CountryId\":1},{\"StateProvinceId\":63,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Europe\",\"CountryId\":1},{\"StateProvinceId\":64,\"StateProvinceAbbr\":\"AE\",\"DisplayName\":\"Armed Forces Middle East\",\"CountryId\":1},{\"StateProvinceId\":65,\"StateProvinceAbbr\":\"AP\",\"DisplayName\":\"Armed Forces Pacific\",\"CountryId\":1},{\"StateProvinceId\":67,\"StateProvinceAbbr\":\"BC\",\"DisplayName\":\"Baja California\",\"CountryId\":148},{\"StateProvinceId\":68,\"StateProvinceAbbr\":\"BS\",\"DisplayName\":\"Baja California Sur\",\"CountryId\":148},{\"StateProvinceId\":101,\"StateProvinceAbbr\":\"BC\",\"DisplayName\":\"British Columbia\",\"CountryId\":41},{\"StateProvinceId\":6,\"StateProvinceAbbr\":\"CA\",\"DisplayName\":\"California\",\"CountryId\":1},{\"StateProvinceId\":69,\"StateProvinceAbbr\":\"CM\",\"DisplayName\":\"Campeche\",\"CountryId\":148},{\"StateProvinceId\":70,\"StateProvinceAbbr\":\"CS\",\"DisplayName\":\"Chiapas \",\"CountryId\":148},{\"StateProvinceId\":71,\"StateProvinceAbbr\":\"CH\",\"DisplayName\":\"Chihuahua\",\"CountryId\":148},{\"StateProvinceId\":72,\"StateProvinceAbbr\":\"CO\",\"DisplayName\":\"Coahuila de Zaragoza\",\"CountryId\":148},{\"StateProvinceId\":73,\"StateProvinceAbbr\":\"CL\",\"DisplayName\":\"Colima\",\"CountryId\":148},{\"StateProvinceId\":7,\"StateProvinceAbbr\":\"CO\",\"DisplayName\":\"Colorado\",\"CountryId\":1},{\"StateProvinceId\":8,\"StateProvinceAbbr\":\"CT\",\"DisplayName\":\"Connecticut\",\"CountryId\":1},{\"StateProvinceId\":9,\"StateProvinceAbbr\":\"DE\",\"DisplayName\":\"Delaware\",\"CountryId\":1},{\"StateProvinceId\":10,\"StateProvinceAbbr\":\"DC\",\"DisplayName\":\"District of Columbia\",\"CountryId\":1},{\"StateProvinceId\":74,\"StateProvinceAbbr\":\"DF\",\"DisplayName\":\"Distrito Federal\",\"CountryId\":148},{\"StateProvinceId\":75,\"StateProvinceAbbr\":\"DG\",\"DisplayName\":\"Durango\",\"CountryId\":148},{\"StateProvinceId\":11,\"StateProvinceAbbr\":\"FM\",\"DisplayName\":\"Federated States of Micronesia\",\"CountryId\":1},{\"StateProvinceId\":12,\"StateProvinceAbbr\":\"FL\",\"DisplayName\":\"Florida\",\"CountryId\":1},{\"StateProvinceId\":13,\"StateProvinceAbbr\":\"GA\",\"DisplayName\":\"Georgia\",\"CountryId\":1},{\"StateProvinceId\":14,\"StateProvinceAbbr\":\"GU\",\"DisplayName\":\"Guam\",\"CountryId\":1},{\"StateProvinceId\":76,\"StateProvinceAbbr\":\"GT\",\"DisplayName\":\"Guanajuato\",\"CountryId\":148},{\"StateProvinceId\":77,\"StateProvinceAbbr\":\"GR\",\"DisplayName\":\"Guerrero\",\"CountryId\":148},{\"StateProvinceId\":15,\"StateProvinceAbbr\":\"HI\",\"DisplayName\":\"Hawaii\",\"CountryId\":1},{\"StateProvinceId\":78,\"StateProvinceAbbr\":\"HG\",\"DisplayName\":\"Hidalgo\",\"CountryId\":148},{\"StateProvinceId\":16,\"StateProvinceAbbr\":\"ID\",\"DisplayName\":\"Idaho\",\"CountryId\":1},{\"StateProvinceId\":17,\"StateProvinceAbbr\":\"IL\",\"DisplayName\":\"Illinois\",\"CountryId\":1},{\"StateProvinceId\":18,\"StateProvinceAbbr\":\"IN\",\"DisplayName\":\"Indiana\",\"CountryId\":1},{\"StateProvinceId\":19,\"StateProvinceAbbr\":\"IA\",\"DisplayName\":\"Iowa\",\"CountryId\":1},{\"StateProvinceId\":79,\"StateProvinceAbbr\":\"JA\",\"DisplayName\":\"Jalisco\",\"CountryId\":148},{\"StateProvinceId\":20,\"StateProvinceAbbr\":\"KS\",\"DisplayName\":\"Kansas\",\"CountryId\":1},{\"StateProvinceId\":21,\"StateProvinceAbbr\":\"KY\",\"DisplayName\":\"Kentucky\",\"CountryId\":1},{\"StateProvinceId\":22,\"StateProvinceAbbr\":\"LA\",\"DisplayName\":\"Louisiana\",\"CountryId\":1},{\"StateProvinceId\":23,\"StateProvinceAbbr\":\"ME\",\"DisplayName\":\"Maine\",\"CountryId\":1},{\"StateProvinceId\":102,\"StateProvinceAbbr\":\"MB\",\"DisplayName\":\"Manitoba\",\"CountryId\":41},{\"StateProvinceId\":24,\"StateProvinceAbbr\":\"MH\",\"DisplayName\":\"Marshall Islands\",\"CountryId\":1},{\"StateProvinceId\":25,\"StateProvinceAbbr\":\"MD\",\"DisplayName\":\"Maryland\",\"CountryId\":1},{\"StateProvinceId\":26,\"StateProvinceAbbr\":\"MA\",\"DisplayName\":\"Massachusetts\",\"CountryId\":1},{\"StateProvinceId\":80,\"StateProvinceAbbr\":\"EM\",\"DisplayName\":\"Mexico\",\"CountryId\":148},{\"StateProvinceId\":27,\"StateProvinceAbbr\":\"MI\",\"DisplayName\":\"Michigan\",\"CountryId\":1},{\"StateProvinceId\":81,\"StateProvinceAbbr\":\"MI\",\"DisplayName\":\"Michoacan de Ocampo\",\"CountryId\":148},{\"StateProvinceId\":28,\"StateProvinceAbbr\":\"MN\",\"DisplayName\":\"Minnesota\",\"CountryId\":1},{\"StateProvinceId\":29,\"StateProvinceAbbr\":\"MS\",\"DisplayName\":\"Mississippi\",\"CountryId\":1},{\"StateProvinceId\":30,\"StateProvinceAbbr\":\"MO\",\"DisplayName\":\"Missouri\",\"CountryId\":1},{\"StateProvinceId\":31,\"StateProvinceAbbr\":\"MT\",\"DisplayName\":\"Montana\",\"CountryId\":1},{\"StateProvinceId\":82,\"StateProvinceAbbr\":\"MO\",\"DisplayName\":\"Morelos\",\"CountryId\":148},{\"StateProvinceId\":83,\"StateProvinceAbbr\":\"NA\",\"DisplayName\":\"Nayarit\",\"CountryId\":148},{\"StateProvinceId\":32,\"StateProvinceAbbr\":\"NE\",\"DisplayName\":\"Nebraska\",\"CountryId\":1},{\"StateProvinceId\":33,\"StateProvinceAbbr\":\"NV\",\"DisplayName\":\"Nevada\",\"CountryId\":1},{\"StateProvinceId\":103,\"StateProvinceAbbr\":\"NB\",\"DisplayName\":\"New Brunswick\",\"CountryId\":41},{\"StateProvinceId\":34,\"StateProvinceAbbr\":\"NH\",\"DisplayName\":\"New Hampshire\",\"CountryId\":1},{\"StateProvinceId\":35,\"StateProvinceAbbr\":\"NJ\",\"DisplayName\":\"New Jersey\",\"CountryId\":1},{\"StateProvinceId\":36,\"StateProvinceAbbr\":\"NM\",\"DisplayName\":\"New Mexico\",\"CountryId\":1},{\"StateProvinceId\":37,\"StateProvinceAbbr\":\"NY\",\"DisplayName\":\"New York\",\"CountryId\":1},{\"StateProvinceId\":104,\"StateProvinceAbbr\":\"NL\",\"DisplayName\":\"Newfoundland and Labrador\",\"CountryId\":41},{\"StateProvinceId\":38,\"StateProvinceAbbr\":\"NC\",\"DisplayName\":\"North Carolina\",\"CountryId\":1},{\"StateProvinceId\":39,\"StateProvinceAbbr\":\"ND\",\"DisplayName\":\"North Dakota\",\"CountryId\":1},{\"StateProvinceId\":40,\"StateProvinceAbbr\":\"MP\",\"DisplayName\":\"Northern Mariana Islands\",\"CountryId\":1},{\"StateProvinceId\":111,\"StateProvinceAbbr\":\"NT\",\"DisplayName\":\"Northwest\",\"CountryId\":41},{\"StateProvinceId\":105,\"StateProvinceAbbr\":\"NS\",\"DisplayName\":\"Nova Scotia\",\"CountryId\":41},{\"StateProvinceId\":84,\"StateProvinceAbbr\":\"NL\",\"DisplayName\":\"Nuevo Leon\",\"CountryId\":148},{\"StateProvinceId\":112,\"StateProvinceAbbr\":\"NU\",\"DisplayName\":\"Nunavut\",\"CountryId\":41},{\"StateProvinceId\":85,\"StateProvinceAbbr\":\"OA\",\"DisplayName\":\"Oaxaca\",\"CountryId\":148},{\"StateProvinceId\":41,\"StateProvinceAbbr\":\"OH\",\"DisplayName\":\"Ohio\",\"CountryId\":1},{\"StateProvinceId\":42,\"StateProvinceAbbr\":\"OK\",\"DisplayName\":\"Oklahoma\",\"CountryId\":1},{\"StateProvinceId\":106,\"StateProvinceAbbr\":\"ON\",\"DisplayName\":\"Ontario\",\"CountryId\":41},{\"StateProvinceId\":43,\"StateProvinceAbbr\":\"OR\",\"DisplayName\":\"Oregon\",\"CountryId\":1},{\"StateProvinceId\":44,\"StateProvinceAbbr\":\"PW\",\"DisplayName\":\"Palau\",\"CountryId\":1},{\"StateProvinceId\":45,\"StateProvinceAbbr\":\"PA\",\"DisplayName\":\"Pennsylvania\",\"CountryId\":1},{\"StateProvinceId\":107,\"StateProvinceAbbr\":\"PE\",\"DisplayName\":\"Prince Edward Island\",\"CountryId\":41},{\"StateProvinceId\":86,\"StateProvinceAbbr\":\"PU\",\"DisplayName\":\"Puebla\",\"CountryId\":148},{\"StateProvinceId\":46,\"StateProvinceAbbr\":\"PR\",\"DisplayName\":\"Puerto Rico\",\"CountryId\":1},{\"StateProvinceId\":108,\"StateProvinceAbbr\":\"QC\",\"DisplayName\":\"Quebec\",\"CountryId\":41},{\"StateProvinceId\":87,\"StateProvinceAbbr\":\"QT\",\"DisplayName\":\"Queretaro de Arteaga\",\"CountryId\":148},{\"StateProvinceId\":88,\"StateProvinceAbbr\":\"QR\",\"DisplayName\":\"Quintana Roo\",\"CountryId\":148},{\"StateProvinceId\":47,\"StateProvinceAbbr\":\"RI\",\"DisplayName\":\"Rhode Island\",\"CountryId\":1},{\"StateProvinceId\":89,\"StateProvinceAbbr\":\"SL\",\"DisplayName\":\"San Luis Potosi\",\"CountryId\":148},{\"StateProvinceId\":109,\"StateProvinceAbbr\":\"SK\",\"DisplayName\":\"Saskatchewan\",\"CountryId\":41},{\"StateProvinceId\":90,\"StateProvinceAbbr\":\"SI\",\"DisplayName\":\"Sinaloa\",\"CountryId\":148},{\"StateProvinceId\":91,\"StateProvinceAbbr\":\"SO\",\"DisplayName\":\"Sonora\",\"CountryId\":148},{\"StateProvinceId\":48,\"StateProvinceAbbr\":\"SC\",\"DisplayName\":\"South Carolina\",\"CountryId\":1},{\"StateProvinceId\":49,\"StateProvinceAbbr\":\"SD\",\"DisplayName\":\"South Dakota\",\"CountryId\":1},{\"StateProvinceId\":92,\"StateProvinceAbbr\":\"TB\",\"DisplayName\":\"Tabasco\",\"CountryId\":148},{\"StateProvinceId\":93,\"StateProvinceAbbr\":\"TM\",\"DisplayName\":\"Tamaulipas\",\"CountryId\":148},{\"StateProvinceId\":50,\"StateProvinceAbbr\":\"TN\",\"DisplayName\":\"Tennessee\",\"CountryId\":1},{\"StateProvinceId\":51,\"StateProvinceAbbr\":\"TX\",\"DisplayName\":\"Texas\",\"CountryId\":1},{\"StateProvinceId\":94,\"StateProvinceAbbr\":\"TL\",\"DisplayName\":\"Tlaxcala\",\"CountryId\":148},{\"StateProvinceId\":52,\"StateProvinceAbbr\":\"UT\",\"DisplayName\":\"Utah\",\"CountryId\":1},{\"StateProvinceId\":95,\"StateProvinceAbbr\":\"VE\",\"DisplayName\":\"Veracruz-Llave\",\"CountryId\":148},{\"StateProvinceId\":53,\"StateProvinceAbbr\":\"VT\",\"DisplayName\":\"Vermont\",\"CountryId\":1},{\"StateProvinceId\":54,\"StateProvinceAbbr\":\"VI\",\"DisplayName\":\"Virgin Islands\",\"CountryId\":1},{\"StateProvinceId\":55,\"StateProvinceAbbr\":\"VA\",\"DisplayName\":\"Virginia\",\"CountryId\":1},{\"StateProvinceId\":56,\"StateProvinceAbbr\":\"WA\",\"DisplayName\":\"Washington\",\"CountryId\":1},{\"StateProvinceId\":57,\"StateProvinceAbbr\":\"WV\",\"DisplayName\":\"West Virginia\",\"CountryId\":1},{\"StateProvinceId\":58,\"StateProvinceAbbr\":\"WI\",\"DisplayName\":\"Wisconsin\",\"CountryId\":1},{\"StateProvinceId\":59,\"StateProvinceAbbr\":\"WY\",\"DisplayName\":\"Wyoming\",\"CountryId\":1},{\"StateProvinceId\":96,\"StateProvinceAbbr\":\"YU\",\"DisplayName\":\"Yucatan\",\"CountryId\":148},{\"StateProvinceId\":110,\"StateProvinceAbbr\":\"YT\",\"DisplayName\":\"Yukon\",\"CountryId\":41},{\"StateProvinceId\":97,\"StateProvinceAbbr\":\"ZA\",\"DisplayName\":\"Zacatecas\",\"CountryId\":148}]");
+
+
+
+            var clean = function(value, removeCommas) {
+
+                if (!value)
+
+                    return value;
+
+
+
+                var value = value.trim();
+
+                if (value.startsWith('$')) {
+
+                    value = value.substring(1, value.length);
+
+
+
+                    value = value
+
+                        .replace(/[^0-9.]/g, "")
+
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+                }
+
+
+
+                if (removeCommas) {
+
+                    value = value.replace(/,/g, "");
+
+                }
+
+
+
+                return value;
+
+            };
+
+
+
+            $(function() {
+
+                var rootSelector = '#donationblock_5e8c31e6e2014b989fc434e41ab500a4';
+
+                var inputSelector = rootSelector + ' ' + '.form-control.donation';
+
+                var radioSelector = rootSelector + ' ' + 'input:radio[name="ee54fc7d75c64253826ade72d2ce86af"]';
+
+                var productOptionSelector = rootSelector + ' ' + 'input[name="productOptionId"]';
+
+                var errorSelector = rootSelector + ' ' + '.server-error-message';
+
+                var destinationSelector = rootSelector + ' ' + '.destination-link';
+
+                var suggestedAmountSelector = rootSelector + ' ' + 'input[name="suggestedAmount"]';
+
+                var minimumDonationAmountSelector = rootSelector + ' ' + 'input[name="minimum-donation-amount"]';
+
+                var minimumDonationAmountErrorMessageSelector = rootSelector + ' ' + 'input[name="minimum-donation-amount-error-message"]';
+
+                var defaultServerErrorMessageSelector = rootSelector + ' ' + 'input[name="default-server-error-message"]';
+
+                var inHonorOfCheckBoxSelector = rootSelector + ' ' + '#inHonorOfCheck';
+
+                var inHonorOfDivSelector = rootSelector + ' ' + '.InHonorOfDonation';
+
+                var emailSettingsDivSelector = rootSelector + ' ' + '.emailSettings';
+
+                var mailSettingsDivSelector = rootSelector + ' ' + '.mailSettings';
+
+                var emailOrMailSelector = rootSelector + ' ' + 'select[name="emailOrMail"]';
+
+                var countrySelector = rootSelector + ' ' + 'select[name="honoreeCountry"]';
+
+                var stateSelector = rootSelector + ' ' + 'select[name="honoreeState"]';
+
+                var amountErrorElemSelector = rootSelector + ' ' + '.invalid-donation-amount';
+
+                var cartDescriptionInputSelector = rootSelector + ' ' + 'input[name="cartDescription"]';
+
+                var recurringProductCopySelector = rootSelector + ' ' + '.recurring-product-copy';
+
+                var activeDonateFrequencySelector = rootSelector + ' ' + '.donate-frequency-wrap .active';
+
+                var donateFrequencySelector = rootSelector + ' ' + '.donate-frequency-wrap div a';
+
+                var inputAmountFrequencySelector = rootSelector + ' ' + '.input-amount-frequency';
+
+
+
+                var form = $(rootSelector);
+
+
+
+                var getProductOptionId = function() {
+
+                    var $activeDonateFrequency = $(activeDonateFrequencySelector);
+
+                    if ($activeDonateFrequency.length === 1) {
+
+                        return $activeDonateFrequency.data('product-id');
+
+                    }
+
+
+
+                    var $productOptionElem = $(productOptionSelector);
+
+                    return $productOptionElem.val();
+
+                };
+
+
+
+                var getCartDescription = function() {
+
+                    var $activeDonateFrequency = $(activeDonateFrequencySelector);
+
+                    if ($activeDonateFrequency.length === 1) {
+
+                        return $activeDonateFrequency.data('product-description');
+
+                    }
+
+
+
+                    var $cartDescriptionInputSelector = $(cartDescriptionInputSelector);
+
+                    return $cartDescriptionInputSelector.val();
+
+                };
+
+
+
+                form.validate({
+
+                    onkeyup: false,
+
+                    onfocousout: function(element) {
+
+                        if (!this.checkable(element)) {
+
+                            this.element(element);
+
+                        }
+
+                    },
+
+                    errorElement: 'span',
+
+                    errorClass: 'field-notice',
+
+                    errorPlacement: function(error, element) {
+
+                        error.insertBefore(element);
+
+                    },
+
+                    highlight: function(element) {
+
+                        $(element).closest('.form-group').addClass('has-error');
+
+                        $(element).next('.feedback-icon').slideUp();
+
+                    },
+
+                    unhighlight: function(element) {
+
+                        $(element).closest('.form-group').removeClass('has-error');
+
+                        $(element).next('.feedback-icon').slideDown();
+
+                    },
+
+                    submitHandler: GlobalFunctions.debounce(function () {
+
+                        var productOptionId = getProductOptionId();
+
+                        var inputElem = $(inputSelector);
+
+                        var amount = clean(inputElem.val(), true);
+
+                        var suggestedAmount = $(suggestedAmountSelector).val();
+
+                        var amountErrorElem = $(amountErrorElemSelector);
+
+                        var cartDescription = getCartDescription();
+
+                        var destination = $(destinationSelector).prop('href');
+
+                        var inHonorOf = {};
+
+                        var showModal = false;
+
+
+
+                        if (suggestedAmount > 0 && (!amount || amount === '$')) {
+
+                            amountErrorElem.slideDown();
+
+                            return;
+
+                        } else {
+
+                            amountErrorElem.slideUp();
+
+                        }
+
+
+
+                        if ($(inHonorOfCheckBoxSelector).is(":checked")) {
+
+                            inHonorOf.InHonorOfType = form.find("input:radio[name='inHonorOrMemory']:checked").parent('label').text();
+
+                            inHonorOf.InHonorOfTypeId = form.find("input:radio[name='inHonorOrMemory']:checked").val();
+
+                            inHonorOf.HonoreeFirstName = form.find("#honoreeFirstName").val();
+
+                            inHonorOf.HonoreeLastName = form.find("#honoreeLastName").val();
+
+                            inHonorOf.EventOrName = form.find("#eventOrName").val();
+
+                            inHonorOf.SendViaEmail = form.find("#emailOrMail").val() === '1';
+
+                            inHonorOf.HonoreeEmailAddress = form.find("#honoreeEmail").val();
+
+                            inHonorOf.SendCopyToMe = form.find("#copyMe").is(":checked");
+
+                            inHonorOf.EmailMessage = form.find("#message").val();
+
+
+
+                            inHonorOf.HonoreeCountry = form.find("#honoreeCountry :selected").text();
+
+                            inHonorOf.HonoreeCountryId = form.find("#honoreeCountry").val();
+
+                            inHonorOf.HonoreeAddress = form.find("#honoreeAddress").val();
+
+                            inHonorOf.HonoreeUnit = form.find("#honoreeUnit").val();
+
+                            inHonorOf.HonoreeCity = form.find("#honoreeCity").val();
+
+                            inHonorOf.HonoreeZipPostalCode = form.find("#honoreeZip").val();
+
+                            inHonorOf.HonoreeStateProviceId = $(stateSelector).is(":visible")
+
+                                ? form.find("#honoreeState").val()
+
+                                : null;
+
+                            inHonorOf.HonoreeState = $(stateSelector).is(":visible")
+
+                                ? form.find("#honoreeState :selected").text()
+
+                                : '';
+
+
+
+                            inHonorOf.DonorName = "";
+
+                            inHonorOf.DonationBlockGuid = 'd69aab02-b3dc-479d-af6b-a1def2d68982';
+
+                        }
+
+
+
+                        var errorMessage = $(errorSelector);
+
+                        errorMessage.slideUp();
+
+                        var minimumDonationAmount = parseFloat($(minimumDonationAmountSelector).val());
+
+
+
+                        if (amount === "" || parseFloat(amount) < minimumDonationAmount) {
+
+                            var message = $(minimumDonationAmountErrorMessageSelector).val()
+
+                                + minimumDonationAmount + ".";
+
+                            errorMessage.html(message);
+
+                            errorMessage.slideDown();
+
+                            return;
+
+                        }
+
+                        
+
+                        Cart.addToCart(amount, productOptionId, cartDescription, null, inHonorOf,'d69aab02-b3dc-479d-af6b-a1def2d68982')
+
+                            .done(function () {
+
+                                Cart.updateCartCount()
+
+                                if (showModal) {
+
+                                    Cart.openCartModal();
+
+                                } else {
+
+                                    window.location = destination;
+
+                                }
+
+                            }).fail(function() {
+
+                                var message = $(defaultServerErrorMessageSelector).val();
+
+                                errorMessage.html(message);
+
+                                errorMessage.slideDown();
+
+                            });
+
+                    }, 1000),
+
+                    rules : {
+
+                        honoreeFirstName: {
+
+                            required: function () {
+
+                                return $(inHonorOfCheckBoxSelector).is(':checked');
+
+                            }
+
+                        },
+
+                        honoreeLastName: {
+
+                            required: function () {
+
+                                return $(inHonorOfCheckBoxSelector).is(':checked');
+
+                            }
+
+                        },
+
+                        honoreeEmail: {
+
+                            required: function () {
+
+                                return $(emailOrMailSelector).val() === '1';
+
+                            },
+
+                            email: true
+
+                        },
+
+                        honoreeCountry: {
+
+                            required: function() {
+
+                                return $(emailOrMailSelector).val() === '0';
+
+                            }
+
+                        },
+
+                        honoreeAddress: {
+
+                            required: function () {
+
+                                return $(emailOrMailSelector).val() === '0';
+
+                            }
+
+                        },
+
+                        honoreeCity: {
+
+                            required: function () {
+
+                                return $(emailOrMailSelector).val() === '0';
+
+                            }
+
+                        },
+
+                        honoreeState: {
+
+                            required: function () {
+
+                                return $(stateSelector).is(":visible") &&
+
+                                    $(emailOrMailSelector).val() === '0';
+
+                            },
+
+                            min: 1
+
+                        },
+
+                        honoreeZip: {
+
+                            required: function() {
+
+                                return $(emailOrMailSelector).val() === '0'
+
+                                    && $(countrySelector).val() === '1'; //USA
+
+                            }
+
+                        }
+
+                    },
+
+                    messages: {
+
+                        honoreeFirstName: "Oops! We need a first name to continue.",
+
+                        honoreeLastName: " Oops! We need a last name to continue.",
+
+                        honoreeEmail: "Oops! We need a valid email address to continue.",
+
+                        honoreeCountry: "Oops! We need a country to continue.",
+
+                        honoreeCity: "Oops! We need a city to continue.",
+
+                        honoreeAddress: "Oops! We need an address to continue.",
+
+                        honoreeState: "Please select a state/province",
+
+                        honoreeZip: "Oops! We need a ZIP code/postal code to continue."
+
+                    }
+
+                });
+
+
+
+                $(inHonorOfCheckBoxSelector).click(function() {
+
+                    var elem = $(this);
+
+                    if (elem.is(':checked')) {
+
+                        $(inHonorOfDivSelector).slideDown();
+
+                    } else {
+
+                        $(inHonorOfDivSelector).slideUp();
+
+                    }
+
+                });
+
+
+
+                $(emailOrMailSelector).change(function() {
+
+                    var elem = $(this);
+
+
+
+                    if (elem.val() === '1') {
+
+                        $(mailSettingsDivSelector).slideUp();
+
+                        $(emailSettingsDivSelector).slideDown();
+
+                    } else if (elem.val() === '0') {
+
+                        $(emailSettingsDivSelector).slideUp();
+
+                        $(mailSettingsDivSelector).slideDown();
+
+
+
+                        $(countrySelector).trigger('change');
+
+                    } else {
+
+                        $(emailSettingsDivSelector).slideUp();
+
+                        $(mailSettingsDivSelector).slideUp();
+
+                    }
+
+                });
+
+
+
+                $(countrySelector).change(function() {
+
+                    var elem = $(this);
+
+                    var $stateSelector = $(stateSelector);
+
+                    var $stateSelectorParent = $stateSelector.parent();
+
+
+
+                    $stateSelectorParent.slideUp();
+
+
+
+                    $stateSelector.find('option')
+
+                        .remove()
+
+                        .end();
+
+
+
+                    var countryId = elem.find(':selected').data('countryid');
+
+                    var countryStates = stateList.filter(function(element) {
+
+                        return element.CountryId === countryId;
+
+                    });
+
+
+
+                    if (countryStates.length === 0) {
+
+                        return;
+
+                    }
+
+
+
+                    $stateSelectorParent.slideDown();
+
+
+
+                    $stateSelector
+
+                        .append($("<option></option>")
+
+                            .val('0')
+
+                            .text('Please Select'));
+
+
+
+                    $.each(countryStates,
+
+                        function(key, value) {
+
+                            $stateSelector
+
+                                .append($("<option></option>")
+
+                                    .attr("value", value.StateProviceAbbr)
+
+                                    .val(value.StateProvinceId)
+
+                                    .text(value.DisplayName));
+
+                        });
+
+                });
+
+
+
+                $(radioSelector).click(function() {
+
+                    var elem = $(this);
+
+                    var input = $(inputSelector);
+
+                    var cleaned = clean(elem.val());
+
+                    if (cleaned !== 'Other') {
+
+                        input.val('$' + cleaned);
+
+                    } else {
+
+                        input.val('$');
+
+                        input.focus();
+
+                    }
+
+                });
+
+
+
+                $(inputSelector).on('keyup',
+
+                    function() {
+
+                        var elem = $(this);
+
+                        if (clean(elem.val()) === ""){
+
+                            elem.addClass("no-donation-value");
+
+                        }
+
+                        else {
+
+                            elem.removeClass("no-donation-value");
+
+                        }
+
+                        var radio = $(radioSelector);
+
+                        radio.removeAttr('checked');
+
+                        var cleaned = '$' + clean(elem.val());
+
+
+
+                        var matching = radio.filter('[value="' + cleaned + '"]');
+
+
+
+                        if (matching.length > 0) {
+
+                           matching.prop('checked', true).trigger('click');
+
+                        } else {
+
+                           radio.filter('[value="Other"]').prop('checked', true).trigger('click');
+
+                        }
+
+
+
+                        elem.val(cleaned);
+
+                    });
+
+
+
+                //ensure the input box and checkboxes are in sync when the widget loads.
+
+                $(inputSelector).trigger('keyup');
+
+
+
+                form.on('keyup blur', function (e) {
+
+                    if (form.validate().checkForm()) { }
+
+                });
+
+
+
+                $(donateFrequencySelector).click(function(e) {
+
+                    e.preventDefault();
+
+                    if (false) return;
+
+
+
+                    var $this = $(this).parent();
+
+
+
+                    if ($this.hasClass('active')) {
+
+                        return;
+
+                    }
+
+
+
+                    var recurringProduct = $this.data('recurring-product').toString() === 'true';
+
+                    var amountFrequency = $this.data('recurring-frequency').toString();
+
+
+
+                    var $donateFrequencies = $(donateFrequencySelector).parent();
+
+                    var $recurringProductCopy = $(recurringProductCopySelector);
+
+                    var $inputAmountFrequency = $(inputAmountFrequencySelector);
+
+                    var $inHonorOfCheckboxWrap = $(inHonorOfCheckBoxSelector).closest('.checkbox');
+
+                    var $inHonorOfCheckbox = $(inHonorOfCheckBoxSelector);
+
+                    var $inHonorOfDivSelector = $(inHonorOfDivSelector);
+
+                    var $inputDonation = $(inputSelector);
+
+
+
+                    $donateFrequencies.removeClass('active');
+
+                    $this.addClass('active');
+
+
+
+                    $inputAmountFrequency.html(amountFrequency);
+
+
+
+                    if (amountFrequency) {
+
+                        $inputDonation.addClass('mnthly');
+
+                    } else {
+
+                        $inputDonation.removeClass('mnthly');
+
+                    }
+
+
+
+                    if (recurringProduct) {
+
+                        $inHonorOfCheckbox.prop('checked', false);
+
+                        $inHonorOfDivSelector.slideUp();
+
+                        $inHonorOfCheckboxWrap.slideUp();
+
+                        $recurringProductCopy.slideDown();
+
+                    } else {
+
+                        $recurringProductCopy.slideUp();
+
+                        $inHonorOfCheckboxWrap.slideDown();
+
+                    }
+
+                });
+
+            });
+
+
+
+
+
+            $('#donationblock_5e8c31e6e2014b989fc434e41ab500a4 .tab-radio input[type=radio]').on('click', function () {
+
+               var target = $(this).data('target-id');
+
+               var parent = $(this).closest("li.tab-radio");
+
+                parent.siblings().removeClass('selected');
+
+                parent.addClass('selected');
+
+                $('#donationblock_5e8c31e6e2014b989fc434e41ab500a4 .option-tab').hide();
+
+                if(target != null)
+
+                    $('#' + target).show();
+
+            });
+
+
+
+
+
         })(jQuery);
   </script>
   <script>
-   (function($) {
-
-                var selectors = {
-                    root: '#cart-review-block-250f79df80b34143aa34dc8a766d8f32',
-                    spinner: '.spinner-wrapper',
-                    cartList: '.cart-content',
-                    cartListEmpty: '.cart-content-empty',
-                    cartItem: '.cart-detail',
-                    cartItemRemove: '.cart-item-remove',
-                    cartItemAmountInput: '.cart-item-amount-input',
-                    checkoutButton: '.cart-checkout',
-                    keepShopping: '.cart-keep-shopping',
-                    cartTotalAmount: '.cart-total-amount',
-                    cartModal: '[class*=modal modalBlock]',
-                    cartItemUpdate: '.cart-item-update',
-                    inputErrorMessage: '.input-error-message',
-                    btnPlus: '.qty-plus',
-                    btnMinus: '.qty-minus',
-                    serverErrorMessage: '.server-error-message'
-                };
-
-                var clean = function(value, removeCommas) {
-                    if (!value)
-                        return value;
-
-                    value = value.trim();
-                    if (value.startsWith('$')) {
-                        value = value.substring(1, value.length);
-                    }
-
-                    value = value
-                        .replace(/[^0-9.]/g, "")
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-                    if (removeCommas) {
-                        value = value.replace(/,/g, "");
-                    }
-
-                    return value;
-                };
-
-                $(function() {
-
-                    var cartItemCount = 0;
-                    var closeCartIfEmpty = true;
-
-                    var $cartItems;
-                    var $cartItemAmountInput;
-
-                    var $root = $(selectors.root);
-                    var $spinner = $root.find(selectors.spinner);
-                    var $cartList = $root.find(selectors.cartList);
-                    var $checkoutButton = $root.find(selectors.checkoutButton);
-                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
-                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
-                    var $cartModal = $root.closest(selectors.cartModal);
-
-                    var getCurrentCulture = function () {
-                        var paths = location.pathname.split('/');
-                        if (paths.length < 2) return '';
-                        return (paths[1] !== 'es') ? '' : 'es';
-                    }
-
-                    var closeModal = function () {
-                        if ($cartModal.length === 1
-                            && ($cartModal.hasClass('show')
-                                || $cartModal.hasClass('in'))) {
-                            $cartModal.modal('hide');
-                        }
-                    };
-
-                    var setCartItemElements = function () {
-                        $root = $(selectors.root);
-                        $cartItems = $root.find(selectors.cartItem);
-                        cartItemCount = $cartItems.length;
-                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
-                    }
-
-                    var checkIfCartIsEmpty = function () {
-                        $cartListEmpty.slideUp();
-                        $checkoutButton.prop("disabled", false);
-                        if (cartItemCount === 0) {
-                            $cartListEmpty.fadeIn();
-                            $checkoutButton.prop("disabled", true);
-                            if (closeCartIfEmpty) { closeModal(); }
-                        }
-                    }
-
-                    var setTotalForCart = function() {
-                        var total = 0;
-                        $cartItemAmountInput.each(function(index, input) {
-                            var $input = $(input);
-                            var inputAmount = Number(clean($input.val(), true));
-                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
-                            if (origAmount > 0)
-                                inputAmount = origAmount;
-                            total += inputAmount;                            
-                        });
-                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
-                        $cartTotalAmount.html(totalValue);
-                    }
-
-                    var updateNavCart = function() {
-                        if (window.Cart) {
-                            Cart.updateCartCount();
-                        }
-                    }
-
-                    var resetCartItemElements = function() {
-                        setCartItemElements();
-                        checkIfCartIsEmpty();
-                        setTotalForCart();
-                        updateNavCart();
-                    };
-
-                    var refreshCheckoutCart = function() {
-                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
-                    }
-
-                    var reloadCart = function() {
-                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
-                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
-
-                        $cartList.slideDown(function() {
-                            $spinner.fadeIn();
-
-                            $.ajax({
-                                url: ajaxUrl,
-                                type: 'POST',
-                                dataType: 'html'
-                            }).success(function(newHtml) {
-                                $cartList.html(newHtml);
-                                resetCartItemElements();
-                            }).done(function() {
-                                $spinner.fadeOut();
-                            });
-                        });
-                    };
-
-                    var isOnCheckoutPage = function(checkoutUrl) {
-                        if (!checkoutUrl) { return false; }
-                        var currentUrl = window.location.pathname;
-                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
-                    }
-
-                    $root.on('click',
-                        selectors.checkoutButton,
-                        function(e) {
-                            e.preventDefault();
-
-                            var $this = $(this);
-                            var url = $this.attr('href');
-
-                            if (!isOnCheckoutPage(url)) {
-                                window.location = url;
-                                return;
-                            }
-
-                            $(selectors.keepShopping).click();
-                        });
-
-
-                    $root.on('click',
-                        selectors.cartItemRemove,
-                        function(e) {
-                            e.preventDefault();
-
-                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
-                                    var removeUrl = "/Cart/Remove";
-                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
-                                    var itemId = $cartElement.data('item-id');
-
-                                    if (!itemId) {
-                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
-                                    }
-
-                                    if (itemId) {
-                                        $closestCartItem.fadeTo("fast",
-                                            .5,
-                                            function () {
-                                                $.ajax({
-                                                    url: removeUrl,
-                                                    type: 'POST',
-                                                    data: { id: itemId }
-                                                }).success(function() {
-                                                    $closestCartItem.remove();
-                                                    refreshCheckoutCart();
-                                                    resetCartItemElements();
-                                                }).fail(function() {
-                                                    $closestCartItem.fadeTo("fast",
-                                                        1,
-                                                        function() {
-                                                            resetCartItemElements();
-                                                        });
-                                                });
-                                            });
-                                    }
-                                },
-                                250
-                            );
-
-                            var $removeElement = $(e.target);
-                            removeItemFromCart($removeElement);
-                        });
-
-                    $root.on('keyup blur',
-                        selectors.cartItemAmountInput,
-                        function (e) {                      
-                            var $amountInput = $(e.target);                                                  
-                            var cleanedAmount = clean($amountInput.val());                                                        
-                            var amount = Number(clean(cleanedAmount, true));                     
-                            var origValue = $(e.target).attr('data-orig-value');
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-                            
-                            var btnMinus = container.find(selectors.btnMinus);
-                            var btnUpdate = container.find(selectors.cartItemUpdate);
-                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
-                            //setTotalForCart();
-                            
-                            var minimum = $amountInput.data('minimum-amount');
-                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
-                            var keycode = (e.keyCode ? e.keyCode : e.which);
-
-                            if (!isNaN(minimum)) {
-                                if(e.type != 'keyup' || keycode == 13)
-                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
-                                if (amount <= minimum)
-                                    btnMinus.addClass('disabled');
-                                else
-                                    btnMinus.removeClass('disabled');
-                                if(!isNaN(origValue))
-                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
-                            }
-
-                            
-                            if (keycode == '13') {
-                                btnUpdate.trigger('click');
-                            }
-                    });
-
-                    $(document).on('refresh-cart-review-event',
-                        function() {
-                            reloadCart();
-                        });
-
-                    if ($cartModal.length === 1) {
-                        $cartModal.on('hide.bs.modal',
-                            function () {
-                                updateNavCart();
-                                refreshCheckoutCart();
-					        });
-                    }
-
-                    $root.on('click',
-                        selectors.btnPlus,
-                        function (e) {
-                            e.preventDefault();
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-                            var $closestInput = container.find('input');
-                            var amount = Number(clean($closestInput.val(), true));   
-                            $closestInput.val(amount + 1).trigger('blur');
-                        });
-
-                    $root.on('click',
-                        selectors.btnMinus,
-                        function (e) {
-                            e.preventDefault();
-                            if ($(this).hasClass('disabled'))
-                                return;
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-                            var $closestInput = container.find('input');
-                            var amount = Number(clean($closestInput.val(), true));
-                            if(amount>0)
-                                $closestInput.val(amount -1).trigger('blur');
-                        });
-
-                    $root.on('click',
-                        selectors.cartItemUpdate,
-                        function(e) {
-                            e.preventDefault();                            
-                           
-                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
-                                var container = $cartElement.parents('.cart-item-container').eq(0);
-                                var updateUrl = "/Cart/Update";
-                                var itemId = $cartElement.data('item-id');
-                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
-                                var $closestInput = container.find('input');
-                                var value = Number(clean($closestInput.val(),true));                                
-                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
-                                var amountSpan = container.find('.cart-item-amount');
-                                var serverErrorMessage = container.find('.server-error-message');
-                                inputErrorMessage.hide();
-                                serverErrorMessage.html('').hide();
-                           
-                                if (itemId) {
-                                    if (value < minimumAmount) {                                        
-                                        inputErrorMessage.show();
-                                        return;
-                                    }
-
-                                    $.ajax({
-                                        url: updateUrl,
-                                        type: 'POST',
-                                        data: { id: itemId, value: value }
-                                    }).success(function (response) {
-                                        if (response.success) {
-                                            refreshCheckoutCart();
-                                            resetCartItemElements();
-                                            amountSpan.html($closestInput.val());
-                                            $closestInput.attr('data-orig-value', value).trigger('blur');
-                                            setTotalForCart();
-                                        }
-                                        else {
-                                            serverErrorMessage.html(response.message).show();
-                                        }
-                                            
-                                    }).fail(function () {
-
-                                    });
-                                }
-                            });   
-                            var $updateElement = $(e.target);
-                            updateCartItem($updateElement);
-                        });
-                    
-                    resetCartItemElements();                                        
-                });
+   (function($) {
+
+
+
+                var selectors = {
+
+                    root: '#cart-review-block-250f79df80b34143aa34dc8a766d8f32',
+
+                    spinner: '.spinner-wrapper',
+
+                    cartList: '.cart-content',
+
+                    cartListEmpty: '.cart-content-empty',
+
+                    cartItem: '.cart-detail',
+
+                    cartItemRemove: '.cart-item-remove',
+
+                    cartItemAmountInput: '.cart-item-amount-input',
+
+                    checkoutButton: '.cart-checkout',
+
+                    keepShopping: '.cart-keep-shopping',
+
+                    cartTotalAmount: '.cart-total-amount',
+
+                    cartModal: '[class*=modal modalBlock]',
+
+                    cartItemUpdate: '.cart-item-update',
+
+                    inputErrorMessage: '.input-error-message',
+
+                    btnPlus: '.qty-plus',
+
+                    btnMinus: '.qty-minus',
+
+                    serverErrorMessage: '.server-error-message'
+
+                };
+
+
+
+                var clean = function(value, removeCommas) {
+
+                    if (!value)
+
+                        return value;
+
+
+
+                    value = value.trim();
+
+                    if (value.startsWith('$')) {
+
+                        value = value.substring(1, value.length);
+
+                    }
+
+
+
+                    value = value
+
+                        .replace(/[^0-9.]/g, "")
+
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+
+
+                    if (removeCommas) {
+
+                        value = value.replace(/,/g, "");
+
+                    }
+
+
+
+                    return value;
+
+                };
+
+
+
+                $(function() {
+
+
+
+                    var cartItemCount = 0;
+
+                    var closeCartIfEmpty = true;
+
+
+
+                    var $cartItems;
+
+                    var $cartItemAmountInput;
+
+
+
+                    var $root = $(selectors.root);
+
+                    var $spinner = $root.find(selectors.spinner);
+
+                    var $cartList = $root.find(selectors.cartList);
+
+                    var $checkoutButton = $root.find(selectors.checkoutButton);
+
+                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
+
+                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
+
+                    var $cartModal = $root.closest(selectors.cartModal);
+
+
+
+                    var getCurrentCulture = function () {
+
+                        var paths = location.pathname.split('/');
+
+                        if (paths.length < 2) return '';
+
+                        return (paths[1] !== 'es') ? '' : 'es';
+
+                    }
+
+
+
+                    var closeModal = function () {
+
+                        if ($cartModal.length === 1
+
+                            && ($cartModal.hasClass('show')
+
+                                || $cartModal.hasClass('in'))) {
+
+                            $cartModal.modal('hide');
+
+                        }
+
+                    };
+
+
+
+                    var setCartItemElements = function () {
+
+                        $root = $(selectors.root);
+
+                        $cartItems = $root.find(selectors.cartItem);
+
+                        cartItemCount = $cartItems.length;
+
+                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
+
+                    }
+
+
+
+                    var checkIfCartIsEmpty = function () {
+
+                        $cartListEmpty.slideUp();
+
+                        $checkoutButton.prop("disabled", false);
+
+                        if (cartItemCount === 0) {
+
+                            $cartListEmpty.fadeIn();
+
+                            $checkoutButton.prop("disabled", true);
+
+                            if (closeCartIfEmpty) { closeModal(); }
+
+                        }
+
+                    }
+
+
+
+                    var setTotalForCart = function() {
+
+                        var total = 0;
+
+                        $cartItemAmountInput.each(function(index, input) {
+
+                            var $input = $(input);
+
+                            var inputAmount = Number(clean($input.val(), true));
+
+                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
+
+                            if (origAmount > 0)
+
+                                inputAmount = origAmount;
+
+                            total += inputAmount;                            
+
+                        });
+
+                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
+
+                        $cartTotalAmount.html(totalValue);
+
+                    }
+
+
+
+                    var updateNavCart = function() {
+
+                        if (window.Cart) {
+
+                            Cart.updateCartCount();
+
+                        }
+
+                    }
+
+
+
+                    var resetCartItemElements = function() {
+
+                        setCartItemElements();
+
+                        checkIfCartIsEmpty();
+
+                        setTotalForCart();
+
+                        updateNavCart();
+
+                    };
+
+
+
+                    var refreshCheckoutCart = function() {
+
+                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
+
+                    }
+
+
+
+                    var reloadCart = function() {
+
+                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
+
+                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
+
+
+
+                        $cartList.slideDown(function() {
+
+                            $spinner.fadeIn();
+
+
+
+                            $.ajax({
+
+                                url: ajaxUrl,
+
+                                type: 'POST',
+
+                                dataType: 'html'
+
+                            }).success(function(newHtml) {
+
+                                $cartList.html(newHtml);
+
+                                resetCartItemElements();
+
+                            }).done(function() {
+
+                                $spinner.fadeOut();
+
+                            });
+
+                        });
+
+                    };
+
+
+
+                    var isOnCheckoutPage = function(checkoutUrl) {
+
+                        if (!checkoutUrl) { return false; }
+
+                        var currentUrl = window.location.pathname;
+
+                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
+
+                    }
+
+
+
+                    $root.on('click',
+
+                        selectors.checkoutButton,
+
+                        function(e) {
+
+                            e.preventDefault();
+
+
+
+                            var $this = $(this);
+
+                            var url = $this.attr('href');
+
+
+
+                            if (!isOnCheckoutPage(url)) {
+
+                                window.location = url;
+
+                                return;
+
+                            }
+
+
+
+                            $(selectors.keepShopping).click();
+
+                        });
+
+
+
+
+
+                    $root.on('click',
+
+                        selectors.cartItemRemove,
+
+                        function(e) {
+
+                            e.preventDefault();
+
+
+
+                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
+
+                                    var removeUrl = "/Cart/Remove";
+
+                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
+
+                                    var itemId = $cartElement.data('item-id');
+
+
+
+                                    if (!itemId) {
+
+                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
+
+                                    }
+
+
+
+                                    if (itemId) {
+
+                                        $closestCartItem.fadeTo("fast",
+
+                                            .5,
+
+                                            function () {
+
+                                                $.ajax({
+
+                                                    url: removeUrl,
+
+                                                    type: 'POST',
+
+                                                    data: { id: itemId }
+
+                                                }).success(function() {
+
+                                                    $closestCartItem.remove();
+
+                                                    refreshCheckoutCart();
+
+                                                    resetCartItemElements();
+
+                                                }).fail(function() {
+
+                                                    $closestCartItem.fadeTo("fast",
+
+                                                        1,
+
+                                                        function() {
+
+                                                            resetCartItemElements();
+
+                                                        });
+
+                                                });
+
+                                            });
+
+                                    }
+
+                                },
+
+                                250
+
+                            );
+
+
+
+                            var $removeElement = $(e.target);
+
+                            removeItemFromCart($removeElement);
+
+                        });
+
+
+
+                    $root.on('keyup blur',
+
+                        selectors.cartItemAmountInput,
+
+                        function (e) {                      
+
+                            var $amountInput = $(e.target);                                                  
+
+                            var cleanedAmount = clean($amountInput.val());                                                        
+
+                            var amount = Number(clean(cleanedAmount, true));                     
+
+                            var origValue = $(e.target).attr('data-orig-value');
+
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+
+                            
+
+                            var btnMinus = container.find(selectors.btnMinus);
+
+                            var btnUpdate = container.find(selectors.cartItemUpdate);
+
+                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
+
+                            //setTotalForCart();
+
+                            
+
+                            var minimum = $amountInput.data('minimum-amount');
+
+                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
+
+                            var keycode = (e.keyCode ? e.keyCode : e.which);
+
+
+
+                            if (!isNaN(minimum)) {
+
+                                if(e.type != 'keyup' || keycode == 13)
+
+                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
+
+                                if (amount <= minimum)
+
+                                    btnMinus.addClass('disabled');
+
+                                else
+
+                                    btnMinus.removeClass('disabled');
+
+                                if(!isNaN(origValue))
+
+                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
+
+                            }
+
+
+
+                            
+
+                            if (keycode == '13') {
+
+                                btnUpdate.trigger('click');
+
+                            }
+
+                    });
+
+
+
+                    $(document).on('refresh-cart-review-event',
+
+                        function() {
+
+                            reloadCart();
+
+                        });
+
+
+
+                    if ($cartModal.length === 1) {
+
+                        $cartModal.on('hide.bs.modal',
+
+                            function () {
+
+                                updateNavCart();
+
+                                refreshCheckoutCart();
+
+					        });
+
+                    }
+
+
+
+                    $root.on('click',
+
+                        selectors.btnPlus,
+
+                        function (e) {
+
+                            e.preventDefault();
+
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+
+                            var $closestInput = container.find('input');
+
+                            var amount = Number(clean($closestInput.val(), true));   
+
+                            $closestInput.val(amount + 1).trigger('blur');
+
+                        });
+
+
+
+                    $root.on('click',
+
+                        selectors.btnMinus,
+
+                        function (e) {
+
+                            e.preventDefault();
+
+                            if ($(this).hasClass('disabled'))
+
+                                return;
+
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+
+                            var $closestInput = container.find('input');
+
+                            var amount = Number(clean($closestInput.val(), true));
+
+                            if(amount>0)
+
+                                $closestInput.val(amount -1).trigger('blur');
+
+                        });
+
+
+
+                    $root.on('click',
+
+                        selectors.cartItemUpdate,
+
+                        function(e) {
+
+                            e.preventDefault();                            
+
+                           
+
+                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
+
+                                var container = $cartElement.parents('.cart-item-container').eq(0);
+
+                                var updateUrl = "/Cart/Update";
+
+                                var itemId = $cartElement.data('item-id');
+
+                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
+
+                                var $closestInput = container.find('input');
+
+                                var value = Number(clean($closestInput.val(),true));                                
+
+                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
+
+                                var amountSpan = container.find('.cart-item-amount');
+
+                                var serverErrorMessage = container.find('.server-error-message');
+
+                                inputErrorMessage.hide();
+
+                                serverErrorMessage.html('').hide();
+
+                           
+
+                                if (itemId) {
+
+                                    if (value < minimumAmount) {                                        
+
+                                        inputErrorMessage.show();
+
+                                        return;
+
+                                    }
+
+
+
+                                    $.ajax({
+
+                                        url: updateUrl,
+
+                                        type: 'POST',
+
+                                        data: { id: itemId, value: value }
+
+                                    }).success(function (response) {
+
+                                        if (response.success) {
+
+                                            refreshCheckoutCart();
+
+                                            resetCartItemElements();
+
+                                            amountSpan.html($closestInput.val());
+
+                                            $closestInput.attr('data-orig-value', value).trigger('blur');
+
+                                            setTotalForCart();
+
+                                        }
+
+                                        else {
+
+                                            serverErrorMessage.html(response.message).show();
+
+                                        }
+
+                                            
+
+                                    }).fail(function () {
+
+
+
+                                    });
+
+                                }
+
+                            });   
+
+                            var $updateElement = $(e.target);
+
+                            updateCartItem($updateElement);
+
+                        });
+
+                    
+
+                    resetCartItemElements();                                        
+
+                });
+
             })(jQuery);
   </script>
   <div class="modal modalBlock slide-modal unique-show-modal-cart" role="dialog" tabindex="-1">
@@ -3661,52 +4464,98 @@
    </div>
   </div>
   <script>
-   $(function () {
-            
-            var modalId = '-show-modal-cart';
-            var timeout = 0;
-
-            var selectors = {
-                modal: '.modal.unique' + modalId,
-                trigger: '.trigger-modal-' + modalId,
-                modalLinks: '.modal.unique' + modalId + ' a',
-                modalClose: '.modal.unique' + modalId + ' .callout-close'
-            };
-
-            $(selectors.trigger).on('click', function (e) {
-                e.preventDefault();
-                $(document).trigger('close-all-modals-event');
-                $(selectors.modal).modal('show');
-                
-            });
-
-            $(selectors.modalClose).on('click', function(e) {
-                e.preventDefault();
-                $(selectors.modal).modal('hide');
-                if (typeof ytPlayer !== "undefined") {
-                    ytPlayer.pauseVideo();
-                }
-                if (typeof vimeoPlayer !== "undefined") {
-                    vimeoPlayer.pause();
-                }
-            });
-
-            if(timeout !== 0) {
-                setTimeout(function(){
-                    $(selectors.modal).modal('show');
-                }, timeout * 1000);
-            }
-
-            $(document).on('close-all-modals-event',
-                function() {
-                    $(selectors.modal).modal('hide');
-                    if (typeof ytPlayer !== "undefined"){
-                        ytPlayer.pauseVideo();
-                    }
-                    if (typeof vimeoPlayer !== "undefined") {
-                        vimeoPlayer.pause();
-                    }
-                });
+   $(function () {
+
+            
+
+            var modalId = '-show-modal-cart';
+
+            var timeout = 0;
+
+
+
+            var selectors = {
+
+                modal: '.modal.unique' + modalId,
+
+                trigger: '.trigger-modal-' + modalId,
+
+                modalLinks: '.modal.unique' + modalId + ' a',
+
+                modalClose: '.modal.unique' + modalId + ' .callout-close'
+
+            };
+
+
+
+            $(selectors.trigger).on('click', function (e) {
+
+                e.preventDefault();
+
+                $(document).trigger('close-all-modals-event');
+
+                $(selectors.modal).modal('show');
+
+                
+
+            });
+
+
+
+            $(selectors.modalClose).on('click', function(e) {
+
+                e.preventDefault();
+
+                $(selectors.modal).modal('hide');
+
+                if (typeof ytPlayer !== "undefined") {
+
+                    ytPlayer.pauseVideo();
+
+                }
+
+                if (typeof vimeoPlayer !== "undefined") {
+
+                    vimeoPlayer.pause();
+
+                }
+
+            });
+
+
+
+            if(timeout !== 0) {
+
+                setTimeout(function(){
+
+                    $(selectors.modal).modal('show');
+
+                }, timeout * 1000);
+
+            }
+
+
+
+            $(document).on('close-all-modals-event',
+
+                function() {
+
+                    $(selectors.modal).modal('hide');
+
+                    if (typeof ytPlayer !== "undefined"){
+
+                        ytPlayer.pauseVideo();
+
+                    }
+
+                    if (typeof vimeoPlayer !== "undefined") {
+
+                        vimeoPlayer.pause();
+
+                    }
+
+                });
+
         });
   </script>
   <div class="pop-up-alerts">
