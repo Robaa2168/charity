@@ -9,8 +9,18 @@
     "routes": [
       {
         "src": "/(.*)",
-        "dest": "server.js"
+        "dest": "server.js",
+        "continue": true
       }
-    ]
+    ],
+    "rewrites": [
+      {
+        "source": "/(.*)",
+        "destination": "/server.js"
+      }
+    ],
+    "static": {
+      "public": "children"
+    }
   }
   
