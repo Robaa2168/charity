@@ -9,110 +9,64 @@
    Hacia el Empleo
   </title>
   <script>
-   window.dataLayer = window.dataLayer || [];
-
-    //GA4
-
-    var ga4EcommerceJson = JSON.parse("null");
-
-    if (ga4EcommerceJson != null) {
-
-     window.dataLayer.push({
-
-          event: "purchase",
-
-          ecommerce: {
-
-               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
-
-               'value': JSON.parse("0.0"),
-
-               'currency': 'USD',
-
-                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
-
-         });
-
+   window.dataLayer = window.dataLayer || [];
+    //GA4
+    var ga4EcommerceJson = JSON.parse("null");
+    if (ga4EcommerceJson != null) {
+     window.dataLayer.push({
+          event: "purchase",
+          ecommerce: {
+               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
+               'value': JSON.parse("0.0"),
+               'currency': 'USD',
+                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
+         });
+    }
+
+    dataLayer = window.dataLayer || [];
+    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
+    if (loggedInJson !== null) {
+        window.dataLayer.push(loggedInJson);
+    }
+
+    var ecommerceJson = JSON.parse("null");
+    if (ecommerceJson != null) {
+    dataLayer.push(ecommerceJson);
+    }
+
+    var freeInfoJson = JSON.parse("null");
+    if (freeInfoJson != null && freeInfoJson.length > 0) {
+    freeInfoJson.forEach(function (freeInfo) {
+        window.dataLayer.push(freeInfo);
+    });
+    }
+
+    var newSponsorshipsJson = JSON.parse("null");
+    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
+    newSponsorshipsJson.forEach(function (newSponsorship) {
+        window.dataLayer.push(newSponsorship);
+    });
     }
-
-
-
-    dataLayer = window.dataLayer || [];
-
-    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
-
-    if (loggedInJson !== null) {
-
-        window.dataLayer.push(loggedInJson);
-
-    }
-
-
-
-    var ecommerceJson = JSON.parse("null");
-
-    if (ecommerceJson != null) {
-
-    dataLayer.push(ecommerceJson);
-
-    }
-
-
-
-    var freeInfoJson = JSON.parse("null");
-
-    if (freeInfoJson != null && freeInfoJson.length > 0) {
-
-    freeInfoJson.forEach(function (freeInfo) {
-
-        window.dataLayer.push(freeInfo);
-
-    });
-
-    }
-
-
-charity-tau.vercel.app
-    var newSponsorshipsJson = JSON.parse("null");
-
-    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
-charity-tau.vercel.app
-    newSponsorshipsJson.focharity-tau.vercel.appnewSponsorship) {
-charity-tau.vercel.app
-        window.dataLayer.pcharity-tau.vercel.appip);
-charity-tau.vercel.app
-    });charity-tau.vercel.app
-charity-tau.vercel.app
-    }charity-tau.vercel.app
-  </script>charity-tau.vercel.app
-  <!-- RKD Pixel -->charity-tau.vercel.app
-  <script async defer src=charity-tau.vercel.appcharitable.one/clients/CI/scripts/dmc.js" type="text/javascript">
-  </script>charity-tau.vercel.app
-  <!-- END RKD Pixel -->charity-tau.vercel.app
-  <!-- Page hiding snippetcharity-tau.vercel.app-->
-  <style>charity-tau.vercel.app
-   .async-hide {charity-tau.vercel.app
-charity-tau.vercel.app
-        opacity: 0 !important
-
+  </script>
+  <!-- RKD Pixel -->
+  <script async defer src="https://public.charitable.one/clients/CI/scripts/dmc.js" type="text/javascript">
+  </script>
+  <!-- END RKD Pixel -->
+  <!-- Page hiding snippet (recommended)  -->
+  <style>
+   .async-hide {
+        opacity: 0 !important
     }
   </style>
   <!-- Google Tag Manager -->
   <script>
-   (function (w, d, s, l, i) {
-charity-tau.vercel.app
-            w[l] = w[l] || []; w[l].push({charity-tau.vercel.app
-charity-tau.vercel.app
-                'gtm.start':
-
-                    new Date().getTime(), event: 'gtm.js'
-
-            }); var f = d.getElementsByTagName(s)[0],
-
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-
+   (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-THPKNS');
   </script>
   <!-- End Google Tag Manager -->
@@ -435,10 +389,10 @@ charity-tau.vercel.app
            </a>
           </li>
           <li>
-           <a href="/es/aprender-mas/sala-de-prensa">charity-tau.vercel.app
+           <a href="/es/aprender-mas/sala-de-prensa">
             Sala de prensa
            </a>
-          </li>charity-tau.vercel.app
+          </li>
           <li>
            <a href="/es/historias/blog-de-reflexiones-de-liderazgo">
             Reflexiones de Liderazgo
@@ -1175,7 +1129,7 @@ h3.title {display: none;}
            <p style="text-align: center;">
             <img alt class="lazyload img-responsive" data-srcset="https://media.children.org/cdn-8db6b462d99e400/globalassets/08_into-employment/into-employment/2-coaching-alt.png 1200w, https://media.children.org/cdn-8db6b462d99e400/globalassets/08_into-employment/into-employment/2-coaching-alt.png/ScreenXS 480w" height="145" src="https://media.children.org/cdn-8db6b462d99e400/globalassets/08_into-employment/into-employment/2-coaching-alt.png/ScreenXS" width="145">
            </p>
-           <h5 class="text-uppercase color-blue purple" style="text-align: center; font-size: 1charity-tau.vercel.app
+           <h5 class="text-uppercase color-blue purple" style="text-align: center; font-size: 120%;">
             ORIENTACI&Oacute;N
            </h5>
           </div>
@@ -1197,7 +1151,7 @@ h3.title {display: none;}
            </p>
            <h5 class="text-uppercase color-blue purple" style="text-align: center; font-size: 120%;">
             ENTREVISTAS
-           </h5>charity-tau.vercel.app
+           </h5>
           </div>
          </div>
         </div>
@@ -1206,67 +1160,67 @@ h3.title {display: none;}
      </div>
     </div>
    </section>
-   <div class="column / column-full">charity-tau.vercel.app
+   <div class="column / column-full">
     <p>
      &nbsp;
-    </p>charity-tau.vercel.app
+    </p>
     <p>
      &nbsp;
-    </p>charity-tau.vercel.app
+    </p>
    </div>
    <section class="section / section-two-col-flex / bg-gray-light">
-    <div class="container">charity-tau.vercel.app
+    <div class="container">
      <div class="row">
       <div class="column-full">
-       <div class="row / section-two-col-flex / one-col-center bg-gray-ligcharity-tau.vercel.app
+       <div class="row / section-two-col-flex / one-col-center bg-gray-light">
         <div class="column-one" style="width:85%;">
          <div class="into-employment">
           <img alt="Hacia el Empleo y ODS 8" class="img-responsive" height="auto" src="https://www.children.org/globalassets/08_into-employment/unsdglogolockups-esp.webp" style="display: block; margin-left: auto; margin-right: auto; padding: 10px;" width="378">
           <h3 class="color-blue">
            Hacia el Empleo aborda el Objetivo de Desarrollo Sostenible 8 de la ONU
           </h3>
-         </div>charity-tau.vercel.app
+         </div>
          <p class="lightTxt blue">
           Los ODS de las Naciones Unidas son un llamamiento universal a la acci&oacute;n para poner fin a la pobreza, proteger el planeta y mejorar la vida y las perspectivas de todos, en todas partes. El Objetivo 8 procura promover el crecimiento econ&oacute;mico inclusivo y sostenible, el empleo pleno y productivo y el trabajo decente para todos.
-         </p>charity-tau.vercel.app
+         </p>
          <div class="text-module / content / clearfix / expand-context">
           <div class="wysiwyg">
-          </div>charity-tau.vercel.app
+          </div>
           <div class="pad10">
            <a class="btn / btn-text / btn-add" data-expand-toggle="on" href="#">
-            Leer m&aacute;scharity-tau.vercel.app
+            Leer m&aacute;s
            </a>
            <a class="btn / btn-text / btn-minus / hidden" data-expand-toggle="off" href="#">
-            Leer menoscharity-tau.vercel.app
+            Leer menos
            </a>
           </div>
           <div class="expand-expanded-text / hidden">
            <div class="wysiwyg pad20">
             <p>
              <img alt class="img-responsive" height="137" src="https://www.children.org/globalassets/08_into-employment/unsdglogolockups-02-esp.webp" style="display: block; margin-left: auto; margin-right: auto;" width="462">
-            </p>charity-tau.vercel.app
+            </p>
             <p class="lightTxt" style="text-align: center;">
              Children International aborda m&aacute;s de la mitad de los ODS.
-            </p>charity-tau.vercel.app
+            </p>
             <div class="column / column-full">
              <div class="hidden-xs clearfix" style="max-width: 1170px; margin: 0 auto;">
-              <div style="display: flex;">charity-tau.vercel.app
+              <div style="display: flex;">
                <div class="centered" style="width: 20%;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-01-esp.webp" style="max-height: 150px; float: left;" width="auto">
-               </div>charity-tau.vercel.app
+               </div>
                <div class="centered" style="width: 20%;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-02-esp.webp" style="max-height: 150px; float: left;" width="auto">
-               </div>charity-tau.vercel.app
+               </div>
                <div class="centered" style="width: 20%;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-03-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
                <div class="centered" style="width: 20%;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-04-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-               <div class="centered" style="width: 20%;">charity-tau.vercel.app
+               <div class="centered" style="width: 20%;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-05-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-              </div>charity-tau.vercel.app
+              </div>
              </div>
              <div class="hidden-xs clearfix" style="max-width: 1170px; margin: 0 auto;">
               <div style="display: flex;">
@@ -1276,65 +1230,65 @@ h3.title {display: none;}
                <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-07-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-               <div class="centered" style="width: 20%;">charity-tau.vercel.app
+               <div class="centered" style="width: 20%;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-08-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-               <div class="centered" style="width: 20%; opacity: 0.3; filtcharity-tau.vercel.appy=30);">
+               <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-09-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-               <div class="centered" style="width: 20%; opacity: 0.3; filtcharity-tau.vercel.appy=30);">
+               <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-10-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
               </div>
              </div>
-             <div class="hidden-xs clearfix" style="max-width: 1170px; marcharity-tau.vercel.app
+             <div class="hidden-xs clearfix" style="max-width: 1170px; margin: 0 auto;">
               <div style="display: flex;">
                <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
-                <img alt class="img-responsive" height="150" src="https://charity-tau.vercel.app/globalassets/08_into-employment/into-employment/s_sdg_icons-11-esp.webp" style="max-height: 150px; float: left;" width="auto">
+                <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-11-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
                <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
-                <img alt class="img-responsive" height="150" src="https://charity-tau.vercel.app/globalassets/08_into-employment/into-employment/s_sdg_icons-12-esp.webp" style="max-height: 150px; float: left;" width="auto">
+                <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-12-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
                <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-13-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-               <div class="centered" style="width: 20%; opacity: 0.3; filtcharity-tau.vercel.appy=30);">
+               <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-14-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-               <div class="centered" style="width: 20%; opacity: 0.3; filtcharity-tau.vercel.appy=30);">
+               <div class="centered" style="width: 20%; opacity: 0.3; filter: alpha(opacity=30);">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-15-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
-              </div>charity-tau.vercel.app
+              </div>
              </div>
              <div class="hidden-xs clearfix" style="max-width: 1170px; margin: 0 auto;">
               <div style="display: flex;">
                <div class="centered" style="width: 20%;">
-                <img alt class="img-responsive" height="150" src="https://charity-tau.vercel.app/globalassets/08_into-employment/into-employment/s_sdg_icons-16-esp.webp" style="max-height: 150px; float: left;" width="auto">
+                <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-16-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
                <div class="centered" style="width: 20%;">
-                <img alt class="img-responsive" height="150" src="https://charity-tau.vercel.app/globalassets/08_into-employment/into-employment/s_sdg_icons-17-esp.webp" style="max-height: 150px; float: left;" width="auto">
+                <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-17-esp.webp" style="max-height: 150px; float: left;" width="auto">
                </div>
               </div>
-             </div>charity-tau.vercel.app
+             </div>
              <div class="clearfix visible-xs" style="max-width: 1170px; margin: 0 auto;">
               <div class="pad10">
                &nbsp;
               </div>
-              <div class="row">charity-tau.vercel.app
+              <div class="row">
                <div class="col-xs-4 centered" style="padding: 2;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-01-esp.webp" style="max-height: 150px; float: left;" width="auto">
-               </div>charity-tau.vercel.app
+               </div>
                <div class="col-xs-4 centered" style="padding: 2;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-02-esp.webp" style="max-height: 150px;" width="auto">
-               </div>charity-tau.vercel.app
+               </div>
                <div class="col-xs-4 centered" style="padding: 2;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-03-esp.webp" style="max-height: 150px;" width="auto">
                </div>
               </div>
-              <div class="row">charity-tau.vercel.app
+              <div class="row">
                <div class="col-xs-4 centered" style="padding: 2;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-04-esp.webp" style="max-height: 150px;" width="auto">
-               </div>charity-tau.vercel.app
+               </div>
                <div class="col-xs-4 centered" style="padding: 2;">
                 <img alt class="img-responsive" height="150" src="https://www.children.org/globalassets/08_into-employment/into-employment/s_sdg_icons-05-esp.webp" style="max-height: 150px;" width="auto">
                </div>
@@ -1514,7 +1468,7 @@ h3.title {display: none;}
           <div class="column-one" style="width:50%;">
            <p>
             <img alt class="lazyload img-responsive" data-srcset="https://media.children.org/cdn-8dba975419af800/globalassets/08_into-employment/into-employment/71percent-esp.jpg 1200w, https://media.children.org/cdn-8dba975419af800/globalassets/08_into-employment/into-employment/71percent-esp.jpg/ScreenXS 480w" height="500" src="https://media.children.org/cdn-8dba975419af800/globalassets/08_into-employment/into-employment/71percent-esp.jpg/ScreenXS" width="600">
-           </p>charity-tau.vercel.app
+           </p>
            <div class="into-employment">
             <h3 class="into-employment; color-purple">
              El 71% de los participantes son mujeres j&oacute;venes.
@@ -1545,7 +1499,7 @@ h3.title {display: none;}
        <div class="row / section-two-col-flex / one-col-center">
         <div class="column-one" style="width:100%;">
          <p class="white" style="padding-bottom: 15px;">
-          .charity-tau.vercel.app
+          .
          </p>
         </div>
        </div>
@@ -1655,7 +1609,7 @@ h3.title {display: none;}
          </div>
         </div>
        </div>
-      </div>charity-tau.vercel.app
+      </div>
      </div>
     </div>
    </section>
@@ -1680,7 +1634,7 @@ h3.title {display: none;}
       <div class="column-full">
        <div class="row / section-two-col-flex">
         <div class="column-one" style="width:50%;">
-         <div style="width: 65%; margin-right: auto; margin-left: auto; padding: 22% 0%;">charity-tau.vercel.appcharity-tau.vercel.app
+         <div style="width: 65%; margin-right: auto; margin-left: auto; padding: 22% 0%;">
           <h5 class="text-uppercase color-purple">
            <span style="text-color: #901f61;">
             &Uacute;NASE A NOSOTROS
@@ -2916,7 +2870,7 @@ epieditmode=False" target="_blank">
            <a href="/es/aviso-legal">
             Aviso legal
            </a>
-          </li>charity-tau.vercel.app
+          </li>
           <li>
            Copyright &copy; 2024
           </li>
@@ -2980,660 +2934,333 @@ epieditmode=False" target="_blank">
   <!-- delayed-block: GDPRConsent -->
   <!-- delayed-block:  -->
   <script>
-   (function($) {
-
-
-
-                var selectors = {
-
-                    root: '#cart-review-block-4243f4dd0e9340788b37826fb9963dc0',
-
-                    spinner: '.spinner-wrapper',
-
-                    cartList: '.cart-content',
-
-                    cartListEmpty: '.cart-content-empty',
-
-                    cartItem: '.cart-detail',
-
-                    cartItemRemove: '.cart-item-remove',
-
-                    cartItemAmountInput: '.cart-item-amount-input',
-
-                    checkoutButton: '.cart-checkout',
-
-                    keepShopping: '.cart-keep-shopping',
-
-                    cartTotalAmount: '.cart-total-amount',
-
-                    cartModal: '[class*=modal modalBlock]',
-
-                    cartItemUpdate: '.cart-item-update',
-
-                    inputErrorMessage: '.input-error-message',
-
-                    btnPlus: '.qty-plus',
-
-                    btnMinus: '.qty-minus',
-
-                    serverErrorMessage: '.server-error-message'
-
-                };
-
-
-
-                var clean = function(value, removeCommas) {
-
-                    if (!value)
-
-                        return value;
-
-
-
-                    value = value.trim();
-
-                    if (value.startsWith('$')) {
-
-                        value = value.substring(1, value.length);
-
-                    }
-
-
-
-                    value = value
-
-                        .replace(/[^0-9.]/g, "")
-
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-
-
-                    if (removeCommas) {
-
-                        value = value.replace(/,/g, "");
-
-                    }
-
-
-
-                    return value;
-
-                };
-
-
-
-                $(function() {
-
-
-
-                    var cartItemCount = 0;
-
-                    var closeCartIfEmpty = true;
-
-
-
-                    var $cartItems;
-
-                    var $cartItemAmountInput;
-
-
-
-                    var $root = $(selectors.root);
-
-                    var $spinner = $root.find(selectors.spinner);
-
-                    var $cartList = $root.find(selectors.cartList);
-
-                    var $checkoutButton = $root.find(selectors.checkoutButton);
-
-                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
-
-                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
-
-                    var $cartModal = $root.closest(selectors.cartModal);
-
-
-
-                    var getCurrentCulture = function () {
-
-                        var paths = location.pathname.split('/');
-
-                        if (paths.length < 2) return '';
-
-                        return (paths[1] !== 'es') ? '' : 'es';
-
-                    }
-
-
-
-                    var closeModal = function () {
-
-                        if ($cartModal.length === 1
-
-                            && ($cartModal.hasClass('show')
-
-                                || $cartModal.hasClass('in'))) {
-
-                            $cartModal.modal('hide');
-
-                        }
-
-                    };
-
-
-
-                    var setCartItemElements = function () {
-
-                        $root = $(selectors.root);
-
-                        $cartItems = $root.find(selectors.cartItem);
-
-                        cartItemCount = $cartItems.length;
-
-                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
-
-                    }
-
-
-
-                    var checkIfCartIsEmpty = function () {
-
-                        $cartListEmpty.slideUp();
-
-                        $checkoutButton.prop("disabled", false);
-
-                        if (cartItemCount === 0) {
-
-                            $cartListEmpty.fadeIn();
-
-                            $checkoutButton.prop("disabled", true);
-
-                            if (closeCartIfEmpty) { closeModal(); }
-
-                        }
-
-                    }
-
-
-
-                    var setTotalForCart = function() {
-
-                        var total = 0;
-
-                        $cartItemAmountInput.each(function(index, input) {
-
-                            var $input = $(input);
-
-                            var inputAmount = Number(clean($input.val(), true));
-
-                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
-
-                            if (origAmount > 0)
-
-                                inputAmount = origAmount;
-
-                            total += inputAmount;                            
-
-                        });
-
-                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
-
-                        $cartTotalAmount.html(totalValue);
-
-                    }
-
-
-
-                    var updateNavCart = function() {
-
-                        if (window.Cart) {
-
-                            Cart.updateCartCount();
-
-                        }
-
-                    }
-
-
-
-                    var resetCartItemElements = function() {
-
-                        setCartItemElements();
-
-                        checkIfCartIsEmpty();
-
-                        setTotalForCart();
-
-                        updateNavCart();
-
-                    };
-
-
-
-                    var refreshCheckoutCart = function() {
-
-                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
-
-                    }
-
-
-
-                    var reloadCart = function() {
-
-                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
-
-                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
-
-
-
-                        $cartList.slideDown(function() {
-
-                            $spinner.fadeIn();
-
-
-
-                            $.ajax({
-
-                                url: ajaxUrl,
-
-                                type: 'POST',
-
-                                dataType: 'html'
-
-                            }).success(function(newHtml) {
-
-                                $cartList.html(newHtml);
-
-                                resetCartItemElements();
-
-                            }).done(function() {
-
-                                $spinner.fadeOut();
-
-                            });
-
-                        });
-
-                    };
-
-
-
-                    var isOnCheckoutPage = function(checkoutUrl) {
-
-                        if (!checkoutUrl) { return false; }
-
-                        var currentUrl = window.location.pathname;
-
-                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
-
-                    }
-
-
-
-                    $root.on('click',
-
-                        selectors.checkoutButton,
-
-                        function(e) {
-
-                            e.preventDefault();
-
-
-
-                            var $this = $(this);
-
-                            var url = $this.attr('href');
-
-
-
-                            if (!isOnCheckoutPage(url)) {
-
-                                window.location = url;
-
-                                return;
-
-                            }
-
-
-
-                            $(selectors.keepShopping).click();
-
-                        });
-
-
-
-
-
-                    $root.on('click',
-
-                        selectors.cartItemRemove,
-
-                        function(e) {
-
-                            e.preventDefault();
-
-
-
-                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
-
-                                    var removeUrl = "/Cart/Remove";
-
-                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
-
-                                    var itemId = $cartElement.data('item-id');
-
-
-
-                                    if (!itemId) {
-
-                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
-
-                                    }
-
-
-
-                                    if (itemId) {
-
-                                        $closestCartItem.fadeTo("fast",
-
-                                            .5,
-
-                                            function () {
-
-                                                $.ajax({
-
-                                                    url: removeUrl,
-
-                                                    type: 'POST',
-
-                                                    data: { id: itemId }
-
-                                                }).success(function() {
-
-                                                    $closestCartItem.remove();
-
-                                                    refreshCheckoutCart();
-
-                                                    resetCartItemElements();
-
-                                                }).fail(function() {
-
-                                                    $closestCartItem.fadeTo("fast",
-
-                                                        1,
-
-                                                        function() {
-
-                                                            resetCartItemElements();
-
-                                                        });
-
-                                                });
-
-                                            });
-
-                                    }
-
-                                },
-
-                                250
-
-                            );
-
-
-
-                            var $removeElement = $(e.target);
-
-                            removeItemFromCart($removeElement);
-
-                        });
-charity-tau.vercel.app
-
-
-                    $root.on('keyup blur',
-
-                        selectors.cartItemAmountInput,
-
-                        function (e) {                      
-
-                            var $amountInput = $(e.target);                                                  
-
-                            var cleanedAmount = clean($amountInput.val());                                                        
-
-                            var amount = Number(clean(cleanedAmount, true));                     
-
-                            var origValue = $(e.target).attr('data-orig-value');
-
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-
-                            
-
-                            var btnMinus = container.find(selectors.btnMinus);
-
-                            var btnUpdate = container.find(selectors.cartItemUpdate);
-
-                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
-
-                            //setTotalForCart();
-
-                            
-
-                            var minimum = $amountInput.data('minimum-amount');
-
-                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
-
-                            var keycode = (e.keyCode ? e.keyCode : e.which);
-
-
-
-                            if (!isNaN(minimum)) {
-
-                                if(e.type != 'keyup' || keycode == 13)
-
-                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
-
-                                if (amount <= minimum)
-
-                                    btnMinus.addClass('disabled');
-
-                                else
-
-                                    btnMinus.removeClass('disabled');
-
-                                if(!isNaN(origValue))
-
-                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
-
-                            }
-
-
-
-                            
-
-                            if (keycode == '13') {
-
-                                btnUpdate.trigger('click');
-
-                            }
-
-                    });
-
-
-
-                    $(document).on('refresh-cart-review-event',
-
-                        function() {
-
-                            reloadCart();
-
-                        });
-
-
-
-                    if ($cartModal.length === 1) {
-
-                        $cartModal.on('hide.bs.modal',
-
-                            function () {
-
-                                updateNavCart();
-
-                                refreshCheckoutCart();
-
-					        });
-
-                    }
-
-
-
-                    $root.on('click',
-
-                        selectors.btnPlus,
-
-                        function (e) {
-
-                            e.preventDefault();
-
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-
-                            var $closestInput = container.find('input');
-
-                            var amount = Number(clean($closestInput.val(), true));   
-
-                            $closestInput.val(amount + 1).trigger('blur');
-
-                        });
-
-
-
-                    $root.on('click',
-
-                        selectors.btnMinus,
-
-                        function (e) {
-
-                            e.preventDefault();
-
-                            if ($(this).hasClass('disabled'))
-
-                                return;
-
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-
-                            var $closestInput = container.find('input');
-
-                            var amount = Number(clean($closestInput.val(), true));
-
-                            if(amount>0)
-
-                                $closestInput.val(amount -1).trigger('blur');
-
-                        });
-
-
-
-                    $root.on('click',
-
-                        selectors.cartItemUpdate,
-
-                        function(e) {
-
-                            e.preventDefault();                            
-
-                           
-
-                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
-
-                                var container = $cartElement.parents('.cart-item-container').eq(0);
-
-                                var updateUrl = "/Cart/Update";
-
-                                var itemId = $cartElement.data('item-id');
-
-                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
-
-                                var $closestInput = container.find('input');
-
-                                var value = Number(clean($closestInput.val(),true));                                
-
-                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
-
-                                var amountSpan = container.find('.cart-item-amount');
-
-                                var serverErrorMessage = container.find('.server-error-message');
-
-                                inputErrorMessage.hide();
-
-                                serverErrorMessage.html('').hide();
-
-                           
-
-                                if (itemId) {
-
-                                    if (value < minimumAmount) {                                        
-
-                                        inputErrorMessage.show();
-
-                                        return;
-
-                                    }
-
-
-
-                                    $.ajax({
-
-                                        url: updateUrl,
-
-                                        type: 'POST',
-
-                                        data: { id: itemId, value: value }
-
-                                    }).success(function (response) {
-
-                                        if (response.success) {
-
-                                            refreshCheckoutCart();
-
-                                            resetCartItemElements();
-
-                                            amountSpan.html($closestInput.val());
-
-                                            $closestInput.attr('data-orig-value', value).trigger('blur');
-
-                                            setTotalForCart();
-
-                                        }
-
-                                        else {
-
-                                            serverErrorMessage.html(response.message).show();
-
-                                        }
-
-                                            
-
-                                    }).fail(function () {
-
-
-
-                                    });
-
-                                }
-
-                            });   
-
-                            var $updateElement = $(e.target);
-
-                            updateCartItem($updateElement);
-
-                        });
-
-                    
-
-                    resetCartItemElements();                                        
-
-                });
-
+   (function($) {
+
+                var selectors = {
+                    root: '#cart-review-block-4243f4dd0e9340788b37826fb9963dc0',
+                    spinner: '.spinner-wrapper',
+                    cartList: '.cart-content',
+                    cartListEmpty: '.cart-content-empty',
+                    cartItem: '.cart-detail',
+                    cartItemRemove: '.cart-item-remove',
+                    cartItemAmountInput: '.cart-item-amount-input',
+                    checkoutButton: '.cart-checkout',
+                    keepShopping: '.cart-keep-shopping',
+                    cartTotalAmount: '.cart-total-amount',
+                    cartModal: '[class*=modal modalBlock]',
+                    cartItemUpdate: '.cart-item-update',
+                    inputErrorMessage: '.input-error-message',
+                    btnPlus: '.qty-plus',
+                    btnMinus: '.qty-minus',
+                    serverErrorMessage: '.server-error-message'
+                };
+
+                var clean = function(value, removeCommas) {
+                    if (!value)
+                        return value;
+
+                    value = value.trim();
+                    if (value.startsWith('$')) {
+                        value = value.substring(1, value.length);
+                    }
+
+                    value = value
+                        .replace(/[^0-9.]/g, "")
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+                    if (removeCommas) {
+                        value = value.replace(/,/g, "");
+                    }
+
+                    return value;
+                };
+
+                $(function() {
+
+                    var cartItemCount = 0;
+                    var closeCartIfEmpty = true;
+
+                    var $cartItems;
+                    var $cartItemAmountInput;
+
+                    var $root = $(selectors.root);
+                    var $spinner = $root.find(selectors.spinner);
+                    var $cartList = $root.find(selectors.cartList);
+                    var $checkoutButton = $root.find(selectors.checkoutButton);
+                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
+                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
+                    var $cartModal = $root.closest(selectors.cartModal);
+
+                    var getCurrentCulture = function () {
+                        var paths = location.pathname.split('/');
+                        if (paths.length < 2) return '';
+                        return (paths[1] !== 'es') ? '' : 'es';
+                    }
+
+                    var closeModal = function () {
+                        if ($cartModal.length === 1
+                            && ($cartModal.hasClass('show')
+                                || $cartModal.hasClass('in'))) {
+                            $cartModal.modal('hide');
+                        }
+                    };
+
+                    var setCartItemElements = function () {
+                        $root = $(selectors.root);
+                        $cartItems = $root.find(selectors.cartItem);
+                        cartItemCount = $cartItems.length;
+                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
+                    }
+
+                    var checkIfCartIsEmpty = function () {
+                        $cartListEmpty.slideUp();
+                        $checkoutButton.prop("disabled", false);
+                        if (cartItemCount === 0) {
+                            $cartListEmpty.fadeIn();
+                            $checkoutButton.prop("disabled", true);
+                            if (closeCartIfEmpty) { closeModal(); }
+                        }
+                    }
+
+                    var setTotalForCart = function() {
+                        var total = 0;
+                        $cartItemAmountInput.each(function(index, input) {
+                            var $input = $(input);
+                            var inputAmount = Number(clean($input.val(), true));
+                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
+                            if (origAmount > 0)
+                                inputAmount = origAmount;
+                            total += inputAmount;                            
+                        });
+                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
+                        $cartTotalAmount.html(totalValue);
+                    }
+
+                    var updateNavCart = function() {
+                        if (window.Cart) {
+                            Cart.updateCartCount();
+                        }
+                    }
+
+                    var resetCartItemElements = function() {
+                        setCartItemElements();
+                        checkIfCartIsEmpty();
+                        setTotalForCart();
+                        updateNavCart();
+                    };
+
+                    var refreshCheckoutCart = function() {
+                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
+                    }
+
+                    var reloadCart = function() {
+                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
+                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
+
+                        $cartList.slideDown(function() {
+                            $spinner.fadeIn();
+
+                            $.ajax({
+                                url: ajaxUrl,
+                                type: 'POST',
+                                dataType: 'html'
+                            }).success(function(newHtml) {
+                                $cartList.html(newHtml);
+                                resetCartItemElements();
+                            }).done(function() {
+                                $spinner.fadeOut();
+                            });
+                        });
+                    };
+
+                    var isOnCheckoutPage = function(checkoutUrl) {
+                        if (!checkoutUrl) { return false; }
+                        var currentUrl = window.location.pathname;
+                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
+                    }
+
+                    $root.on('click',
+                        selectors.checkoutButton,
+                        function(e) {
+                            e.preventDefault();
+
+                            var $this = $(this);
+                            var url = $this.attr('href');
+
+                            if (!isOnCheckoutPage(url)) {
+                                window.location = url;
+                                return;
+                            }
+
+                            $(selectors.keepShopping).click();
+                        });
+
+
+                    $root.on('click',
+                        selectors.cartItemRemove,
+                        function(e) {
+                            e.preventDefault();
+
+                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
+                                    var removeUrl = "/Cart/Remove";
+                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
+                                    var itemId = $cartElement.data('item-id');
+
+                                    if (!itemId) {
+                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
+                                    }
+
+                                    if (itemId) {
+                                        $closestCartItem.fadeTo("fast",
+                                            .5,
+                                            function () {
+                                                $.ajax({
+                                                    url: removeUrl,
+                                                    type: 'POST',
+                                                    data: { id: itemId }
+                                                }).success(function() {
+                                                    $closestCartItem.remove();
+                                                    refreshCheckoutCart();
+                                                    resetCartItemElements();
+                                                }).fail(function() {
+                                                    $closestCartItem.fadeTo("fast",
+                                                        1,
+                                                        function() {
+                                                            resetCartItemElements();
+                                                        });
+                                                });
+                                            });
+                                    }
+                                },
+                                250
+                            );
+
+                            var $removeElement = $(e.target);
+                            removeItemFromCart($removeElement);
+                        });
+
+                    $root.on('keyup blur',
+                        selectors.cartItemAmountInput,
+                        function (e) {                      
+                            var $amountInput = $(e.target);                                                  
+                            var cleanedAmount = clean($amountInput.val());                                                        
+                            var amount = Number(clean(cleanedAmount, true));                     
+                            var origValue = $(e.target).attr('data-orig-value');
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+                            
+                            var btnMinus = container.find(selectors.btnMinus);
+                            var btnUpdate = container.find(selectors.cartItemUpdate);
+                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
+                            //setTotalForCart();
+                            
+                            var minimum = $amountInput.data('minimum-amount');
+                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
+                            var keycode = (e.keyCode ? e.keyCode : e.which);
+
+                            if (!isNaN(minimum)) {
+                                if(e.type != 'keyup' || keycode == 13)
+                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
+                                if (amount <= minimum)
+                                    btnMinus.addClass('disabled');
+                                else
+                                    btnMinus.removeClass('disabled');
+                                if(!isNaN(origValue))
+                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
+                            }
+
+                            
+                            if (keycode == '13') {
+                                btnUpdate.trigger('click');
+                            }
+                    });
+
+                    $(document).on('refresh-cart-review-event',
+                        function() {
+                            reloadCart();
+                        });
+
+                    if ($cartModal.length === 1) {
+                        $cartModal.on('hide.bs.modal',
+                            function () {
+                                updateNavCart();
+                                refreshCheckoutCart();
+					        });
+                    }
+
+                    $root.on('click',
+                        selectors.btnPlus,
+                        function (e) {
+                            e.preventDefault();
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+                            var $closestInput = container.find('input');
+                            var amount = Number(clean($closestInput.val(), true));   
+                            $closestInput.val(amount + 1).trigger('blur');
+                        });
+
+                    $root.on('click',
+                        selectors.btnMinus,
+                        function (e) {
+                            e.preventDefault();
+                            if ($(this).hasClass('disabled'))
+                                return;
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+                            var $closestInput = container.find('input');
+                            var amount = Number(clean($closestInput.val(), true));
+                            if(amount>0)
+                                $closestInput.val(amount -1).trigger('blur');
+                        });
+
+                    $root.on('click',
+                        selectors.cartItemUpdate,
+                        function(e) {
+                            e.preventDefault();                            
+                           
+                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
+                                var container = $cartElement.parents('.cart-item-container').eq(0);
+                                var updateUrl = "/Cart/Update";
+                                var itemId = $cartElement.data('item-id');
+                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
+                                var $closestInput = container.find('input');
+                                var value = Number(clean($closestInput.val(),true));                                
+                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
+                                var amountSpan = container.find('.cart-item-amount');
+                                var serverErrorMessage = container.find('.server-error-message');
+                                inputErrorMessage.hide();
+                                serverErrorMessage.html('').hide();
+                           
+                                if (itemId) {
+                                    if (value < minimumAmount) {                                        
+                                        inputErrorMessage.show();
+                                        return;
+                                    }
+
+                                    $.ajax({
+                                        url: updateUrl,
+                                        type: 'POST',
+                                        data: { id: itemId, value: value }
+                                    }).success(function (response) {
+                                        if (response.success) {
+                                            refreshCheckoutCart();
+                                            resetCartItemElements();
+                                            amountSpan.html($closestInput.val());
+                                            $closestInput.attr('data-orig-value', value).trigger('blur');
+                                            setTotalForCart();
+                                        }
+                                        else {
+                                            serverErrorMessage.html(response.message).show();
+                                        }
+                                            
+                                    }).fail(function () {
+
+                                    });
+                                }
+                            });   
+                            var $updateElement = $(e.target);
+                            updateCartItem($updateElement);
+                        });
+                    
+                    resetCartItemElements();                                        
+                });
             })(jQuery);
   </script>
   <div class="modal modalBlock slide-modal unique-show-modal-cart" role="dialog" tabindex="-1">
@@ -3710,98 +3337,52 @@ charity-tau.vercel.app
    </div>
   </div>
   <script>
-   $(function () {
-
-            
-
-            var modalId = '-show-modal-cart';
-
-            var timeout = 0;
-
-
-
-            var selectors = {
-
-                modal: '.modal.unique' + modalId,
-
-                trigger: '.trigger-modal-' + modalId,
-
-                modalLinks: '.modal.unique' + modalId + ' a',
-
-                modalClose: '.modal.unique' + modalId + ' .callout-close'
-
-            };
-
-
-
-            $(selectors.trigger).on('click', function (e) {
-
-                e.preventDefault();
-
-                $(document).trigger('close-all-modals-event');
-
-                $(selectors.modal).modal('show');
-
-                
-
-            });
-
-
-
-            $(selectors.modalClose).on('click', function(e) {
-
-                e.preventDefault();
-
-                $(selectors.modal).modal('hide');
-
-                if (typeof ytPlayer !== "undefined") {
-
-                    ytPlayer.pauseVideo();
-
-                }
-
-                if (typeof vimeoPlayer !== "undefined") {
-
-                    vimeoPlayer.pause();
-
-                }
-
-            });
-
-
-
-            if(timeout !== 0) {
-
-                setTimeout(function(){
-
-                    $(selectors.modal).modal('show');
-
-                }, timeout * 1000);
-
-            }
-
-
-
-            $(document).on('close-all-modals-event',
-
-                function() {
-
-                    $(selectors.modal).modal('hide');
-
-                    if (typeof ytPlayer !== "undefined"){
-
-                        ytPlayer.pauseVideo();
-
-                    }
-
-                    if (typeof vimeoPlayer !== "undefined") {
-
-                        vimeoPlayer.pause();
-
-                    }
-
-                });
-
+   $(function () {
+            
+            var modalId = '-show-modal-cart';
+            var timeout = 0;
+
+            var selectors = {
+                modal: '.modal.unique' + modalId,
+                trigger: '.trigger-modal-' + modalId,
+                modalLinks: '.modal.unique' + modalId + ' a',
+                modalClose: '.modal.unique' + modalId + ' .callout-close'
+            };
+
+            $(selectors.trigger).on('click', function (e) {
+                e.preventDefault();
+                $(document).trigger('close-all-modals-event');
+                $(selectors.modal).modal('show');
+                
+            });
+
+            $(selectors.modalClose).on('click', function(e) {
+                e.preventDefault();
+                $(selectors.modal).modal('hide');
+                if (typeof ytPlayer !== "undefined") {
+                    ytPlayer.pauseVideo();
+                }
+                if (typeof vimeoPlayer !== "undefined") {
+                    vimeoPlayer.pause();
+                }
+            });
+
+            if(timeout !== 0) {
+                setTimeout(function(){
+                    $(selectors.modal).modal('show');
+                }, timeout * 1000);
+            }
+
+            $(document).on('close-all-modals-event',
+                function() {
+                    $(selectors.modal).modal('hide');
+                    if (typeof ytPlayer !== "undefined"){
+                        ytPlayer.pauseVideo();
+                    }
+                    if (typeof vimeoPlayer !== "undefined") {
+                        vimeoPlayer.pause();
+                    }
+                });
         });
   </script>
   <div class="pop-up-alerts">

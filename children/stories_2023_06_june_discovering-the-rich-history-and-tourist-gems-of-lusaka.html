@@ -9,110 +9,64 @@
    Discovering the rich history &amp; tourist gems of Lusaka | Children International | Global Children&rsquo;s Charity
   </title>
   <script>
-   window.dataLayer = window.dataLayer || [];
-
-    //GA4
-
-    var ga4EcommerceJson = JSON.parse("null");
-
-    if (ga4EcommerceJson != null) {
-
-     window.dataLayer.push({
-
-          event: "purchase",
-
-          ecommerce: {
-
-               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
-
-               'value': JSON.parse("0.0"),
-
-               'currency': 'USD',
-
-                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
-
-         });
-
+   window.dataLayer = window.dataLayer || [];
+    //GA4
+    var ga4EcommerceJson = JSON.parse("null");
+    if (ga4EcommerceJson != null) {
+     window.dataLayer.push({
+          event: "purchase",
+          ecommerce: {
+               'transaction_id': JSON.parse("\"00000000-0000-0000-0000-000000000000\""),
+               'value': JSON.parse("0.0"),
+               'currency': 'USD',
+                'items': ga4EcommerceJson.transactionProducts.map(item => ({ item_id: item.itemId, item_name: item.itemName, item_category: item.itemCategory, price: item.price}))          }
+         });
+    }
+
+    dataLayer = window.dataLayer || [];
+    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
+    if (loggedInJson !== null) {
+        window.dataLayer.push(loggedInJson);
+    }
+
+    var ecommerceJson = JSON.parse("null");
+    if (ecommerceJson != null) {
+    dataLayer.push(ecommerceJson);
+    }
+
+    var freeInfoJson = JSON.parse("null");
+    if (freeInfoJson != null && freeInfoJson.length > 0) {
+    freeInfoJson.forEach(function (freeInfo) {
+        window.dataLayer.push(freeInfo);
+    });
+    }
+
+    var newSponsorshipsJson = JSON.parse("null");
+    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
+    newSponsorshipsJson.forEach(function (newSponsorship) {
+        window.dataLayer.push(newSponsorship);
+    });
     }
-
-
-
-    dataLayer = window.dataLayer || [];
-
-    var loggedInJson = JSON.parse("{\"userID\":null,\"loggedIn\":false}");
-
-    if (loggedInJson !== null) {
-
-        window.dataLayer.push(loggedInJson);
-
+  </script>
+  <!-- RKD Pixel -->
+  <script async defer src="https://public.charitable.one/clients/CI/scripts/dmc.js" type="text/javascript">
+  </script>
+  <!-- END RKD Pixel -->
+  <!-- Page hiding snippet (recommended)  -->
+  <style>
+   .async-hide {
+        opacity: 0 !important
     }
-
-
-
-    var ecommerceJson = JSON.parse("null");
-
-    if (ecommerceJson != null) {
-
-    dataLayer.push(ecommerceJson);
-
-    }
-
-
-
-    var freeInfoJson = JSON.parse("null");
-
-    if (freeInfoJson != null && freeInfoJson.length > 0) {
-
-    freeInfoJson.forEach(function (freeInfo) {
-
-        window.dataLayer.push(freeInfo);
-
-    });
-
-    }
-
-
-
-    var newSponsorshipsJson charity-tau.vercel.appll");
-
-    if (newSponsorshipsJson != null && newSponsorshipsJson.length > 0) {
-
-    newSponsorshipsJson.forEach(function (newSponsorship) {
-charity-tau.vercel.app
-        window.dataLayer.push(newSponsorship);
-
-    });
-charity-tau.vercel.app
-    }charity-tau.vercel.app
-  </script>charity-tau.vercel.app
-  <!-- RKD Pixel -->charity-tau.vercel.app
-  <script async defer src=charity-tau.vercel.appcharitable.one/clients/CI/scripts/dmc.js" type="text/javascript">
-  </script>charity-tau.vercel.app
-  <!-- END RKD Pixel -->charity-tau.vercel.app
-  <!-- Page hiding snippetcharity-tau.vercel.app-->
-  <style>charity-tau.vercel.app
-   .async-hide {charity-tau.vercel.app
-charity-tau.vercel.app
-        opacity: 0 !importcharity-tau.vercel.app
-charity-tau.vercel.app
-    }charity-tau.vercel.app
-  </style>charity-tau.vercel.app
-  <!-- Google Tag Manager charity-tau.vercel.app
+  </style>
+  <!-- Google Tag Manager -->
   <script>
-   (function (w, d, s, l, i) {
-
-            w[l] = w[l] || []; w[l].push({
-
-                'gtm.start':
-
-                    new Date().gecharity-tau.vercel.app'gtm.js'
-charity-tau.vercel.app
-            }); var f = d.getElemcharity-tau.vercel.app[0],
-
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-
+   (function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-THPKNS');
   </script>
   <!-- End Google Tag Manager -->
@@ -441,10 +395,10 @@ charity-tau.vercel.app
            </a>
           </li>
           <li>
-           <a href="/learn-more/newsroom">charity-tau.vercel.app
+           <a href="/learn-more/newsroom">
             Newsroom &amp; Media Kit
            </a>
-          </li>charity-tau.vercel.app
+          </li>
           <li>
            <a href="/stories/leadership-insights-blog">
             Leadership Insights
@@ -869,7 +823,7 @@ charity-tau.vercel.app
          <a href="/stories">
           Stories &amp; videos
          </a>
-        </li>charity-tau.vercel.app
+        </li>
         <li>
          Discovering the rich history and tourist gems of Lusaka
         </li>
@@ -914,7 +868,7 @@ charity-tau.vercel.app
              <li class="post-meta">
               <span class="byline">
                by
-              </span>charity-tau.vercel.appcharity-tau.vercel.app
+              </span>
               <a href="https://www.children.org/stories/ci-storytellers/caren-mwelwa">
                <span class="author">
                 Caren M.
@@ -1226,7 +1180,7 @@ padding: 40px 30px;
             <p class="pad30">
              These are just a few of the many interesting tourism sites that Lusaka has to offer. Whether you&rsquo;re interested in history, nature or culture, there&rsquo;s something for everyone in this vibrant city.
             </p>
-            <p>charity-tau.vercel.app
+            <p>
              After my discoveries, I have developed a deeper appreciation for Lusaka&rsquo;s history and culture, and I couldn&rsquo;t help but feel grateful for the opportunity to learn more about this amazing city.
             </p>
             <p>
@@ -1271,7 +1225,7 @@ padding: 40px 30px;
            <li class="post-meta">
             <span class="byline">
              by
-            </span>charity-tau.vercel.appcharity-tau.vercel.app
+            </span>
             <a href="https://www.children.org/stories/ci-storytellers/caren-mwelwa">
              <span class="author">
               Caren M.
@@ -1430,7 +1384,7 @@ padding: 40px 30px;
          </a>
          <div class="comment-content">
           <h5 class="comment-author">
-           BMcKennacharity-tau.vercel.app
+           BMcKenna
           </h5>
           <h6 class="comment-date">
            Oct 17, 2023
@@ -1450,7 +1404,7 @@ padding: 40px 30px;
           <h6 class="comment-date">
            Oct 17, 2023
           </h6>
-          <p>charity-tau.vercel.app
+          <p>
            This was fascinating!  Thank you for sharing this!
           </p>
          </div>
@@ -1471,83 +1425,46 @@ padding: 40px 30px;
     </div>
    </section>
    <script type="application/ld+json">
-    {
-
-        "@context": "http://schema.org",
-
-        "@type": "NewsArticle",
-
-        "mainEntityOfPage":{
-
-            "@type":"WebPage",charity-tau.vercel.appcharity-tau.vercel.app
-
-            "@id":"https://www.children.org/stories/2023/06_june/discovering-the-rich-history-and-tourist-gems-of-lusaka"
-
-        },
-
-        "headline": "Discovering the rich history and tourist gems of&#160;Lusaka",
-
-        "image": {
-
-            "@type": "ImageObject",
-
-            "url": "https://media.children.org/cdn-8db5ad1acfd4000/globalassets/03_stories/2023/06_june/lusaka-overview-1.jpg",
-
-            "height": 800,
-
-            "width": 1300
-
-        },
-
-        "datePublished": "2023-05-22T14:34:35.0000000-05:00",
-
-        "dateModified": "2023-05-22T14:34:35.0000000-05:00",
-
-        "author": {
-
-            "@type": "Person",
-
-            "name": "Caren Mwelwa"
-
-        },
-
-        "publisher": {
-
-            "@type": "Organization",
-
-            "name": "Children International",
-
-            "logo": {
-
-                "@type": "ImageObject",
-
-                "url": "https://www.children.org/ci-frontend/dist/images/logo.jpg",
-
-                "width": 600,
-
-                "height": 60
-
-            }
-
-        },
-
-        "description": "Discovering the rich history and tourist gems of&#160;Lusaka"
-
+    {
+        "@context": "http://schema.org",
+        "@type": "NewsArticle",
+        "mainEntityOfPage":{
+            "@type":"WebPage",
+            "@id":"https://www.children.org/stories/2023/06_june/discovering-the-rich-history-and-tourist-gems-of-lusaka"
+        },
+        "headline": "Discovering the rich history and tourist gems of&#160;Lusaka",
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://media.children.org/cdn-8db5ad1acfd4000/globalassets/03_stories/2023/06_june/lusaka-overview-1.jpg",
+            "height": 800,
+            "width": 1300
+        },
+        "datePublished": "2023-05-22T14:34:35.0000000-05:00",
+        "dateModified": "2023-05-22T14:34:35.0000000-05:00",
+        "author": {
+            "@type": "Person",
+            "name": "Caren Mwelwa"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "Children International",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://www.children.org/ci-frontend/dist/images/logo.jpg",
+                "width": 600,
+                "height": 60
+            }
+        },
+        "description": "Discovering the rich history and tourist gems of&#160;Lusaka"
     }
    </script>
    <script type="text/javascript">
-    document.addEventListener("DOMContentLoaded", function (event) {
-
-  
-
-        $('.commentReplyForm').on('submit', function(){
-
-            $('.btnCommentSubmit').attr('disabled',true);
-
-            return true;
-
-        });
-
+    document.addEventListener("DOMContentLoaded", function (event) {
+  
+        $('.commentReplyForm').on('submit', function(){
+            $('.btnCommentSubmit').attr('disabled',true);
+            return true;
+        });
     });
    </script>
    <div class="scroll-top-wrapper">
@@ -2804,7 +2721,7 @@ padding: 40px 30px;
      </div>
     </div>
    </div>
-   <section class="bg-gcharity-tau.vercel.app
+   <section class="bg-green-dark">
     <div class="container">
      <div class="row">
       <div class="column-full">
@@ -2905,660 +2822,333 @@ padding: 40px 30px;
   <!-- delayed-block: GDPRConsent -->
   <!-- delayed-block:  -->
   <script>
-   (function($) {
-
-
-
-                var selectors = {
-
-                    root: '#cart-review-block-3a55777117274b5bada76869cbe319dc',
-
-                    spinner: '.spinner-wrapper',
-
-                    cartList: '.cart-content',
-
-                    cartListEmpty: '.cart-content-empty',
-
-                    cartItem: '.cart-detail',
-
-                    cartItemRemove: '.cart-item-remove',
-
-                    cartItemAmountInput: '.cart-item-amount-input',
-
-                    checkoutButton: '.cart-checkout',
-
-                    keepShopping: '.cart-keep-shopping',
-
-                    cartTotalAmount: '.cart-total-amount',
-
-                    cartModal: '[class*=modal modalBlock]',
-
-                    cartItemUpdate: '.cart-item-update',
-
-                    inputErrorMessage: '.input-error-message',
-
-                    btnPlus: '.qty-plus',
-
-                    btnMinus: '.qty-minus',
-
-                    serverErrorMessage: '.server-error-message'
-
-                };
-
-
-
-                var clean = function(value, removeCommas) {
-
-                    if (!value)
-
-                        return value;
-
-
-
-                    value = value.trim();
-
-                    if (value.startsWith('$')) {
-
-                        value = value.substring(1, value.length);
-
-                    }
-
-
-
-                    value = value
-
-                        .replace(/[^0-9.]/g, "")
-
-                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-
-
-
-                    if (removeCommas) {
-
-                        value = value.replace(/,/g, "");
-
-                    }
-
-
-
-                    return value;
-
-                };
-
-
-
-                $(function() {
-
-
-
-                    var cartItemCount = 0;
-
-                    var closeCartIfEmpty = true;
-
-
-
-                    var $cartItems;
-
-                    var $cartItemAmountInput;
-
-
-
-                    var $root = $(selectors.root);
-
-                    var $spinner = $root.find(selectors.spinner);
-
-                    var $cartList = $root.find(selectors.cartList);
-
-                    var $checkoutButton = $root.find(selectors.checkoutButton);
-
-                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
-
-                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
-
-                    var $cartModal = $root.closest(selectors.cartModal);
-
-
-
-                    var getCurrentCulture = function () {
-
-                        var paths = location.pathname.split('/');
-
-                        if (paths.length < 2) return '';
-
-                        return (paths[1] !== 'es') ? '' : 'es';
-
-                    }
-
-
-
-                    var closeModal = function () {
-
-                        if ($cartModal.length === 1
-
-                            && ($cartModal.hasClass('show')
-
-                                || $cartModal.hasClass('in'))) {
-
-                            $cartModal.modal('hide');
-
-                        }
-
-                    };
-
-
-
-                    var setCartItemElements = function () {
-
-                        $root = $(selectors.root);
-
-                        $cartItems = $root.find(selectors.cartItem);
-
-                        cartItemCount = $cartItems.length;
-
-                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
-
-                    }
-
-
-
-                    var checkIfCartIsEmpty = function () {
-
-                        $cartListEmpty.slideUp();
-
-                        $checkoutButton.prop("disabled", false);
-
-                        if (cartItemCount === 0) {
-
-                            $cartListEmpty.fadeIn();
-
-                            $checkoutButton.prop("disabled", true);
-
-                            if (closeCartIfEmpty) { closeModal(); }
-
-                        }
-
-                    }
-
-
-
-                    var setTotalForCart = function() {
-
-                        var total = 0;
-
-                        $cartItemAmountInput.each(function(index, input) {
-
-                            var $input = $(input);
-
-                            var inputAmount = Number(clean($input.val(), true));
-
-                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
-
-                            if (origAmount > 0)
-
-                                inputAmount = origAmount;
-
-                            total += inputAmount;                            
-
-                        });
-
-                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
-
-                        $cartTotalAmount.html(totalValue);
-
-                    }
-
-
-
-                    var updateNavCart = function() {
-
-                        if (window.Cart) {
-
-                            Cart.updateCartCount();
-
-                        }
-
-                    }
-
-
-
-                    var resetCartItemElements = function() {
-
-                        setCartItemElements();
-
-                        checkIfCartIsEmpty();
-
-                        setTotalForCart();
-
-                        updateNavCart();
-
-                    };
-
-
-
-                    var refreshCheckoutCart = function() {
-
-                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
-
-                    }
-
-
-
-                    var reloadCart = function() {
-
-                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
-
-                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
-
-
-
-                        $cartList.slideDown(function() {
-
-                            $spinner.fadeIn();
-
-
-
-                            $.ajax({
-
-                                url: ajaxUrl,
-
-                                type: 'POST',
-
-                                dataType: 'html'
-
-                            }).success(function(newHtml) {
-
-                                $cartList.html(newHtml);
-
-                                resetCartItemElements();
-
-                            }).done(function() {
-
-                                $spinner.fadeOut();
-
-                            });
-
-                        });
-
-                    };
-
-
-
-                    var isOnCheckoutPage = function(checkoutUrl) {
-
-                        if (!checkoutUrl) { return false; }
-
-                        var currentUrl = window.location.pathname;
-
-                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
-
-                    }
-
-
-
-                    $root.on('click',
-
-                        selectors.checkoutButton,
-
-                        function(e) {
-
-                            e.preventDefault();
-
-
-
-                            var $this = $(this);
-
-                            var url = $this.attr('href');
-
-
-
-                            if (!isOnCheckoutPage(url)) {
-
-                                window.location = url;
-
-                                return;
-
-                            }
-
-
-
-                            $(selectors.keepShopping).click();
-
-                        });
-
-
-
-
-
-                    $root.on('click',
-
-                        selectors.cartItemRemove,
-
-                        function(e) {
-
-                            e.preventDefault();
-
-
-
-                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
-
-                                    var removeUrl = "/Cart/Remove";
-
-                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
-
-                                    var itemId = $cartElement.data('item-id');
-
-
-
-                                    if (!itemId) {
-
-                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
-
-                                    }
-
-
-
-                                    if (itemId) {
-
-                                        $closestCartItem.fadeTo("fast",
-
-                                            .5,
-
-                                            function () {
-
-                                                $.ajax({
-
-                                                    url: removeUrl,
-
-                                                    type: 'POST',
-
-                                                    data: { id: itemId }
-
-                                                }).success(function() {
-
-                            charity-tau.vercel.app        $closestCartItem.remove();
-
-                                                    refreshCheckoutCart();
-
-                                                    resetCartItemElements();
-
-                                                }).fail(function() {
-
-                                                    $closestCartItem.fadeTo("fast",
-
-                                                        1,
-
-                                                        function() {
-
-                                                            resetCartItemElements();
-
-                                                        });
-
-                                                });
-
-                                            });
-
-                                    }
-
-                                },
-
-                                250
-
-                            );
-
-
-
-                            var $removeElement = $(e.target);
-
-                            removeItemFromCart($removeElement);
-
-                        });
-
-
-
-                    $root.on('keyup blur',
-
-                        selectors.cartItemAmountInput,
-
-                        function (e) {                      
-
-                            var $amountInput = $(e.target);                                                  
-
-                            var cleanedAmount = clean($amountInput.val());                                                        
-
-                            var amount = Number(clean(cleanedAmount, true));                     
-
-                            var origValue = $(e.target).attr('data-orig-value');
-
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-
-                            
-
-                            var btnMinus = container.find(selectors.btnMinus);
-
-                            var btnUpdate = container.find(selectors.cartItemUpdate);
-
-                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
-
-                            //setTotalForCart();
-
-                            
-
-                            var minimum = $amountInput.data('minimum-amount');
-
-                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
-
-                            var keycode = (e.keyCode ? e.keyCode : e.which);
-
-
-
-                            if (!isNaN(minimum)) {
-
-                                if(e.type != 'keyup' || keycode == 13)
-
-                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
-
-                                if (amount <= minimum)
-
-                                    btnMinus.addClass('disabled');
-
-                                else
-
-                                    btnMinus.removeClass('disabled');
-
-                                if(!isNaN(origValue))
-
-                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
-
-                            }
-
-
-
-                            
-
-                            if (keycode == '13') {
-
-                                btnUpdate.trigger('click');
-
-                            }
-
-                    });
-
-
-
-                    $(document).on('refresh-cart-review-event',
-
-                        function() {
-
-                            reloadCart();
-
-                        });
-
-
-
-                    if ($cartModal.length === 1) {
-
-                        $cartModal.on('hide.bs.modal',
-
-                            function () {
-
-                                updateNavCart();
-
-                                refreshCheckoutCart();
-
-					        });
-
-                    }
-
-
-
-                    $root.on('click',
-
-                        selectors.btnPlus,
-
-                        function (e) {
-
-                            e.preventDefault();
-
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-
-                            var $closestInput = container.find('input');
-
-                            var amount = Number(clean($closestInput.val(), true));   
-
-                            $closestInput.val(amount + 1).trigger('blur');
-
-                        });
-
-
-
-                    $root.on('click',
-
-                        selectors.btnMinus,
-
-                        function (e) {
-
-                            e.preventDefault();
-
-                            if ($(this).hasClass('disabled'))
-
-                                return;
-
-                            var container = $(e.target).parents('.cart-item-container').eq(0);
-
-                            var $closestInput = container.find('input');
-
-                            var amount = Number(clean($closestInput.val(), true));
-
-                            if(amount>0)
-
-                                $closestInput.val(amount -1).trigger('blur');
-
-                        });
-
-
-
-                    $root.on('click',
-
-                        selectors.cartItemUpdate,
-
-                        function(e) {
-
-                            e.preventDefault();                            
-
-                           
-
-                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
-
-                                var container = $cartElement.parents('.cart-item-container').eq(0);
-
-                                var updateUrl = "/Cart/Update";
-
-                                var itemId = $cartElement.data('item-id');
-
-                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
-
-                                var $closestInput = container.find('input');
-
-                                var value = Number(clean($closestInput.val(),true));                                
-
-                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
-
-                                var amountSpan = container.find('.cart-item-amount');
-
-                                var serverErrorMessage = container.find('.server-error-message');
-
-                                inputErrorMessage.hide();
-
-                                serverErrorMessage.html('').hide();
-
-                           
-
-                                if (itemId) {
-
-                                    if (value < minimumAmount) {                                        
-
-                                        inputErrorMessage.show();
-
-                                        return;
-
-                                    }
-
-
-
-                                    $.ajax({
-
-                                        url: updateUrl,
-
-                                        type: 'POST',
-
-                                        data: { id: itemId, value: value }
-
-                                    }).success(function (response) {
-
-                                        if (response.success) {
-
-                                            refreshCheckoutCart();
-
-                                            resetCartItemElements();
-
-                                            amountSpan.html($closestInput.val());
-
-                                            $closestInput.attr('data-orig-value', value).trigger('blur');
-
-                                            setTotalForCart();
-
-                                        }
-
-                                        else {
-
-                                            serverErrorMessage.html(response.message).show();
-
-                                        }
-
-                                            
-
-                                    }).fail(function () {
-
-
-
-                                    });
-
-                                }
-
-                            });   
-
-                            var $updateElement = $(e.target);
-
-                            updateCartItem($updateElement);
-
-                        });
-
-                    
-
-                    resetCartItemElements();                                        
-
-                });
-
+   (function($) {
+
+                var selectors = {
+                    root: '#cart-review-block-3a55777117274b5bada76869cbe319dc',
+                    spinner: '.spinner-wrapper',
+                    cartList: '.cart-content',
+                    cartListEmpty: '.cart-content-empty',
+                    cartItem: '.cart-detail',
+                    cartItemRemove: '.cart-item-remove',
+                    cartItemAmountInput: '.cart-item-amount-input',
+                    checkoutButton: '.cart-checkout',
+                    keepShopping: '.cart-keep-shopping',
+                    cartTotalAmount: '.cart-total-amount',
+                    cartModal: '[class*=modal modalBlock]',
+                    cartItemUpdate: '.cart-item-update',
+                    inputErrorMessage: '.input-error-message',
+                    btnPlus: '.qty-plus',
+                    btnMinus: '.qty-minus',
+                    serverErrorMessage: '.server-error-message'
+                };
+
+                var clean = function(value, removeCommas) {
+                    if (!value)
+                        return value;
+
+                    value = value.trim();
+                    if (value.startsWith('$')) {
+                        value = value.substring(1, value.length);
+                    }
+
+                    value = value
+                        .replace(/[^0-9.]/g, "")
+                        .replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+
+                    if (removeCommas) {
+                        value = value.replace(/,/g, "");
+                    }
+
+                    return value;
+                };
+
+                $(function() {
+
+                    var cartItemCount = 0;
+                    var closeCartIfEmpty = true;
+
+                    var $cartItems;
+                    var $cartItemAmountInput;
+
+                    var $root = $(selectors.root);
+                    var $spinner = $root.find(selectors.spinner);
+                    var $cartList = $root.find(selectors.cartList);
+                    var $checkoutButton = $root.find(selectors.checkoutButton);
+                    var $cartListEmpty = $root.find(selectors.cartListEmpty);
+                    var $cartTotalAmount = $root.find(selectors.cartTotalAmount);
+                    var $cartModal = $root.closest(selectors.cartModal);
+
+                    var getCurrentCulture = function () {
+                        var paths = location.pathname.split('/');
+                        if (paths.length < 2) return '';
+                        return (paths[1] !== 'es') ? '' : 'es';
+                    }
+
+                    var closeModal = function () {
+                        if ($cartModal.length === 1
+                            && ($cartModal.hasClass('show')
+                                || $cartModal.hasClass('in'))) {
+                            $cartModal.modal('hide');
+                        }
+                    };
+
+                    var setCartItemElements = function () {
+                        $root = $(selectors.root);
+                        $cartItems = $root.find(selectors.cartItem);
+                        cartItemCount = $cartItems.length;
+                        $cartItemAmountInput = $root.find(selectors.cartItemAmountInput);
+                    }
+
+                    var checkIfCartIsEmpty = function () {
+                        $cartListEmpty.slideUp();
+                        $checkoutButton.prop("disabled", false);
+                        if (cartItemCount === 0) {
+                            $cartListEmpty.fadeIn();
+                            $checkoutButton.prop("disabled", true);
+                            if (closeCartIfEmpty) { closeModal(); }
+                        }
+                    }
+
+                    var setTotalForCart = function() {
+                        var total = 0;
+                        $cartItemAmountInput.each(function(index, input) {
+                            var $input = $(input);
+                            var inputAmount = Number(clean($input.val(), true));
+                            var origAmount = Number(clean($(input).attr('data-orig-value'), true));
+                            if (origAmount > 0)
+                                inputAmount = origAmount;
+                            total += inputAmount;                            
+                        });
+                        var totalValue = '$' + clean((total % 1 !== 0 ? total.toFixed(2) : total).toString());
+                        $cartTotalAmount.html(totalValue);
+                    }
+
+                    var updateNavCart = function() {
+                        if (window.Cart) {
+                            Cart.updateCartCount();
+                        }
+                    }
+
+                    var resetCartItemElements = function() {
+                        setCartItemElements();
+                        checkIfCartIsEmpty();
+                        setTotalForCart();
+                        updateNavCart();
+                    };
+
+                    var refreshCheckoutCart = function() {
+                        document.dispatchEvent(new CustomEvent('refresh-cart-event'));
+                    }
+
+                    var reloadCart = function() {
+                        var culture = getCurrentCulture() === 'es' ? '/es' : '';
+                        var ajaxUrl = culture + '/CartReviewBlock/Ajax?contentReferenceId=29986';
+
+                        $cartList.slideDown(function() {
+                            $spinner.fadeIn();
+
+                            $.ajax({
+                                url: ajaxUrl,
+                                type: 'POST',
+                                dataType: 'html'
+                            }).success(function(newHtml) {
+                                $cartList.html(newHtml);
+                                resetCartItemElements();
+                            }).done(function() {
+                                $spinner.fadeOut();
+                            });
+                        });
+                    };
+
+                    var isOnCheckoutPage = function(checkoutUrl) {
+                        if (!checkoutUrl) { return false; }
+                        var currentUrl = window.location.pathname;
+                        return currentUrl.toLowerCase() === checkoutUrl.toLowerCase();
+                    }
+
+                    $root.on('click',
+                        selectors.checkoutButton,
+                        function(e) {
+                            e.preventDefault();
+
+                            var $this = $(this);
+                            var url = $this.attr('href');
+
+                            if (!isOnCheckoutPage(url)) {
+                                window.location = url;
+                                return;
+                            }
+
+                            $(selectors.keepShopping).click();
+                        });
+
+
+                    $root.on('click',
+                        selectors.cartItemRemove,
+                        function(e) {
+                            e.preventDefault();
+
+                            var removeItemFromCart = GlobalFunctions.debounce(function($cartElement) {
+                                    var removeUrl = "/Cart/Remove";
+                                    var $closestCartItem = $cartElement.closest(selectors.cartItem);
+                                    var itemId = $cartElement.data('item-id');
+
+                                    if (!itemId) {
+                                        itemId = $cartElement.parent(selectors.cartItemRemove).data('item-id');
+                                    }
+
+                                    if (itemId) {
+                                        $closestCartItem.fadeTo("fast",
+                                            .5,
+                                            function () {
+                                                $.ajax({
+                                                    url: removeUrl,
+                                                    type: 'POST',
+                                                    data: { id: itemId }
+                                                }).success(function() {
+                                                    $closestCartItem.remove();
+                                                    refreshCheckoutCart();
+                                                    resetCartItemElements();
+                                                }).fail(function() {
+                                                    $closestCartItem.fadeTo("fast",
+                                                        1,
+                                                        function() {
+                                                            resetCartItemElements();
+                                                        });
+                                                });
+                                            });
+                                    }
+                                },
+                                250
+                            );
+
+                            var $removeElement = $(e.target);
+                            removeItemFromCart($removeElement);
+                        });
+
+                    $root.on('keyup blur',
+                        selectors.cartItemAmountInput,
+                        function (e) {                      
+                            var $amountInput = $(e.target);                                                  
+                            var cleanedAmount = clean($amountInput.val());                                                        
+                            var amount = Number(clean(cleanedAmount, true));                     
+                            var origValue = $(e.target).attr('data-orig-value');
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+                            
+                            var btnMinus = container.find(selectors.btnMinus);
+                            var btnUpdate = container.find(selectors.cartItemUpdate);
+                            $amountInput.val(cleanedAmount.length === 0 ? '' : ' $' + cleanedAmount);
+                            //setTotalForCart();
+                            
+                            var minimum = $amountInput.data('minimum-amount');
+                            var inputErrorMsg = container.find(selectors.inputErrorMessage);
+                            var keycode = (e.keyCode ? e.keyCode : e.which);
+
+                            if (!isNaN(minimum)) {
+                                if(e.type != 'keyup' || keycode == 13)
+                                    (amount < minimum) ? inputErrorMsg.show() : inputErrorMsg.hide();
+                                if (amount <= minimum)
+                                    btnMinus.addClass('disabled');
+                                else
+                                    btnMinus.removeClass('disabled');
+                                if(!isNaN(origValue))
+                                    btnUpdate.prop('disabled', (amount == origValue || amount < minimum));
+                            }
+
+                            
+                            if (keycode == '13') {
+                                btnUpdate.trigger('click');
+                            }
+                    });
+
+                    $(document).on('refresh-cart-review-event',
+                        function() {
+                            reloadCart();
+                        });
+
+                    if ($cartModal.length === 1) {
+                        $cartModal.on('hide.bs.modal',
+                            function () {
+                                updateNavCart();
+                                refreshCheckoutCart();
+					        });
+                    }
+
+                    $root.on('click',
+                        selectors.btnPlus,
+                        function (e) {
+                            e.preventDefault();
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+                            var $closestInput = container.find('input');
+                            var amount = Number(clean($closestInput.val(), true));   
+                            $closestInput.val(amount + 1).trigger('blur');
+                        });
+
+                    $root.on('click',
+                        selectors.btnMinus,
+                        function (e) {
+                            e.preventDefault();
+                            if ($(this).hasClass('disabled'))
+                                return;
+                            var container = $(e.target).parents('.cart-item-container').eq(0);
+                            var $closestInput = container.find('input');
+                            var amount = Number(clean($closestInput.val(), true));
+                            if(amount>0)
+                                $closestInput.val(amount -1).trigger('blur');
+                        });
+
+                    $root.on('click',
+                        selectors.cartItemUpdate,
+                        function(e) {
+                            e.preventDefault();                            
+                           
+                            var updateCartItem = GlobalFunctions.debounce(function ($cartElement) {
+                                var container = $cartElement.parents('.cart-item-container').eq(0);
+                                var updateUrl = "/Cart/Update";
+                                var itemId = $cartElement.data('item-id');
+                                var minimumAmount = Number($cartElement.attr('data-minimum-amount'));                               
+                                var $closestInput = container.find('input');
+                                var value = Number(clean($closestInput.val(),true));                                
+                                var inputErrorMessage = container.find(selectors.inputErrorMessage);
+                                var amountSpan = container.find('.cart-item-amount');
+                                var serverErrorMessage = container.find('.server-error-message');
+                                inputErrorMessage.hide();
+                                serverErrorMessage.html('').hide();
+                           
+                                if (itemId) {
+                                    if (value < minimumAmount) {                                        
+                                        inputErrorMessage.show();
+                                        return;
+                                    }
+
+                                    $.ajax({
+                                        url: updateUrl,
+                                        type: 'POST',
+                                        data: { id: itemId, value: value }
+                                    }).success(function (response) {
+                                        if (response.success) {
+                                            refreshCheckoutCart();
+                                            resetCartItemElements();
+                                            amountSpan.html($closestInput.val());
+                                            $closestInput.attr('data-orig-value', value).trigger('blur');
+                                            setTotalForCart();
+                                        }
+                                        else {
+                                            serverErrorMessage.html(response.message).show();
+                                        }
+                                            
+                                    }).fail(function () {
+
+                                    });
+                                }
+                            });   
+                            var $updateElement = $(e.target);
+                            updateCartItem($updateElement);
+                        });
+                    
+                    resetCartItemElements();                                        
+                });
             })(jQuery);
   </script>
   <div class="modal modalBlock slide-modal unique-show-modal-cart" role="dialog" tabindex="-1">
@@ -3635,98 +3225,52 @@ padding: 40px 30px;
    </div>
   </div>
   <script>
-   $(function () {
-
-            
-
-            var modalId = '-show-modal-cart';
-
-            var timeout = 0;
-
-
-
-            var selectors = {
-
-                modal: '.modal.unique' + modalId,
-
-                trigger: '.trigger-modal-' + modalId,
-
-                modalLinks: '.modal.unique' + modalId + ' a',
-
-                modalClose: '.modal.unique' + modalId + ' .callout-close'
-
-            };
-
-
-
-            $(selectors.trigger).on('click', function (e) {
-
-                e.preventDefault();
-
-                $(document).trigger('close-all-modals-event');
-
-                $(selectors.modal).modal('show');
-
-                
-
-            });
-
-
-
-            $(selectors.modalClose).on('click', function(e) {
-
-                e.preventDefault();
-
-                $(selectors.modal).modal('hide');
-
-                if (typeof ytPlayer !== "undefined") {
-
-                    ytPlayer.pauseVideo();
-
-                }
-
-                if (typeof vimeoPlayer !== "undefined") {
-
-                    vimeoPlayer.pause();
-
-                }
-
-            });
-
-
-
-            if(timeout !== 0) {
-
-                setTimeout(function(){
-
-                    $(selectors.modal).modal('show');
-
-                }, timeout * 1000);
-
-            }
-
-
-
-            $(document).on('close-all-modals-event',
-
-                function() {
-
-                    $(selectors.modal).modal('hide');
-
-                    if (typeof ytPlayer !== "undefined"){
-
-                        ytPlayer.pauseVideo();
-
-                    }
-
-                    if (typeof vimeoPlayer !== "undefined") {
-
-                        vimeoPlayer.pause();
-
-                    }
-
-                });
-
+   $(function () {
+            
+            var modalId = '-show-modal-cart';
+            var timeout = 0;
+
+            var selectors = {
+                modal: '.modal.unique' + modalId,
+                trigger: '.trigger-modal-' + modalId,
+                modalLinks: '.modal.unique' + modalId + ' a',
+                modalClose: '.modal.unique' + modalId + ' .callout-close'
+            };
+
+            $(selectors.trigger).on('click', function (e) {
+                e.preventDefault();
+                $(document).trigger('close-all-modals-event');
+                $(selectors.modal).modal('show');
+                
+            });
+
+            $(selectors.modalClose).on('click', function(e) {
+                e.preventDefault();
+                $(selectors.modal).modal('hide');
+                if (typeof ytPlayer !== "undefined") {
+                    ytPlayer.pauseVideo();
+                }
+                if (typeof vimeoPlayer !== "undefined") {
+                    vimeoPlayer.pause();
+                }
+            });
+
+            if(timeout !== 0) {
+                setTimeout(function(){
+                    $(selectors.modal).modal('show');
+                }, timeout * 1000);
+            }
+
+            $(document).on('close-all-modals-event',
+                function() {
+                    $(selectors.modal).modal('hide');
+                    if (typeof ytPlayer !== "undefined"){
+                        ytPlayer.pauseVideo();
+                    }
+                    if (typeof vimeoPlayer !== "undefined") {
+                        vimeoPlayer.pause();
+                    }
+                });
         });
   </script>
   <div class="pop-up-alerts">
