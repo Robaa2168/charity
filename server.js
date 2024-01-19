@@ -2,9 +2,9 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
-// Serve dmca-notice.html for the root URL ('/')
+// Serve learn-more.html for the root URL ('/')
 app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, 'children', 'dmca-notice.html'));
+    res.sendFile(path.join(__dirname, 'children', 'learn-more.html'));
 });
 
 // Dynamic HTML file serving based on URL path
